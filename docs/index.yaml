@@ -1,0 +1,257 @@
+courseId: kurs-drugi-ikt
+description:
+  externalLinks: []
+  longDescription: '<div class="document">
+
+    <p>Овај курс је намењен ученицима 2. разреда гимназије за предмет Рачунарство
+    и информатика у току првог полугодишта.
+
+    У оквиру овог курса детаљно је  обрађена наставна тема Програми за табеларна израчунавања.
+
+    Курс у потпуности прати програм наставе и учења за овај предмет. Курс је организован
+    по двочасима.
+
+    Током курса детаљно се изучава апликативни софтвер за табеларна израчунавања,
+    Excel.
+
+    Материјал намењен за један двочас се састоји од лекције, дела са питалицама, којима
+    се ученицима скреће
+
+    пажња на најбитније делове из садржаја лекције и  квизова, који имају за циљ проверу
+    усвојеног градива.</p>
+
+    <p>Поред рада у школи, курс се може пролазити и самостално.</p>
+
+    <p>&lt;p&gt;
+
+    &lt;a rel=&quot;license&quot; href=&quot;<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">https://creativecommons.org/licenses/by/4.0/deed.sr_LATN</a>&quot;&gt;
+
+    &lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot;
+    src=&quot;https://i.creativecommons.org/l/by/4.0/88x31.png&quot; /&gt;&lt;/a&gt;
+
+    &lt;br /&gt;Овај курс Фондација Петља објавила je под лиценцом &lt;a rel=&quot;license&quot;
+    href=&quot;https://creativecommons.org/licenses/by/4.0/deed.sr_LATN&quot;&gt;Creative
+    Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)&lt;/a&gt;.
+
+    &lt;/p&gt;</p>
+
+    </div>
+
+    '
+  requirements:
+  - Имаш инсталиран Пајтон
+  - Имаш рачунар са приступом интернету
+  shortDescription: Програми за табеларна израчунавања
+  toc:
+  - ПРОГРАМИ ЗА ТАБЕЛАРНА ИЗРАЧУНАВАЊА
+  - 1. Увод у рад са програмима за табеларна израчунавања
+  - 2. Аутоматска рекалкулација
+  - 3. Селектовање групе ћелија и уређивање табеле
+  - 4. Разне врсте података у табели
+  - 5. Штампање и генерисање ПДФ документа
+  - 6. Апсолутне и релативне адресе ћелија
+  - 7. Визуелизација података
+  - 8. Сортирање, филтрирање и фреквенцијска анализа
+  - 9. Више табела у истом документу
+  - 10. Рад са дељеним табелама
+  willLearn:
+  - ПРОГРАМИ ЗА ТАБЕЛАРНА ИЗРАЧУНАВАЊА
+  - Унос различитих типова података у табелу (нумеричких, текстуалних, датум, време....).
+  - Појам адресе и различите могућности (апсолутна и релативна адреса).
+  - Сортирање и филтрирање података.
+  - Примена формула за израчунавање статистика.
+  - Визуализација података.
+  - Форматирање табеле и припрема за штампу.
+lang: sr-Cyrl
+lessons:
+- activities:
+  - description: ''
+    file: E01.html
+    guid: 6e09f3e9-24ae-4cf6-9773-7f514756c139
+    src: E01.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE01.html
+    guid: d6d48387-1fda-4483-ae01-9f15114963bd
+    src: testE01.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E01
+  guid: f77c8f05-b8d8-4190-8432-deb8f2bb7d13
+  normalized_title: 1. Увод у рад са програмима за табеларна израчунавања
+  title: 1. Увод у рад са програмима за табеларна израчунавања
+- activities:
+  - description: ''
+    file: E02.html
+    guid: 52f81b05-f499-429a-8089-4a27c38cd6cc
+    src: E02.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE02.html
+    guid: 522ef612-ffde-4b75-9e27-0f712542dd75
+    src: testE02.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E02
+  guid: 78721466-c43e-411a-bd0b-cf8af3261f8e
+  normalized_title: 2. Аутоматска рекалкулација
+  title: 2. Аутоматска рекалкулација
+- activities:
+  - description: ''
+    file: E03.html
+    guid: f8400a28-db53-4a3e-b537-3a9d0514e465
+    src: E03.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE03.html
+    guid: 4c88c1c0-fe19-43b5-a4d6-22715d1a5fe4
+    src: testE03.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E03
+  guid: ff4d9b25-0553-431e-8353-a451da635c1d
+  normalized_title: 3. Селектовање групе ћелија и уређивање табеле
+  title: 3. Селектовање групе ћелија и уређивање табеле
+- activities:
+  - description: ''
+    file: E04.html
+    guid: 70b1d499-6205-4990-888d-13f1409b6a92
+    src: E04.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE04.html
+    guid: 5c029f15-e7aa-4ec4-85ca-53f624045595
+    src: testE04.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E04
+  guid: 93e7639e-a018-4de7-9505-27272dfd6bba
+  normalized_title: 4. Разне врсте података у табели
+  title: 4. Разне врсте података у табели
+- activities:
+  - description: ''
+    file: E05.html
+    guid: 6b7ffed1-94a2-497d-8fd2-2e7938502faf
+    src: E05.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE05.html
+    guid: c587a2e3-79ef-49c2-a8bc-f1270b41cb91
+    src: testE05.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E05
+  guid: 41eb23b9-c0b7-4fc9-8f5c-96fa2293fb74
+  normalized_title: 5. Штампање и генерисање ПДФ документа
+  title: 5. Штампање и генерисање ПДФ документа
+- activities:
+  - description: ''
+    file: E06.html
+    guid: db6cf896-8c96-446b-877f-0de00658630b
+    src: E06.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE06.html
+    guid: 7464ba0a-629d-417b-a6a7-539da1e61dff
+    src: testE06.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E06
+  guid: bb546b11-873a-4d4c-809d-5dfd039d46c2
+  normalized_title: 6. Апсолутне и релативне адресе ћелија
+  title: 6. Апсолутне и релативне адресе ћелија
+- activities:
+  - description: ''
+    file: E07.html
+    guid: 823dc087-b5b4-4194-91e2-a499f7c03692
+    src: E07.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE07.html
+    guid: f8625dbe-1a47-498c-8198-643397002298
+    src: testE07.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E07
+  guid: 62a696f2-3baf-4f45-b791-376039395436
+  normalized_title: 7. Визуелизација података
+  title: 7. Визуелизација података
+- activities:
+  - description: ''
+    file: E08.html
+    guid: d171f716-f17e-429e-a531-206a81010389
+    src: E08.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE08.html
+    guid: 54fc969f-fe03-4d65-81ad-40c8a07650c1
+    src: testE08.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E08
+  guid: 91227beb-1a72-406f-8ba5-e74aaac21eb4
+  normalized_title: 8. Сортирање, филтрирање и фреквенцијска анализа
+  title: 8. Сортирање, филтрирање и фреквенцијска анализа
+- activities:
+  - description: ''
+    file: E09.html
+    guid: b9186f78-36fa-417f-8659-714710621422
+    src: E09.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE09.html
+    guid: 72af1f1a-39fe-45ab-8385-f41ef04e967e
+    src: testE09.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E09
+  guid: 177003b4-dadd-412b-a1cb-90f4971289b7
+  normalized_title: 9. Више табела у истом документу
+  title: 9. Више табела у истом документу
+- activities:
+  - description: ''
+    file: E10.html
+    guid: 1e346279-ce88-48e0-bc04-068d27400a9b
+    src: E10.rst
+    title: Лекција
+    type: reading
+  - description: ''
+    file: testE10.html
+    guid: 6d5f32c9-8d8f-4907-8849-d453e254e906
+    src: testE10.rst
+    title: Квиз
+    type: quiz
+  archived-activities: []
+  description: ''
+  folder: E10
+  guid: bdd702fa-7fca-44fe-b95b-47530eb5efb4
+  normalized_title: 10. Рад са дељеним табелама
+  title: 10. Рад са дељеним табелама
+title: Програми за табеларна израчунавања за други разред гимназије

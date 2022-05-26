@@ -1,218 +1,376 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Рад са дељеним табелама &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рад са дељеним табелама</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/runestonebase.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="../_static/jquery-fix.js"></script>
-    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../_static/bootstrap-sphinx.js"></script>
-    <script src="../_static/waypoints.min.js"></script>
-    <script src="../_static/rangy-core.js"></script>
-    <script src="../_static/rangy-textrange.js"></script>
-    <script src="../_static/rangy-cssclassapplier.js"></script>
-    <script src="../_static/user-highlights.js"></script>
-    <script src="../_static/jquery.idle-timer.js"></script>
-    <script src="../_static/processing-1.4.1.min.js"></script>
-    <script src="../_static/jquery.hotkey.js"></script>
-    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Тест" href="testE10.html" />
-    <link rel="prev" title="Лекција 10." href="index.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="../_static/p5js.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/regex-check.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/nimgame.js"></script>
+    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
 
-<script type="text/javascript">
-  eBookConfig = {};
-  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
-  eBookConfig.app = eBookConfig.host+'/runestone';
-  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
-  eBookConfig.logLevel = 0;
-  eBookConfig.loginRequired = false;
-  eBookConfig.build_info = "";
-  eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
-  eBookConfig.runestone_version = '3.1.1';
-  eBookConfig.imagesDir = '../_images/';
-  eBookConfig.staticDir = '../_static/';
-  if(typeof(Sk) != "undefined")
-      Sk.imgPath = eBookConfig.imagesDir;
-</script>
+  </head>
 
-<div id="fb-root"></div>
+  <body>
 
 
 
-  </head><body>
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
 
-
-<!-- Begin navbar -->
-
-<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-
-  <div class="container">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
-      </ul>
-    </div>
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
   </div>
-</nav>
-
-<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
-  
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-    <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 10.</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Рад са дељеним табелама</a></li>
-<li class="toctree-l2"><a class="reference internal" href="testE10.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-
-        </div>
-      </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
   </div>
-<div class="container col-md-12" id="continue-reading"></div>
+</div>
 
-<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+
+<div class="content-header-label" id = "content-header-label" href="../">Програми за табеларна израчунавања</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
   
-  <div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
-<p>Unknown interpreted text role „blank”.</p>
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E01>
+                    <h5>1. Увод у рад са програмима за табеларна израчунавања</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E01/E01.html><div class="studioLecture" id=activity-E01><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E01/testE01.html><div class="studioLecture" id=activity-testE01><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E02>
+                    <h5>2. Аутоматска рекалкулација</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E02/E02.html><div class="studioLecture" id=activity-E02><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E02/testE02.html><div class="studioLecture" id=activity-testE02><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E03>
+                    <h5>3. Селектовање групе ћелија и уређивање табеле</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E03/E03.html><div class="studioLecture" id=activity-E03><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E03/testE03.html><div class="studioLecture" id=activity-testE03><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E04>
+                    <h5>4. Разне врсте података у табели</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E05>
+                    <h5>5. Штампање и генерисање ПДФ документа</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E05/E05.html><div class="studioLecture" id=activity-E05><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E05/testE05.html><div class="studioLecture" id=activity-testE05><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E06>
+                    <h5>6. Апсолутне и релативне адресе ћелија</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E06/E06.html><div class="studioLecture" id=activity-E06><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E06/testE06.html><div class="studioLecture" id=activity-testE06><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E07>
+                    <h5>7. Визуелизација података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E07/E07.html><div class="studioLecture" id=activity-E07><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E07/testE07.html><div class="studioLecture" id=activity-testE07><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E08>
+                    <h5>8. Сортирање, филтрирање и фреквенцијска анализа</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E08/testE08.html><div class="studioLecture" id=activity-testE08><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E09>
+                    <h5>9. Више табела у истом документу</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E09/E09.html><div class="studioLecture" id=activity-E09><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E09/testE09.html><div class="studioLecture" id=activity-testE09><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-E10>
+                    <h5>10. Рад са дељеним табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../E10/E10.html><div class="studioLecture" id=activity-E10><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../E10/testE10.html><div class="studioLecture" id=activity-testE10><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
-<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
-    :blank:`x`
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
-</pre></div>
-</div>
-</div>
-<div class="section" id="id3">
-<h1>Рад са дељеним табелама<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Рад са дељеним табелама<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>У овој лекцији се бавимо подацима „у облаку”. Причаћемо о:</p>
 <ol class="arabic simple">
 <li><p>сервисима „у облаку”,</p></li>
@@ -246,8 +404,8 @@ Google-ове сервисе могу да користе само регист�
 <a class="reference internal image-reference" href="../_images/Sh3.jpg"><img alt="../_images/Sh3.jpg" class="align-center" src="../_images/Sh3.jpg" style="width: 600px;" /></a>
 <p>Након идентификације имамо приступ свим Google-овим сервисима.</p>
 </div>
-<div class="section" id="id4">
-<h2>Креирање документа „у облаку”<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h2>Креирање документа „у облаку”<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p><strong>Корак 1.</strong> Отићи ћемо на <em>drive.google.com</em>, што је комбиновани сервис за смештање података „у облаку”, као и за креирање нових докумената „у облаку”. Добијамо приказ докумената које смо до сада похранили на овом сервису (тренутно нема ниједног), као и могућност да креирамо нове документе.</p>
 <a class="reference internal image-reference" href="../_images/Sh4.jpg"><img alt="../_images/Sh4.jpg" class="align-center" src="../_images/Sh4.jpg" style="width: 600px;" /></a>
 <p><strong>Корак 2.</strong> Нови документ се креира кликом на „New”, након чега имамо могућност да одаберемо врсту документа коју желимо да креирамо. Ми ћемо се определити за „Google Sheets” -&gt; „Blank spreadsheet”:</p>
@@ -274,9 +432,24 @@ Google-ове сервисе могу да користе само регист�
 <a class="reference internal image-reference" href="../_images/Sh11.jpg"><img alt="../_images/Sh11.jpg" class="align-center" src="../_images/Sh11.jpg" style="width: 600px;" /></a>
 <p>Нови документ са именом „Play-list” се појавио на списку докумената који су ускладиштени:</p>
 <a class="reference internal image-reference" href="../_images/Sh12.jpg"><img alt="../_images/Sh12.jpg" class="align-center" src="../_images/Sh12.jpg" style="width: 600px;" /></a>
-</div>
-<div class="section" id="id5">
-<h2>Дељење документа „у облаку” и колаборација<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Ево и кратког видеа:</p>
+
+    <div  id="VJCjI3EJxqM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/VJCjI3EJxqM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-VJCjI3EJxqM" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-VJCjI3EJxqM">
+        </div>
+    </div>
+    
+    
+    </div>
+<div class="section" id="id3">
+<h2>Дељење документа „у облаку” и колаборација<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p><strong>Корак 5.</strong> Сада ћемо поделити документ са другим корисницима. Кликни <em>десним</em> тастером миша на документ и из менија који се појавио одабери „Share”:</p>
 <a class="reference internal image-reference" href="../_images/Sh13.jpg"><img alt="../_images/Sh13.jpg" class="align-center" src="../_images/Sh13.jpg" style="width: 600px;" /></a>
 <p>Појавиће се овакав дијалог:</p>
@@ -290,7 +463,22 @@ Google-ове сервисе могу да користе само регист�
 </ul>
 <p>Можемо додати и кратак опис.</p>
 <p>Коначно треба кликнути на [Send] („пошаљи”).</p>
-<p><strong>Корак 6.</strong> Сви чланови групе ће добити обавештење путем електронске поште да је документ подељен са њима:</p>
+<p>Ево и кратког видеа:</p>
+
+    <div  id="f55A9KYwUnI" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/f55A9KYwUnI/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-f55A9KYwUnI" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-f55A9KYwUnI">
+        </div>
+    </div>
+    
+    
+    <p><strong>Корак 6.</strong> Сви чланови групе ће добити обавештење путем електронске поште да је документ подељен са њима:</p>
 <a class="reference internal image-reference" href="../_images/Sh15.jpg"><img alt="../_images/Sh15.jpg" class="align-center" src="../_images/Sh15.jpg" style="width: 600px;" /></a>
 <p>Да би прихватили позив треба да отворе поруку и кликну на „Open in Sheets”:</p>
 <a class="reference internal image-reference" href="../_images/Sh16.jpg"><img alt="../_images/Sh16.jpg" class="align-center" src="../_images/Sh16.jpg" style="width: 600px;" /></a>
@@ -298,16 +486,46 @@ Google-ове сервисе могу да користе само регист�
 <a class="reference internal image-reference" href="../_images/Sh17.jpg"><img alt="../_images/Sh17.jpg" class="align-center" src="../_images/Sh17.jpg" style="width: 600px;" /></a>
 <p>Док више корисника ради на истом документу, свако има своју активну ћелију и тако се може пратити колико људи ради на документу и шта ко ради:</p>
 <a class="reference internal image-reference" href="../_images/Sh19.jpg"><img alt="../_images/Sh19.jpg" class="align-center" src="../_images/Sh19.jpg" style="width: 600px;" /></a>
-</div>
-<div class="section" id="id6">
-<h2>Преузимање документа<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Ево и кратког видеа:</p>
+
+    <div  id="dlgDeyxmFQQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/dlgDeyxmFQQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-dlgDeyxmFQQ" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-dlgDeyxmFQQ">
+        </div>
+    </div>
+    
+    
+    </div>
+<div class="section" id="id4">
+<h2>Преузимање документа<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Као што смо већ рекли, при раду са документима „у облаку” <em>нема опције „Save”</em> која снима документ. Свака измена у документу се одмах прослеђује серверу. Када завршимо рад на документу можемо га преузети и снимити на свој рачунар: треба кликнути на „File”, ту одабрати „Download” па из подменија „Microsoft Excel (.xlsx)”:</p>
 <a class="reference internal image-reference" href="../_images/Sh20.jpg"><img alt="../_images/Sh20.jpg" class="align-center" src="../_images/Sh20.jpg" style="width: 600px;" /></a>
 <p>Одговарајући Ексел фајл ће бити преузет са сервера.</p>
 <p>Важно је да разумемо да <em>измене које вршимо на копији фајла који се налази на нашем рачунару неће бити видљиве осталим члановима тима!</em> Само измене које вршимо „у облаку” ће бити доступне свима.</p>
-</div>
-<div class="section" id="id7">
-<h2>Задаци<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Ево и кратког видеа:</p>
+
+    <div  id="E1sDUZ9E7pY" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/E1sDUZ9E7pY/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-E1sDUZ9E7pY" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-E1sDUZ9E7pY">
+        </div>
+    </div>
+    
+    
+    </div>
+<div class="section" id="id5">
+<h2>Задаци<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p><strong>Задатак 1.</strong> Направити дељену табелу која садржи оцене свих ученика у групи. Један ученик у групи треба да направи табелу  и да подели табелу са осталим ученицима у групи. Онда сваки ученик нека унесе у табелу своје име, оцене и нека за себе израчуна просек оцена.</p>
 <p><strong>Задатак 2.</strong> Са следећег линка преузети документ <em>PoslJedinice.xlsx</em></p>
 <p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/PoslJedinice.xlsx">PoslJedinice.xlsx</a></p>
@@ -316,58 +534,44 @@ Google-ове сервисе могу да користе само регист�
 </div>
 
 
-  
-      <div class="col-md-12">
-<ul class="pager">
-    <li id="relations-prev" title='Previous chapter - Лекција 10.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    </div>
     
-        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE10.html"><i class="fas fa-arrow-right"></i></a></li>
-</ul>
-
-<!-- <ul class="pager"> -->
-    <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 10.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
-    <!--  -->
-    <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE10.html">Следеће поглавље</a></li> -->
-    <!-- -->
-<!-- </ul> -->
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
 
 <script type="text/javascript">
-
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-
 </script>
 </div>
-  
+
+    
+  </div>
 </div>
-<footer class="footer col-md-12">
-    <div class="container">
-        <div class="text-center">
-            <hr>
-            <p class="text-muted">
-                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
-            </p>
-        </div>
-    </div>
-</footer>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
 
 
+<div class="lectureToolbox">
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32029811-1']);
-  _gaq.push(['_trackPageview']);
+  <label class="font-size-toggle" id="fontSizeToggle">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
 
-
+</div>
 
   </body>
 </html>
