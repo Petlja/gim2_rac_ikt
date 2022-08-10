@@ -53,9 +53,21 @@ lessons:
     guid: f77c8f05-b8d8-4190-8432-deb8f2bb7d13
     activities:
       - type: reading
-        title: Лекција
+        title: Програми за табеларна израчунавања
+        file: E00.rst
+        guid: 8aa25f03-46f3-416a-ad16-09a306e077a8
+      - type: reading
+        title: Покретање, навигација и уношење података у табелу
         file: E01.rst
         guid: 6e09f3e9-24ae-4cf6-9773-7f514756c139
+      - type: reading
+        title: Једноставне формуле
+        file: E013.rst
+        guid: dab8fc54-be83-43e5-a0f4-a2bd6bc06177
+      - type: reading
+        title: Задаци за вежбу
+        file: E014.rst
+        guid: f8291b2a-cf3d-4a46-98e5-74f3f117e579
       - type: quiz 
         title: Квиз
         file: testE01.rst
@@ -65,9 +77,21 @@ lessons:
     guid: 78721466-c43e-411a-bd0b-cf8af3261f8e
     activities:
       - type: reading
-        title: Лекција
+        title: Аутоматска рекалкулација
         file: E02.rst
         guid: 52f81b05-f499-429a-8089-4a27c38cd6cc
+      - type: reading
+        title: Унос података и формула у табелу
+        file: E022.rst
+        guid: 3af2af56-e841-462b-ab95-4c6e6723782c
+      - type: reading
+        title: Аутоматска рекалкулација и додавање врста и колона табели
+        file: E023.rst
+        guid: e0ea4e5f-c39f-40a0-96c1-4c2f49b4ae30
+      - type: reading
+        title: Задаци за вежбу
+        file: E024.rst
+        guid: 95a72f41-ec36-40f9-a571-06b3d09eefc8
       - type: quiz 
         title: Квиз
         file: testE02.rst
@@ -77,9 +101,29 @@ lessons:
     guid: ff4d9b25-0553-431e-8353-a451da635c1d
     activities:
       - type: reading
-        title: Лекција
+        title: Уношење формула и брзо копирање
         file: E03.rst
         guid: f8400a28-db53-4a3e-b537-3a9d0514e465
+      - type: reading
+        title: Селектовање групе ћелија
+        file: E033.rst
+        guid: 9f678fa4-3161-4289-8b46-b3e467cebf27
+      - type: reading
+        title: Форматирање децималних бројева
+        file: E034.rst
+        guid: b381c89a-2bcb-4c19-8d7d-c687c9abc928
+      - type: reading
+        title: Рачунање минимума и максимума
+        file: E035.rst
+        guid: 8b3d6233-4bd8-4834-84ea-0c43b47110a6
+      - type: reading
+        title: Уређивање табеле
+        file: E036.rst
+        guid: b36bfacb-1fa5-42fd-a8b2-21ebccaec8f6
+      - type: reading
+        title: Задаци за вежбу
+        file: E037.rst
+        guid: e58b41b6-f23b-429e-ba76-63d19d44baec
       - type: quiz 
         title: Квиз
         file: testE03.rst
@@ -89,21 +133,61 @@ lessons:
     guid: 93e7639e-a018-4de7-9505-27272dfd6bba
     activities:
       - type: reading
-        title: Лекција
+        title: Разне врсте података у табели
         file: E04.rst
         guid: 70b1d499-6205-4990-888d-13f1409b6a92
+      - type: reading
+        title: Валуте у Ексел табели
+        file: E041.rst
+        guid: 9ab5be33-4131-413e-a84f-815b548be167
+      - type: reading
+        title: Датуми у Ексел табели
+        file: E042.rst
+        guid: 752e239d-fc33-47d2-a0a1-d173587f1ea0
+      - type: reading
+        title: Време у Ексел табели
+        file: E043.rst
+        guid: 3b0f7970-6dcf-419a-901e-0b49408e536e
+      - type: reading
+        title: Задаци за вежбу
+        file: E044.rst
+        guid: 2db13225-971e-4357-90d0-88fc5a729a6d
       - type: quiz 
         title: Квиз
         file: testE04.rst
         guid: 5c029f15-e7aa-4ec4-85ca-53f624045595
-  - title: 5. Штампање и генерисање ПДФ документа
+  - title: 5. Проценти, штампање и генерисање ПДФ документа
     folder: E05
     guid: 41eb23b9-c0b7-4fc9-8f5c-96fa2293fb74
     activities:
       - type: reading
-        title: Лекција
+        title: Папирни и дигитални документи
         file: E05.rst
         guid: 6b7ffed1-94a2-497d-8fd2-2e7938502faf
+      - type: reading
+        title: Проширивање врсте и приказивање садржаја ћелије у више редова
+        file: E051.rst
+        guid: 649daa03-8ee2-49fe-a77c-ceeca7654305
+      - type: reading
+        title: Приказивање бројева  у облику процента
+        file: E052.rst
+        guid: 3940e317-4957-4a35-8087-35fd6dde755c
+      - type: reading
+        title: Спајање ћелија и промена величине слова
+        file: E053.rst
+        guid: 5c774cb7-c641-4318-8faa-62b1ccfc2d00
+      - type: reading
+        title: Штампање документа
+        file: E054.rst
+        guid: c2e834d6-1d74-4b1f-b392-ecf569c42ed6
+      - type: reading
+        title: Снимање документа у ПДФ формату
+        file: E055.rst
+        guid: 51cc6b33-62a5-4cd2-9f8b-04cf026a416f
+      - type: reading
+        title: Задаци за вежбу
+        file: E056.rst
+        guid: 73ac3e2a-af91-4acd-8f2f-c46c01e6033f
       - type: quiz 
         title: Квиз
         file: testE05.rst
@@ -113,9 +197,25 @@ lessons:
     guid: bb546b11-873a-4d4c-809d-5dfd039d46c2
     activities:
       - type: reading
-        title: Лекција
+        title: Апсолутне и релативне адресе ћелија
         file: E06.rst
         guid: db6cf896-8c96-446b-877f-0de00658630b
+      - type: reading
+        title: Интелигентно копирање формула
+        file: E061.rst
+        guid: a3a9c50e-d244-46e3-ad30-d19a1dd2f320
+      - type: reading
+        title: Апсолутна адреса ћелије
+        file: E062.rst
+        guid: bcd2e28b-99f8-48e0-b363-49c6256ed662
+      - type: reading
+        title: Прерачун валута
+        file: E063.rst
+        guid: 4ed259d3-0827-486a-936b-8dd3721af51f
+      - type: reading
+        title: Задаци за вежбу
+        file: E064.rst
+        guid: 0cd517ce-eedf-4677-bc9f-a139fb5eced9
       - type: quiz 
         title: Квиз
         file: testE06.rst
@@ -125,9 +225,29 @@ lessons:
     guid: 62a696f2-3baf-4f45-b791-376039395436
     activities:
       - type: reading
-        title: Лекција
+        title: Визуелизација података
         file: E07.rst
         guid: 823dc087-b5b4-4194-91e2-a499f7c03692
+      - type: reading
+        title: Промена величине у времену - Scatter дијаграм
+        file: E071.rst
+        guid: d087429f-575f-4e16-8ff2-11926ad2d880
+      - type: reading
+        title: Компаративна анализа -- Стубичасти дијаграми
+        file: E072.rst
+        guid: 4e8ebb3b-9e68-4f76-8579-af35af81243c
+      - type: reading
+        title: Визуелизација удела у целини -- Секторски дијаграми
+        file: E073.rst
+        guid: e242c84b-b5b9-430f-b7de-c5b2b87d16e7
+      - type: reading
+        title: Приказивање две групе података на истом дијаграму
+        file: E074.rst
+        guid: 31ab1483-0da1-4540-a8a7-3b453acd453a
+      - type: reading
+        title: Задаци за вежбу
+        file: E075.rst
+        guid: b0aae83f-abf7-48df-b011-421f2168faa9
       - type: quiz 
         title: Квиз
         file: testE07.rst
@@ -137,9 +257,25 @@ lessons:
     guid: 91227beb-1a72-406f-8ba5-e74aaac21eb4
     activities:
       - type: reading
-        title: Лекција
+        title: Сортирање, филтрирање и фреквенцијска анализа
         file: E08.rst
         guid: d171f716-f17e-429e-a531-206a81010389
+      - type: reading
+        title: Сортирање података
+        file: E081.rst
+        guid: 4e8197f8-4cb6-4afc-9a79-f745945ae584
+      - type: reading
+        title: Филтрирање података
+        file: E082.rst
+        guid: 7fa9a78c-2244-4bc9-a4b7-94314a069e8c
+      - type: reading
+        title: Фреквенцијска анализа
+        file: E083.rst
+        guid: 5e98be3c-b316-43c8-9866-40eabb79dda0
+      - type: reading
+        title: Задаци за вежбу
+        file: E084.rst
+        guid: bc7d7d9f-a500-4542-a2c3-157ea14c9990
       - type: quiz 
         title: Квиз
         file: testE08.rst
@@ -149,9 +285,25 @@ lessons:
     guid: 177003b4-dadd-412b-a1cb-90f4971289b7
     activities:
       - type: reading
-        title: Лекција
+        title: Више табела у истом документу
         file: E09.rst
         guid: b9186f78-36fa-417f-8659-714710621422
+      - type: reading
+        title: Радни листови
+        file: E091.rst
+        guid: e4d7b503-4f63-460b-a9a4-b6e875e82f7a
+      - type: reading
+        title: Управљање подацима на радним листовима
+        file: E092.rst
+        guid: f194b7bf-d5eb-446f-92c4-e9d2ea621f44
+      - type: reading
+        title: Преузимање података са другог радног листа
+        file: E093.rst
+        guid: ed3f52e6-945c-41ee-86da-076247dd36be
+      - type: reading
+        title: Задаци за вежбу
+        file: E094.rst
+        guid: 5feff24a-4d3c-4671-89d4-e2a9e2c4a067
       - type: quiz 
         title: Квиз
         file: testE09.rst
@@ -161,9 +313,25 @@ lessons:
     guid: bdd702fa-7fca-44fe-b95b-47530eb5efb4
     activities:
       - type: reading
-        title: Лекција
+        title: Сервиси „у облаку“ (cloud services)
         file: E10.rst
         guid: 1e346279-ce88-48e0-bc04-068d27400a9b
+      - type: reading
+        title: Креирање документа „у облаку“
+        file: E101.rst
+        guid: d341c849-be65-4a23-8728-faf5ea84ccc6
+      - type: reading
+        title: Дељење документа „у облаку“ и сарадња
+        file: E102.rst
+        guid: d4757b53-dc20-48ce-bb0f-a2a823ceb416
+      - type: reading
+        title: Преузимање документа
+        file: E103.rst
+        guid: ca618c73-710e-4f31-b07b-09d04869ff43
+      - type: reading
+        title: Задаци за вежбу
+        file: E104.rst
+        guid: 02acdcac-9588-4733-8c0c-49d829362290
       - type: quiz 
         title: Квиз
         file: testE10.rst
