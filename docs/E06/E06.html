@@ -24,14 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -120,49 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/nimgame.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -252,7 +212,10 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E01/E01.html><div class="studioLecture" id=activity-E01><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E01/E00.html><div class="studioLecture" id=activity-E00><i class="fas fa-file-alt activity-icon"></i>Програми за табеларна израчунавања</div></a>
+                <a href=../E01/E01.html><div class="studioLecture" id=activity-E01><i class="fas fa-file-alt activity-icon"></i>Покретање, навигација и уношење података у табелу</div></a>
+                <a href=../E01/E013.html><div class="studioLecture" id=activity-E013><i class="fas fa-file-alt activity-icon"></i>Једноставне формуле</div></a>
+                <a href=../E01/E014.html><div class="studioLecture" id=activity-E014><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E01/testE01.html><div class="studioLecture" id=activity-testE01><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -263,7 +226,10 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E02/E02.html><div class="studioLecture" id=activity-E02><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E02/E02.html><div class="studioLecture" id=activity-E02><i class="fas fa-file-alt activity-icon"></i>Аутоматска рекалкулација</div></a>
+                <a href=../E02/E022.html><div class="studioLecture" id=activity-E022><i class="fas fa-file-alt activity-icon"></i>Унос података и формула у табелу</div></a>
+                <a href=../E02/E023.html><div class="studioLecture" id=activity-E023><i class="fas fa-file-alt activity-icon"></i>Аутоматска рекалкулација и додавање врста и колона табели</div></a>
+                <a href=../E02/E024.html><div class="studioLecture" id=activity-E024><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E02/testE02.html><div class="studioLecture" id=activity-testE02><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -274,7 +240,12 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E03/E03.html><div class="studioLecture" id=activity-E03><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E03/E03.html><div class="studioLecture" id=activity-E03><i class="fas fa-file-alt activity-icon"></i>Уношење формула и брзо копирање</div></a>
+                <a href=../E03/E033.html><div class="studioLecture" id=activity-E033><i class="fas fa-file-alt activity-icon"></i>Селектовање групе ћелија</div></a>
+                <a href=../E03/E034.html><div class="studioLecture" id=activity-E034><i class="fas fa-file-alt activity-icon"></i>Форматирање децималних бројева</div></a>
+                <a href=../E03/E035.html><div class="studioLecture" id=activity-E035><i class="fas fa-file-alt activity-icon"></i>Рачунање минимума и максимума</div></a>
+                <a href=../E03/E036.html><div class="studioLecture" id=activity-E036><i class="fas fa-file-alt activity-icon"></i>Уређивање табеле</div></a>
+                <a href=../E03/E037.html><div class="studioLecture" id=activity-E037><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E03/testE03.html><div class="studioLecture" id=activity-testE03><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -285,18 +256,28 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
+                <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
+                <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-E05>
-                    <h5>5. Штампање и генерисање ПДФ документа</h5>
+                    <h5>5. Проценти, штампање и генерисање ПДФ документа</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E05/E05.html><div class="studioLecture" id=activity-E05><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E05/E05.html><div class="studioLecture" id=activity-E05><i class="fas fa-file-alt activity-icon"></i>Папирни и дигитални документи</div></a>
+                <a href=../E05/E051.html><div class="studioLecture" id=activity-E051><i class="fas fa-file-alt activity-icon"></i>Проширивање врсте и приказивање садржаја ћелије у више редова</div></a>
+                <a href=../E05/E052.html><div class="studioLecture" id=activity-E052><i class="fas fa-file-alt activity-icon"></i>Приказивање бројева  у облику процента</div></a>
+                <a href=../E05/E053.html><div class="studioLecture" id=activity-E053><i class="fas fa-file-alt activity-icon"></i>Спајање ћелија и промена величине слова</div></a>
+                <a href=../E05/E054.html><div class="studioLecture" id=activity-E054><i class="fas fa-file-alt activity-icon"></i>Штампање документа</div></a>
+                <a href=../E05/E055.html><div class="studioLecture" id=activity-E055><i class="fas fa-file-alt activity-icon"></i>Снимање документа у ПДФ формату</div></a>
+                <a href=../E05/E056.html><div class="studioLecture" id=activity-E056><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E05/testE05.html><div class="studioLecture" id=activity-testE05><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -307,7 +288,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E06/E06.html><div class="studioLecture" id=activity-E06><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E06/E06.html><div class="studioLecture" id=activity-E06><i class="fas fa-file-alt activity-icon"></i>Апсолутне и релативне адресе ћелија</div></a>
+                <a href=../E06/E061.html><div class="studioLecture" id=activity-E061><i class="fas fa-file-alt activity-icon"></i>Интелигентно копирање формула</div></a>
+                <a href=../E06/E062.html><div class="studioLecture" id=activity-E062><i class="fas fa-file-alt activity-icon"></i>Апсолутна адреса ћелије</div></a>
+                <a href=../E06/E063.html><div class="studioLecture" id=activity-E063><i class="fas fa-file-alt activity-icon"></i>Прерачун валута</div></a>
+                <a href=../E06/E064.html><div class="studioLecture" id=activity-E064><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E06/testE06.html><div class="studioLecture" id=activity-testE06><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -318,7 +303,12 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E07/E07.html><div class="studioLecture" id=activity-E07><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E07/E07.html><div class="studioLecture" id=activity-E07><i class="fas fa-file-alt activity-icon"></i>Визуелизација података</div></a>
+                <a href=../E07/E071.html><div class="studioLecture" id=activity-E071><i class="fas fa-file-alt activity-icon"></i>Промена величине у времену - Scatter дијаграм</div></a>
+                <a href=../E07/E072.html><div class="studioLecture" id=activity-E072><i class="fas fa-file-alt activity-icon"></i>Компаративна анализа -- Стубичасти дијаграми</div></a>
+                <a href=../E07/E073.html><div class="studioLecture" id=activity-E073><i class="fas fa-file-alt activity-icon"></i>Визуелизација удела у целини -- Секторски дијаграми</div></a>
+                <a href=../E07/E074.html><div class="studioLecture" id=activity-E074><i class="fas fa-file-alt activity-icon"></i>Приказивање две групе података на истом дијаграму</div></a>
+                <a href=../E07/E075.html><div class="studioLecture" id=activity-E075><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E07/testE07.html><div class="studioLecture" id=activity-testE07><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -329,7 +319,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
+                <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
+                <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
+                <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E08/testE08.html><div class="studioLecture" id=activity-testE08><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -340,7 +334,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E09/E09.html><div class="studioLecture" id=activity-E09><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E09/E09.html><div class="studioLecture" id=activity-E09><i class="fas fa-file-alt activity-icon"></i>Више табела у истом документу</div></a>
+                <a href=../E09/E091.html><div class="studioLecture" id=activity-E091><i class="fas fa-file-alt activity-icon"></i>Радни листови</div></a>
+                <a href=../E09/E092.html><div class="studioLecture" id=activity-E092><i class="fas fa-file-alt activity-icon"></i>Управљање подацима на радним листовима</div></a>
+                <a href=../E09/E093.html><div class="studioLecture" id=activity-E093><i class="fas fa-file-alt activity-icon"></i>Преузимање података са другог радног листа</div></a>
+                <a href=../E09/E094.html><div class="studioLecture" id=activity-E094><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E09/testE09.html><div class="studioLecture" id=activity-testE09><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -351,7 +349,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E10/E10.html><div class="studioLecture" id=activity-E10><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E10/E10.html><div class="studioLecture" id=activity-E10><i class="fas fa-file-alt activity-icon"></i>Сервиси „у облаку“ (cloud services)</div></a>
+                <a href=../E10/E101.html><div class="studioLecture" id=activity-E101><i class="fas fa-file-alt activity-icon"></i>Креирање документа „у облаку“</div></a>
+                <a href=../E10/E102.html><div class="studioLecture" id=activity-E102><i class="fas fa-file-alt activity-icon"></i>Дељење документа „у облаку“ и сарадња</div></a>
+                <a href=../E10/E103.html><div class="studioLecture" id=activity-E103><i class="fas fa-file-alt activity-icon"></i>Преузимање документа</div></a>
+                <a href=../E10/E104.html><div class="studioLecture" id=activity-E104><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E10/testE10.html><div class="studioLecture" id=activity-testE10><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -371,206 +373,28 @@
     
   <div class="section" id="id1">
 <h1>Апсолутне и релативне адресе ћелија<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>У овој лекцији нагласак је на формулама. Објашњавамо:</p>
+<p>Као што смо већ видели, могућност да у ћелију унесемо формулу, у сарадњи са аутоматском рекалкулацијом, представља
+један од највећих адута Ексела. Пошто се Ексел користи и за озбиљније пословне прорачуне, да би се одговорило изазовима
+које пословна употреба поставља пред један софтверски производ, велика пажња је посвећена изражајним могућностима приликом
+конструкције формула. Оно што смо до сада видели представља само мали део Екселове флексибилности, а описивање свих
+његових могућности када се ради о израђајној моћи формула далеко надилази амбиције овог курса. Међутим,</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<p>Механизам апсолутног и релативног адресирања ћелија представља окосницу Екслеове флексибилности!</p>
+
+    </p></div></div>
+<div class="section" id="id2">
+<h2>У овој лекцији<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>У овој лекцији нагласак је на формулама њиховој изражајној моћи. Објашњавамо:</p>
 <ol class="arabic simple">
 <li><p>како се копирају формуле и како Ексел мења формулу током копирања,</p></li>
 <li><p>шта је релативна, а шта апсолутна адреса ћелије и како то утиче на копирање формула, и</p></li>
 <li><p>како подацима у ћелији додати знак за валуту.</p></li>
 </ol>
-<div class="section" id="id2">
-<h2>Пример: Зарада од продаје воћа – рачунање удела у заради<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>У овом примеру ћемо израчунати зараду једног продавца воћа у једном дану. За сваку врсту воћа ћемо израчунати и који удео зарада од продаје те врсте воћа чини у укупној заради продавца.</p>
-<p><strong>Корак 1.</strong> Преузми табелу <em>Zarada.xlsx</em> са следећег линка и учитај је у Ексел:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Zarada.xlsx">Zarada.xlsx</a></p>
-<p>Табела изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/Zarada1.jpg"><img alt="../_images/Zarada1.jpg" class="align-center" src="../_images/Zarada1.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 2.</strong></p>
-<ol class="arabic simple">
-<li><p>У поље B1 унеси неки датум (датум за који се прави анализа), а у поље B2 унеси име продајног места (било какав текст).</p></li>
-<li><p>Спој ћелије A3:E3 (<em>Merge Cells</em>) и повећај величину слова текста у новој (великој) ћелији.</p></li>
-<li><p>Ћелије B2 и B4:E4 поравнај по десној ивици.</p></li>
-<li><p>За стил текста у ћелијама A4:E4 одабери <strong>bold</strong> и <em>italic</em>.</p></li>
-</ol>
-<p>Табела треба да изгледа отприлике овако:</p>
-<a class="reference internal image-reference" href="../_images/Zarada2.jpg"><img alt="../_images/Zarada2.jpg" class="align-center" src="../_images/Zarada2.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 3.</strong> У ћелије B5:B15 унеси произвољне бројеве. Они представљају количину воћа која је продата, рецимо овако:</p>
-<a class="reference internal image-reference" href="../_images/Zarada3.jpg"><img alt="../_images/Zarada3.jpg" class="align-center" src="../_images/Zarada3.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 4.</strong> За сваку врсту воћа израчунај зараду тако што ћеш у ћелију D5 унети формулу</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">B5</span><span class="o">*</span><span class="n">C5</span>
-</pre></div>
-</div>
-<p>и онда ту формулу „развући” до краја листе:</p>
-<a class="reference internal image-reference" href="../_images/Zarada4.jpg"><img alt="../_images/Zarada4.jpg" class="align-center" src="../_images/Zarada4.jpg" style="width: 600px;" /></a>
-</div>
-<div class="section" id="id3">
-<h2>Интелигентно копирање формула<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p><strong>Корак 5.</strong> Израчунај укупну зараду тако што ћеш у ћелију D16 унети формулу</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="n">D5</span><span class="p">:</span><span class="n">D15</span><span class="p">)</span>
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/Zarada5.jpg"><img alt="../_images/Zarada5.jpg" class="align-center" src="../_images/Zarada5.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 6.</strong> Даље, израчунаћемо колико је укупно килограма воћа продато тај дан. Један начин да се то уради је, наравно, да се у ћелију B16 унесе формула</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="n">B5</span><span class="p">:</span><span class="n">B15</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>али ћемо сада показати бржи начин да се то уради. Користићемо наредбе из групе „Clipboard”</p>
-<a class="reference internal image-reference" href="../_images/CopyPaste.jpg"><img alt="../_images/CopyPaste.jpg" class="align-center" src="../_images/CopyPaste.jpg" style="width: 600px;" /></a>
-<p>Пошто смо већ у ћелији D16 израчунали збир бројева у ћелијама D5:D15, и пошто је формула коју треба да унесемо у ћелију B15 „аналогна”, просто ћемо <em>ископирати</em> формулу из ћелије D16 у ћелију B16. Ево како.</p>
-<p>Кликни на ћелију D16 и онда кликни на икону која одговара операцији „Copy” (енгл. „ископирај”):</p>
-<a class="reference internal image-reference" href="../_images/Zarada6.jpg"><img alt="../_images/Zarada6.jpg" class="align-center" src="../_images/Zarada6.jpg" style="width: 600px;" /></a>
-<p>У табели се ништа није десило, али је Ексел <em>ископирао</em> формулу у посебан део меморије који се зове <em>Clipboard</em>.</p>
-<p>Сада кликни на ћелију B16 и онда кликни на икону која одговара операцији „Paste” (енгл. „налепи”) која ће садржај из <em>Clipboard</em>-а ископирати у ћелију на коју смо кликнули, <em>али интелигентно</em>:</p>
-<a class="reference internal image-reference" href="../_images/Zarada7.jpg"><img alt="../_images/Zarada7.jpg" class="align-center" src="../_images/Zarada7.jpg" style="width: 600px;" /></a>
-<p>Ексел је ископирао формулу у ћелију B16, али се прилагодио чињеници да смо формулу пренели из колоне D у колону B. Зато сада у колони B16 пише:</p>
-<a class="reference internal image-reference" href="../_images/Zarada8.jpg"><img alt="../_images/Zarada8.jpg" class="align-center" src="../_images/Zarada8.jpg" style="width: 600px;" /></a>
-<p>Ова операција је веома важна и у жаргону се зове <em>Copy/Paste</em>.</p>
-<p>Важан закључак: Ексел уме да копира садржај ћелије у неку другу ћелију. Ако садржај који се копира број, датум, време или текст, приликом копирања неће ништа бити промењено. <em>Али, ако је садржај који се копира формула, она ће бити прилагођена положају нове ћелије и биће измењена на одговарајући начин!</em>  Ово својство Ексела зовемо <em>интелигентно копирање формула</em>.</p>
-<p>Приметимо још нешто: операција „развлачења ћелије за бубуљицу” коју смо до сада користили да брзо копирамо формуле је само вишеструка примена операције <em>Copy/Paste</em>.</p>
-</div>
-<div class="section" id="id4">
-<h2>Апсолутна адреса ћелије<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p><strong>Корак 7.</strong> За сваку врсту воћа израчунаћемо удео те врсте воћа у укупној заради и приказати га у облику процента. Као што смо већ видели, проценти се рачунају као обичан количник дела и целине, и онда се одговарајуће ћелије само форматирају на одговарајући начин.</p>
-<p>У нашем примеру целину представља укупна зарада (број у ћелији D16), док су делови чији удео у целини рачунамо бројеви који представљају зараду сваке појединачне врсте воћа.</p>
-<p>Да бисмо израчунали удео који зарада на јабукама носи у укупној заради у ћелију E5 ћемо уписати формулу</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">D5</span><span class="o">/</span><span class="n">D16</span>
-</pre></div>
-</div>
-<p>(количник дела и целине):</p>
-<a class="reference internal image-reference" href="../_images/Zarada9.jpg"><img alt="../_images/Zarada9.jpg" class="align-center" src="../_images/Zarada9.jpg" style="width: 600px;" /></a>
-<p>Добијамо неки децимални број који ћемо касније форматирати као проценат.</p>
-<p>Пошто ћелије E6:E15 садрже исту формулу, само ћемо кликути на ћелију E5 и „развући” до дна:</p>
-<a class="reference internal image-reference" href="../_images/Zarada10.jpg"><img alt="../_images/Zarada10.jpg" class="align-center" src="../_images/Zarada10.jpg" style="width: 600px;" /></a>
-<p><strong>УПС! ГДЕ СМО ПОГРЕШИЛИ?</strong></p>
-<p>Да видимо. Ако кликнемо на ћелију E5 и притиснемо тастер [F2] Ексел ће нам показати формулу која је у ћелији и означиће ћелије које учествују у формули:</p>
-<a class="reference internal image-reference" href="../_images/Zarada11.jpg"><img alt="../_images/Zarada11.jpg" class="align-center" src="../_images/Zarada11.jpg" style="width: 600px;" /></a>
-<p>Формула у ћелији E5 је добра. (Како не би била када смо је ручно унели.)</p>
-<p>Хајде сада да кликнемо на ћелију E6 и притиснемо тастер [F2]:</p>
-<a class="reference internal image-reference" href="../_images/Zarada12.jpg"><img alt="../_images/Zarada12.jpg" class="align-center" src="../_images/Zarada12.jpg" style="width: 600px;" /></a>
-<p>Ето зашто се Ексел буни: формула у ћелији E6 гласи</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">D6</span><span class="o">/</span><span class="n">D17</span>
-</pre></div>
-</div>
-<p>и D6 је добро (то је зарада на крушкама), али D17 је празна ћелија. Када се број у ћелији D6 подели ничим добије се грешка, наравно.</p>
-<p>Зашто смо добили ову формулу? Погледајмо табеларни приказ ситуације:</p>
-<table class="docutils align-left" id="id7">
-<caption><span class="caption-text">Шта смо добили и шта желимо</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Ћелија</p></th>
-<th class="head"><p>Формула у ћелији</p></th>
-<th class="head"><p>Формула коју желимо</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>E5</p></td>
-<td><p>= D5/D16</p></td>
-<td><p>= D5/D16</p></td>
-</tr>
-<tr class="row-odd"><td><p>E6</p></td>
-<td><p>= D6/D17</p></td>
-<td><p>= D6/D16</p></td>
-</tr>
-</tbody>
-</table>
-<p>Када смо формулу из ћелије E5 ископирали у ћелију E6 пренели смо формулу један ред ниже. Тако је D5 постало D6, што нам одговара, али је D16 постало D17, што нам <em>никако не одговара</em>.
-Волели бисмо када бисмо могли да убедимо Ексел да при преласку са E5 на E6 он промени D5 на D6, али желимо да при томе D16 остане D16. И то је, наравно, могуће!</p>
-<p>Обрисаћемо сада све (селектујемо ћелије E5:E15) и притиснемо тастер [Del] (или [Delete]) на тастатури:</p>
-<a class="reference internal image-reference" href="../_images/Zarada13.jpg"><img alt="../_images/Zarada13.jpg" class="align-center" src="../_images/Zarada13.jpg" style="width: 600px;" /></a>
-<p>Поново ћемо у поље E5 унети формулу, али овај пут ћемо написати:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= D5/$D$16
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/Zarada14.jpg"><img alt="../_images/Zarada14.jpg" class="align-center" src="../_images/Zarada14.jpg" style="width: 600px;" /></a>
-<p>Симболима $ које смо додали испред имена колоне и броја врсте ћелије D16 смо <em>фиксирали</em> ту ћелију у следећем смислу: <em>приликом копирања формуле овај елемент формуле неће бити модификован; он ће увек остати $D$16</em>.</p>
-<a class="reference internal image-reference" href="../_images/Zarada15.jpg"><img alt="../_images/Zarada15.jpg" class="align-center" src="../_images/Zarada15.jpg" style="width: 600px;" /></a>
-<p>Да се уверимо да је то заиста тако ископираћемо формулу из ћелије E5 у ћелију E6 користећи <em>Copy/Paste</em> акцију. Ако притиснемо тастер [F2] док стојимо на ћелији E6 видимо да је у њу уписана формула</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= D6/$D$16
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/Zarada16.jpg"><img alt="../_images/Zarada16.jpg" class="align-center" src="../_images/Zarada16.jpg" style="width: 600px;" /></a>
-<p>Дакле, приликом копирања формуле из E5 у E6, D5 постало D6, али је $D$16 остало $D$16.</p>
-<p>Сада слободно можемо да кликнемо на ћелију E6 и „развучемо” формулу до дна табеле:</p>
-<a class="reference internal image-reference" href="../_images/Zarada17.jpg"><img alt="../_images/Zarada17.jpg" class="align-center" src="../_images/Zarada17.jpg" style="width: 600px;" /></a>
-<p>У свакој ћелији се налази коректна формула. На пример,</p>
-<a class="reference internal image-reference" href="../_images/Zarada18.jpg"><img alt="../_images/Zarada18.jpg" class="align-center" src="../_images/Zarada18.jpg" style="width: 600px;" /></a>
-<p>Адреса ћелије као што је D6 се зове <em>релативна адреса</em> зато што је Екселу приликом копирања формуле дозвољено да је мења.</p>
-<p>Адреса ћелије као што је $D$16, која је <em>фиксирана</em>, се зове <em>апсолутна адреса</em> зато што Екселу приликом копирања формуле <strong>није</strong> дозвољено да је мења (зато је <em>апсолутна, непроменљива</em>).</p>
-<p><strong>Корак 8.</strong> За крај треба још бројеве које смо добили у колони E приказати у облику процента. Да бисмо то постигли, селектоваћмо ћелије E5:E15 и као формат приказа одабрати „Percentage”:</p>
-<a class="reference internal image-reference" href="../_images/Zarada19.jpg"><img alt="../_images/Zarada19.jpg" class="align-center" src="../_images/Zarada19.jpg" style="width: 600px;" /></a>
-<p>Добијамо:</p>
-<a class="reference internal image-reference" href="../_images/Zarada20.jpg"><img alt="../_images/Zarada20.jpg" class="align-center" src="../_images/Zarada20.jpg" style="width: 600px;" /></a>
-<p>За крај, сними табелу као Ексел фајл и као ПДФ фајл.</p>
-</div>
-<div class="section" id="id5">
-<h2>Пример: Прерачун валута<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Показаћемо сада још један пример у коме се природно користе апсолутне адресе ћелија.</p>
-<p><strong>Корак 1.</strong> Са следећег линка преузми документ <em>PriceList.xlsx</em> који садржи ценовник једне радње у три валуте: еврима, британским фунтама и динарима:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/PriceList.xlsx">PriceList.xlsx</a></p>
-<p>Табела изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/PriceList1.jpg"><img alt="../_images/PriceList1.jpg" class="align-center" src="../_images/PriceList1.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 2.</strong> Прво ћемо мало да улепшамо табелу.</p>
-<ol class="arabic simple">
-<li><p>Спој (<em>Merge Cells</em>) ћелије A1:D1 (наслов табле), постави величину слова на 16, обој позадину ових ћелија тамно сиво, а слова бело.</p></li>
-<li><p>Постави величину слова у ћелијама A2:D3 на 12.</p></li>
-<li><p>Спој (<em>Merge Cells</em>) ћелије A15:C15 (наслов мале табеле); обој позадину ових ћелија тамно сиво, а слова бело.</p></li>
-<li><p>Прошири колоне A, B, C и D тако да сав садржај буде видљив.</p></li>
-<li><p>Спој (<em>Merge Cells</em>) ћелије A2 и A3 и центрирај садржај вертикално.</p></li>
-<li><p>Спој (<em>Merge Cells</em>) ћелије B2:D2</p></li>
-</ol>
-<p>Табела сада изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/PriceList2.jpg"><img alt="../_images/PriceList2.jpg" class="align-center" src="../_images/PriceList2.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 3.</strong> Израчунаћемо цене производа у британским фунтама и у динарима на основу курса евра који је дат у малој табели. Да бисмо израчунали цену првог производа у британским фунтама у ћелију C4 ћемо унети</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= B4*$B$16
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/PriceList3.jpg"><img alt="../_images/PriceList3.jpg" class="align-center" src="../_images/PriceList3.jpg" style="width: 600px;" /></a>
-<p>У овој формули ћелија B4 није фиксирана јер приликом копирања формуле у следећи ред желимо да она постане B5
-(и тако добијемо формулу која конвертује у британске фунте цену наредног производа на листи).
-С друге стране, ћелија B16 је фиксирана изразом $B$16 јер се на сваки ред табеле примењује курс фунте из ћелије B16,
-и то не треба да се мења приликом копирања формуле.</p>
-<p>Из истог разлога ћемо у ћелију D4 унети формулу</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= B4*$B$17
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/PriceList4.jpg"><img alt="../_images/PriceList4.jpg" class="align-center" src="../_images/PriceList4.jpg" style="width: 600px;" /></a>
-<p>Сада можемо ове две формуле да брзо ископирамо у остатак табеле. Селектоваћемо ћелије C4:D4</p>
-<a class="reference internal image-reference" href="../_images/PriceList5.jpg"><img alt="../_images/PriceList5.jpg" class="align-center" src="../_images/PriceList5.jpg" style="width: 600px;" /></a>
-<p>и „развући” до дна табеле:</p>
-<a class="reference internal image-reference" href="../_images/PriceList6.jpg"><img alt="../_images/PriceList6.jpg" class="align-center" src="../_images/PriceList6.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 4.</strong> За крај ћемо још мало улепшати табелу.</p>
-<ol class="arabic simple">
-<li><p>Прикажи све цене на две децимале.</p></li>
-<li><p>Поравнај по десној ивици садржај у ћелијама B3:D13.</p></li>
-<li><p>Испред цена у фунтама додај симбол за британску фунту, а испред цена у еврима додај симбол за евро.</p></li>
-<li><p>Уоквири следеће групе ћелија користећи опцију „Outside Borders”: A2:A13, A2:D3, B3:B13, C3:C13, D3:D13</p></li>
-</ol>
-<p>Табела на крају треба да изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/PriceList7.jpg"><img alt="../_images/PriceList7.jpg" class="align-center" src="../_images/PriceList7.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 5.</strong> Сними табелу и као Ексел фајл и као ПДФ фајл.</p>
-</div>
-<div class="section" id="id6">
-<h2>Задаци<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p><strong>Задатак 1.</strong> Са следећег линка преузми датотеку која садржи податке о берачима воћа на једној плантажи:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Jabuke.xlsx">Jabuke.xlsx</a></p>
-<ul class="simple">
-<li><p>Прошири колоне ако је потребно и улепшај табелу.</p></li>
-<li><p>Одреди укупну количину јабука, крушака и трешања које су убране.</p></li>
-<li><p>За сваког берача утврди колико је зарадио ако знаш да су износи убраног воћа дати у килограмима, а цена брања по килограму воћа је дата испод табеле са берачима.</p></li>
-</ul>
-<p><strong>Задатак 2.</strong> У ауто-салону се продаје 10 врста аутомобила и преглед продаје је дат у документу на следећем линку:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Automobili.xlsx">Automobili.xlsx</a></p>
-<p>Свака врста аутомобила има своју <em>Nabavnu cenu</em> (колона F).</p>
-<p>На набавну цену власник салона зарачунава своју маржу (проценат) из ћелије C3 и висина марже се исказује у колони G.</p>
-<p><em>Osnovna cena</em> аутомобила (колона H) је набавна цена увећана за маржу.</p>
-<p>На основну цену се зарачунава <em>Carina</em> у одређеном проценту (колона G). Проценат за царину се налази у ћелији C4.</p>
-<p>На збир основне цене и царине се даље зарачунава ПДВ (колона H) у одређеном проценту. Проценат ПДВ-а се налази у ћелији C5.</p>
-<p><em>Ukupna Cena</em> се рачуна као збир <em>Osnovne cene</em>, <em>Carine</em> и ПДВ-а (колона I).</p>
-<p>У колону <em>Popust</em> (колона J) се уноси могући попуст који даје продавац <em>у процентима</em> <strong>на основну цену</strong>, ако му се купац „свиђа”.</p>
-<p>Израчунати <em>Prodajnu cenu</em>.</p>
 </div>
 </div>
 

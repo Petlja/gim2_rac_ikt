@@ -66,10 +66,28 @@ lang: sr-Cyrl
 lessons:
 - activities:
   - description: ''
+    file: E00.html
+    guid: 8aa25f03-46f3-416a-ad16-09a306e077a8
+    src: E00.rst
+    title: Програми за табеларна израчунавања
+    type: reading
+  - description: ''
     file: E01.html
     guid: 6e09f3e9-24ae-4cf6-9773-7f514756c139
     src: E01.rst
-    title: Лекција
+    title: Покретање, навигација и уношење података у табелу
+    type: reading
+  - description: ''
+    file: E013.html
+    guid: dab8fc54-be83-43e5-a0f4-a2bd6bc06177
+    src: E013.rst
+    title: Једноставне формуле
+    type: reading
+  - description: ''
+    file: E014.html
+    guid: f8291b2a-cf3d-4a46-98e5-74f3f117e579
+    src: E014.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE01.html
@@ -88,7 +106,25 @@ lessons:
     file: E02.html
     guid: 52f81b05-f499-429a-8089-4a27c38cd6cc
     src: E02.rst
-    title: Лекција
+    title: Аутоматска рекалкулација
+    type: reading
+  - description: ''
+    file: E022.html
+    guid: 3af2af56-e841-462b-ab95-4c6e6723782c
+    src: E022.rst
+    title: Унос података и формула у табелу
+    type: reading
+  - description: ''
+    file: E023.html
+    guid: e0ea4e5f-c39f-40a0-96c1-4c2f49b4ae30
+    src: E023.rst
+    title: Аутоматска рекалкулација и додавање врста и колона табели
+    type: reading
+  - description: ''
+    file: E024.html
+    guid: 95a72f41-ec36-40f9-a571-06b3d09eefc8
+    src: E024.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE02.html
@@ -107,7 +143,37 @@ lessons:
     file: E03.html
     guid: f8400a28-db53-4a3e-b537-3a9d0514e465
     src: E03.rst
-    title: Лекција
+    title: Уношење формула и брзо копирање
+    type: reading
+  - description: ''
+    file: E033.html
+    guid: 9f678fa4-3161-4289-8b46-b3e467cebf27
+    src: E033.rst
+    title: Селектовање групе ћелија
+    type: reading
+  - description: ''
+    file: E034.html
+    guid: b381c89a-2bcb-4c19-8d7d-c687c9abc928
+    src: E034.rst
+    title: Форматирање децималних бројева
+    type: reading
+  - description: ''
+    file: E035.html
+    guid: 8b3d6233-4bd8-4834-84ea-0c43b47110a6
+    src: E035.rst
+    title: Рачунање минимума и максимума
+    type: reading
+  - description: ''
+    file: E036.html
+    guid: b36bfacb-1fa5-42fd-a8b2-21ebccaec8f6
+    src: E036.rst
+    title: Уређивање табеле
+    type: reading
+  - description: ''
+    file: E037.html
+    guid: e58b41b6-f23b-429e-ba76-63d19d44baec
+    src: E037.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE03.html
@@ -126,7 +192,31 @@ lessons:
     file: E04.html
     guid: 70b1d499-6205-4990-888d-13f1409b6a92
     src: E04.rst
-    title: Лекција
+    title: Разне врсте података у табели
+    type: reading
+  - description: ''
+    file: E041.html
+    guid: 9ab5be33-4131-413e-a84f-815b548be167
+    src: E041.rst
+    title: Валуте у Ексел табели
+    type: reading
+  - description: ''
+    file: E042.html
+    guid: 752e239d-fc33-47d2-a0a1-d173587f1ea0
+    src: E042.rst
+    title: Датуми у Ексел табели
+    type: reading
+  - description: ''
+    file: E043.html
+    guid: 3b0f7970-6dcf-419a-901e-0b49408e536e
+    src: E043.rst
+    title: Време у Ексел табели
+    type: reading
+  - description: ''
+    file: E044.html
+    guid: 2db13225-971e-4357-90d0-88fc5a729a6d
+    src: E044.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE04.html
@@ -145,7 +235,43 @@ lessons:
     file: E05.html
     guid: 6b7ffed1-94a2-497d-8fd2-2e7938502faf
     src: E05.rst
-    title: Лекција
+    title: Папирни и дигитални документи
+    type: reading
+  - description: ''
+    file: E051.html
+    guid: 649daa03-8ee2-49fe-a77c-ceeca7654305
+    src: E051.rst
+    title: Проширивање врсте и приказивање садржаја ћелије у више редова
+    type: reading
+  - description: ''
+    file: E052.html
+    guid: 3940e317-4957-4a35-8087-35fd6dde755c
+    src: E052.rst
+    title: Приказивање бројева  у облику процента
+    type: reading
+  - description: ''
+    file: E053.html
+    guid: 5c774cb7-c641-4318-8faa-62b1ccfc2d00
+    src: E053.rst
+    title: Спајање ћелија и промена величине слова
+    type: reading
+  - description: ''
+    file: E054.html
+    guid: c2e834d6-1d74-4b1f-b392-ecf569c42ed6
+    src: E054.rst
+    title: Штампање документа
+    type: reading
+  - description: ''
+    file: E055.html
+    guid: 51cc6b33-62a5-4cd2-9f8b-04cf026a416f
+    src: E055.rst
+    title: Снимање документа у ПДФ формату
+    type: reading
+  - description: ''
+    file: E056.html
+    guid: 73ac3e2a-af91-4acd-8f2f-c46c01e6033f
+    src: E056.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE05.html
@@ -157,14 +283,38 @@ lessons:
   description: ''
   folder: E05
   guid: 41eb23b9-c0b7-4fc9-8f5c-96fa2293fb74
-  normalized_title: 5. Штампање и генерисање ПДФ документа
-  title: 5. Штампање и генерисање ПДФ документа
+  normalized_title: 5. Проценти, штампање и генерисање ПДФ документа
+  title: 5. Проценти, штампање и генерисање ПДФ документа
 - activities:
   - description: ''
     file: E06.html
     guid: db6cf896-8c96-446b-877f-0de00658630b
     src: E06.rst
-    title: Лекција
+    title: Апсолутне и релативне адресе ћелија
+    type: reading
+  - description: ''
+    file: E061.html
+    guid: a3a9c50e-d244-46e3-ad30-d19a1dd2f320
+    src: E061.rst
+    title: Интелигентно копирање формула
+    type: reading
+  - description: ''
+    file: E062.html
+    guid: bcd2e28b-99f8-48e0-b363-49c6256ed662
+    src: E062.rst
+    title: Апсолутна адреса ћелије
+    type: reading
+  - description: ''
+    file: E063.html
+    guid: 4ed259d3-0827-486a-936b-8dd3721af51f
+    src: E063.rst
+    title: Прерачун валута
+    type: reading
+  - description: ''
+    file: E064.html
+    guid: 0cd517ce-eedf-4677-bc9f-a139fb5eced9
+    src: E064.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE06.html
@@ -183,7 +333,37 @@ lessons:
     file: E07.html
     guid: 823dc087-b5b4-4194-91e2-a499f7c03692
     src: E07.rst
-    title: Лекција
+    title: Визуелизација података
+    type: reading
+  - description: ''
+    file: E071.html
+    guid: d087429f-575f-4e16-8ff2-11926ad2d880
+    src: E071.rst
+    title: Промена величине у времену - Scatter дијаграм
+    type: reading
+  - description: ''
+    file: E072.html
+    guid: 4e8ebb3b-9e68-4f76-8579-af35af81243c
+    src: E072.rst
+    title: Компаративна анализа -- Стубичасти дијаграми
+    type: reading
+  - description: ''
+    file: E073.html
+    guid: e242c84b-b5b9-430f-b7de-c5b2b87d16e7
+    src: E073.rst
+    title: Визуелизација удела у целини -- Секторски дијаграми
+    type: reading
+  - description: ''
+    file: E074.html
+    guid: 31ab1483-0da1-4540-a8a7-3b453acd453a
+    src: E074.rst
+    title: Приказивање две групе података на истом дијаграму
+    type: reading
+  - description: ''
+    file: E075.html
+    guid: b0aae83f-abf7-48df-b011-421f2168faa9
+    src: E075.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE07.html
@@ -202,7 +382,31 @@ lessons:
     file: E08.html
     guid: d171f716-f17e-429e-a531-206a81010389
     src: E08.rst
-    title: Лекција
+    title: Сортирање, филтрирање и фреквенцијска анализа
+    type: reading
+  - description: ''
+    file: E081.html
+    guid: 4e8197f8-4cb6-4afc-9a79-f745945ae584
+    src: E081.rst
+    title: Сортирање података
+    type: reading
+  - description: ''
+    file: E082.html
+    guid: 7fa9a78c-2244-4bc9-a4b7-94314a069e8c
+    src: E082.rst
+    title: Филтрирање података
+    type: reading
+  - description: ''
+    file: E083.html
+    guid: 5e98be3c-b316-43c8-9866-40eabb79dda0
+    src: E083.rst
+    title: Фреквенцијска анализа
+    type: reading
+  - description: ''
+    file: E084.html
+    guid: bc7d7d9f-a500-4542-a2c3-157ea14c9990
+    src: E084.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE08.html
@@ -221,7 +425,31 @@ lessons:
     file: E09.html
     guid: b9186f78-36fa-417f-8659-714710621422
     src: E09.rst
-    title: Лекција
+    title: Више табела у истом документу
+    type: reading
+  - description: ''
+    file: E091.html
+    guid: e4d7b503-4f63-460b-a9a4-b6e875e82f7a
+    src: E091.rst
+    title: Радни листови
+    type: reading
+  - description: ''
+    file: E092.html
+    guid: f194b7bf-d5eb-446f-92c4-e9d2ea621f44
+    src: E092.rst
+    title: Управљање подацима на радним листовима
+    type: reading
+  - description: ''
+    file: E093.html
+    guid: ed3f52e6-945c-41ee-86da-076247dd36be
+    src: E093.rst
+    title: Преузимање података са другог радног листа
+    type: reading
+  - description: ''
+    file: E094.html
+    guid: 5feff24a-4d3c-4671-89d4-e2a9e2c4a067
+    src: E094.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE09.html
@@ -240,7 +468,31 @@ lessons:
     file: E10.html
     guid: 1e346279-ce88-48e0-bc04-068d27400a9b
     src: E10.rst
-    title: Лекција
+    title: Сервиси „у облаку“ (cloud services)
+    type: reading
+  - description: ''
+    file: E101.html
+    guid: d341c849-be65-4a23-8728-faf5ea84ccc6
+    src: E101.rst
+    title: Креирање документа „у облаку“
+    type: reading
+  - description: ''
+    file: E102.html
+    guid: d4757b53-dc20-48ce-bb0f-a2a823ceb416
+    src: E102.rst
+    title: Дељење документа „у облаку“ и сарадња
+    type: reading
+  - description: ''
+    file: E103.html
+    guid: ca618c73-710e-4f31-b07b-09d04869ff43
+    src: E103.rst
+    title: Преузимање документа
+    type: reading
+  - description: ''
+    file: E104.html
+    guid: 02acdcac-9588-4733-8c0c-49d829362290
+    src: E104.rst
+    title: Задаци за вежбу
     type: reading
   - description: ''
     file: testE10.html
