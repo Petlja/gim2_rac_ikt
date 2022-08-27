@@ -24,14 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -120,49 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/nimgame.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -252,7 +212,10 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E01/E01.html><div class="studioLecture" id=activity-E01><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E01/E00.html><div class="studioLecture" id=activity-E00><i class="fas fa-file-alt activity-icon"></i>Програми за табеларна израчунавања</div></a>
+                <a href=../E01/E01.html><div class="studioLecture" id=activity-E01><i class="fas fa-file-alt activity-icon"></i>Покретање, навигација и уношење података у табелу</div></a>
+                <a href=../E01/E013.html><div class="studioLecture" id=activity-E013><i class="fas fa-file-alt activity-icon"></i>Једноставне формуле</div></a>
+                <a href=../E01/E014.html><div class="studioLecture" id=activity-E014><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E01/testE01.html><div class="studioLecture" id=activity-testE01><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -263,7 +226,10 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E02/E02.html><div class="studioLecture" id=activity-E02><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E02/E02.html><div class="studioLecture" id=activity-E02><i class="fas fa-file-alt activity-icon"></i>Аутоматска рекалкулација</div></a>
+                <a href=../E02/E022.html><div class="studioLecture" id=activity-E022><i class="fas fa-file-alt activity-icon"></i>Унос података и формула у табелу</div></a>
+                <a href=../E02/E023.html><div class="studioLecture" id=activity-E023><i class="fas fa-file-alt activity-icon"></i>Аутоматска рекалкулација и додавање врста и колона табели</div></a>
+                <a href=../E02/E024.html><div class="studioLecture" id=activity-E024><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E02/testE02.html><div class="studioLecture" id=activity-testE02><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -274,7 +240,12 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E03/E03.html><div class="studioLecture" id=activity-E03><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E03/E03.html><div class="studioLecture" id=activity-E03><i class="fas fa-file-alt activity-icon"></i>Уношење формула и брзо копирање</div></a>
+                <a href=../E03/E033.html><div class="studioLecture" id=activity-E033><i class="fas fa-file-alt activity-icon"></i>Селектовање групе ћелија</div></a>
+                <a href=../E03/E034.html><div class="studioLecture" id=activity-E034><i class="fas fa-file-alt activity-icon"></i>Форматирање децималних бројева</div></a>
+                <a href=../E03/E035.html><div class="studioLecture" id=activity-E035><i class="fas fa-file-alt activity-icon"></i>Рачунање минимума и максимума</div></a>
+                <a href=../E03/E036.html><div class="studioLecture" id=activity-E036><i class="fas fa-file-alt activity-icon"></i>Уређивање табеле</div></a>
+                <a href=../E03/E037.html><div class="studioLecture" id=activity-E037><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E03/testE03.html><div class="studioLecture" id=activity-testE03><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -285,18 +256,28 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
+                <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
+                <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-E05>
-                    <h5>5. Штампање и генерисање ПДФ документа</h5>
+                    <h5>5. Проценти, штампање и генерисање ПДФ документа</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E05/E05.html><div class="studioLecture" id=activity-E05><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E05/E05.html><div class="studioLecture" id=activity-E05><i class="fas fa-file-alt activity-icon"></i>Папирни и дигитални документи</div></a>
+                <a href=../E05/E051.html><div class="studioLecture" id=activity-E051><i class="fas fa-file-alt activity-icon"></i>Проширивање врсте и приказивање садржаја ћелије у више редова</div></a>
+                <a href=../E05/E052.html><div class="studioLecture" id=activity-E052><i class="fas fa-file-alt activity-icon"></i>Приказивање бројева  у облику процента</div></a>
+                <a href=../E05/E053.html><div class="studioLecture" id=activity-E053><i class="fas fa-file-alt activity-icon"></i>Спајање ћелија и промена величине слова</div></a>
+                <a href=../E05/E054.html><div class="studioLecture" id=activity-E054><i class="fas fa-file-alt activity-icon"></i>Штампање документа</div></a>
+                <a href=../E05/E055.html><div class="studioLecture" id=activity-E055><i class="fas fa-file-alt activity-icon"></i>Снимање документа у ПДФ формату</div></a>
+                <a href=../E05/E056.html><div class="studioLecture" id=activity-E056><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E05/testE05.html><div class="studioLecture" id=activity-testE05><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -307,7 +288,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E06/E06.html><div class="studioLecture" id=activity-E06><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E06/E06.html><div class="studioLecture" id=activity-E06><i class="fas fa-file-alt activity-icon"></i>Апсолутне и релативне адресе ћелија</div></a>
+                <a href=../E06/E061.html><div class="studioLecture" id=activity-E061><i class="fas fa-file-alt activity-icon"></i>Интелигентно копирање формула</div></a>
+                <a href=../E06/E062.html><div class="studioLecture" id=activity-E062><i class="fas fa-file-alt activity-icon"></i>Апсолутна адреса ћелије</div></a>
+                <a href=../E06/E063.html><div class="studioLecture" id=activity-E063><i class="fas fa-file-alt activity-icon"></i>Прерачун валута</div></a>
+                <a href=../E06/E064.html><div class="studioLecture" id=activity-E064><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E06/testE06.html><div class="studioLecture" id=activity-testE06><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -318,7 +303,12 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E07/E07.html><div class="studioLecture" id=activity-E07><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E07/E07.html><div class="studioLecture" id=activity-E07><i class="fas fa-file-alt activity-icon"></i>Визуелизација података</div></a>
+                <a href=../E07/E071.html><div class="studioLecture" id=activity-E071><i class="fas fa-file-alt activity-icon"></i>Промена величине у времену - Scatter дијаграм</div></a>
+                <a href=../E07/E072.html><div class="studioLecture" id=activity-E072><i class="fas fa-file-alt activity-icon"></i>Компаративна анализа -- Стубичасти дијаграми</div></a>
+                <a href=../E07/E073.html><div class="studioLecture" id=activity-E073><i class="fas fa-file-alt activity-icon"></i>Визуелизација удела у целини -- Секторски дијаграми</div></a>
+                <a href=../E07/E074.html><div class="studioLecture" id=activity-E074><i class="fas fa-file-alt activity-icon"></i>Приказивање две групе података на истом дијаграму</div></a>
+                <a href=../E07/E075.html><div class="studioLecture" id=activity-E075><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E07/testE07.html><div class="studioLecture" id=activity-testE07><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -329,7 +319,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
+                <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
+                <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
+                <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E08/testE08.html><div class="studioLecture" id=activity-testE08><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -340,7 +334,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E09/E09.html><div class="studioLecture" id=activity-E09><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E09/E09.html><div class="studioLecture" id=activity-E09><i class="fas fa-file-alt activity-icon"></i>Више табела у истом документу</div></a>
+                <a href=../E09/E091.html><div class="studioLecture" id=activity-E091><i class="fas fa-file-alt activity-icon"></i>Радни листови</div></a>
+                <a href=../E09/E092.html><div class="studioLecture" id=activity-E092><i class="fas fa-file-alt activity-icon"></i>Управљање подацима на радним листовима</div></a>
+                <a href=../E09/E093.html><div class="studioLecture" id=activity-E093><i class="fas fa-file-alt activity-icon"></i>Преузимање података са другог радног листа</div></a>
+                <a href=../E09/E094.html><div class="studioLecture" id=activity-E094><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E09/testE09.html><div class="studioLecture" id=activity-testE09><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -351,7 +349,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../E10/E10.html><div class="studioLecture" id=activity-E10><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../E10/E10.html><div class="studioLecture" id=activity-E10><i class="fas fa-file-alt activity-icon"></i>Сервиси „у облаку“ (cloud services)</div></a>
+                <a href=../E10/E101.html><div class="studioLecture" id=activity-E101><i class="fas fa-file-alt activity-icon"></i>Креирање документа „у облаку“</div></a>
+                <a href=../E10/E102.html><div class="studioLecture" id=activity-E102><i class="fas fa-file-alt activity-icon"></i>Дељење документа „у облаку“ и сарадња</div></a>
+                <a href=../E10/E103.html><div class="studioLecture" id=activity-E103><i class="fas fa-file-alt activity-icon"></i>Преузимање документа</div></a>
+                <a href=../E10/E104.html><div class="studioLecture" id=activity-E104><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E10/testE10.html><div class="studioLecture" id=activity-testE10><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
                 </div>
             </div>
@@ -371,23 +373,15 @@
     
   <div class="section" id="id1">
 <h1>Визуелизација података<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>У овој лекцији ћемо дискутовати о:</p>
-<ol class="arabic simple">
-<li><p>раду са командним тракама у Екселу,</p></li>
-<li><p>приказивању података разним врстама графикона, и</p></li>
-<li><p>приказивању две групе података на истом графикону.</p></li>
-</ol>
-<div class="section" id="ribbons">
-<h2>Рад са командним тракама (<em>ribbons</em>)<a class="headerlink" href="#ribbons" title="Permalink to this headline">¶</a></h2>
 <p>Увек је важно податке приказати у виду графикона зато што људи најлакше и најбрже обрађују визуелне податке. (Вероватно знаш за изреку да <em>једна слика вреди више од хиљаду речи</em>.) Научићемо да приказујемо податке разним врстама графикона. Важно је напоменути да није свака врста графикона погодна за приказивање сваке врсте података.</p>
-<p>Ексел, наравно, има могућност да на основу података који су дати направи графикон. Одговарајуће опције се налазе на командној траци (енгл. <em>ribbon</em>) који се зове „Insert”. При врху прозора се налази списак свих командних трака:</p>
+<p>Ексел, наравно, има могућност да на основу података који су дати направи графикон. Одговарајуће опције се налазе на командној траци (енгл. <em>ribbon</em>) који се зове „Insert“. При врху прозора се налази списак свих командних трака:</p>
 <a class="reference internal image-reference" href="../_images/gr1.jpg"><img alt="../_images/gr1.jpg" class="align-center" src="../_images/gr1.jpg" style="width: 600px;" /></a>
-<p>Одабиром било које од њих можемо да добијамо нови сет команди као што ћемо показати у наредном одељку. Кликом на „Home” увек можемо да се вратимо на основну командну траку („да се вратимо кући”).</p>
+<p>Одабиром било које од њих можемо да добијамо нови сет команди као што ћемо показати у наредном одељку. Кликом на „Home“ увек можемо да се вратимо на основну командну траку („да се вратимо кући“).</p>
 <p>Ево и кратког видеа:</p>
 
     <div  id="DW5-RMn0fHE" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/DW5-RMn0fHE/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -398,171 +392,13 @@
     </div>
     
     
-    </div>
-<div class="section" id="id2">
-<h2>Промена величине у времену<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p><strong>Корак 1.</strong> Са следећег линка преузми документ <em>BrLjudiNaSvetu.xlsx</em> и сними га на свој рачунар:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/BrLjudiNaSvetu.xlsx">Broj ljudi</a></p>
-<p>Отвори документ и пређи на командну траку „Insert” на којој су нам доступне нове могућности. За креирање графикона ће нам бити важне оне које се налазе у групи „Charts” (енгл. „графикон”):</p>
-<a class="reference internal image-reference" href="../_images/gr3.jpg"><img alt="../_images/gr3.jpg" class="align-center" src="../_images/gr3.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 2.</strong> У табели коју смо учитали приказан је процењени број становника наше планете у разним историјским периодима, при чему је број људи исказан у милијардама. Дакле, ради се о подацима који показују како се неки параметар (број становника наше планете) мењао у времену. Да бисмо ове податке приказали графиконом селектоваћемо целу табелу <em>укључујући и имена колона</em>:</p>
-<a class="reference internal image-reference" href="../_images/gr4.jpg"><img alt="../_images/gr4.jpg" class="align-center" src="../_images/gr4.jpg" style="width: 600px;" /></a>
-<p>На основу имена колона табеле Ексел у највећем броју случајева може да закључи како треба да се зове табела.</p>
-<p><strong>Корак 3.</strong> На командној траци „Insert” из групе „Charts” одабраћемо опцију „Scatter (X,Y)”:</p>
-<a class="reference internal image-reference" href="../_images/gr5.jpg"><img alt="../_images/gr5.jpg" class="align-center" src="../_images/gr5.jpg" style="width: 600px;" /></a>
-<p>како бисмо добили списак расположивих стилова ове врсте графикона:</p>
-<a class="reference internal image-reference" href="../_images/gr6.jpg"><img alt="../_images/gr6.jpg" class="align-center" src="../_images/gr6.jpg" style="width: 600px;" /></a>
-<p>Одаберимо назначени стил (тачке спојене линијама):</p>
-<a class="reference internal image-reference" href="../_images/gr7.jpg"><img alt="../_images/gr7.jpg" class="align-center" src="../_images/gr7.jpg" style="width: 600px;" /></a>
-<p>Добијамо графикон који је део документа:</p>
-<a class="reference internal image-reference" href="../_images/gr8.jpg"><img alt="../_images/gr8.jpg" class="align-center" src="../_images/gr8.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 4.</strong> Пошто је графикон превелики и прекрива податке, можемо га мало смањити („ухватимо” мишем за истакнуту тачку у углу графикона и подесимо величину), а можемо га и преместити (клинемо у празан део оквира и <em>не отпуштајући тастер на мишу</em> преместимо графикон).
-Примети да је Ексел исправно схватио како графикон треба да се зове:</p>
-<a class="reference internal image-reference" href="../_images/gr9.jpg"><img alt="../_images/gr9.jpg" class="align-center" src="../_images/gr9.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 5.</strong> За крај ћемо снимити документ као Ексел документ и као ПДФ. Ако погледамо ПДФ документ, видећемо да је графикон заиста саставни део документа:</p>
-<a class="reference internal image-reference" href="../_images/gr10.jpg"><img alt="../_images/gr10.jpg" class="align-center" src="../_images/gr10.jpg" style="width: 600px;" /></a>
-<p>Ево и кратког видеа:</p>
-
-    <div  id="6Yir930ZbJ4" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/6Yir930ZbJ4/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-6Yir930ZbJ4" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-6Yir930ZbJ4">
-        </div>
-    </div>
-    
-    
-    </div>
-<div class="section" id="id3">
-<h2>Компаративна анализа<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Често подаци служе томе да се изврши <em>компаративна анализа</em>, дакле, да се неке врсте упореде (<em>компарација</em> = упоређивање) и да се установи која врста је више, а која мање заступљена у подацима.</p>
-<p><strong>Корак 1.</strong> Са следећег линка преузми документ <em>Zarada2.xlsx</em> и сними га на свој рачунар:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Zarada2.xlsx">Zarade</a></p>
-<p>Табела садржи податке о продаји воћа и оствареној заради:</p>
-<a class="reference internal image-reference" href="../_images/Zarada201.jpg"><img alt="../_images/Zarada201.jpg" class="align-center" src="../_images/Zarada201.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 2.</strong> Желимо да илуструјемо зараду и да визуелизујемо допринос сваке врсте продатог воћа заради. Пређи на командну траку „Insert” и уочи (немој још ништа да кликнеш!) опцију која црта хистограме (зову се још и <em>стубичасти дијаграми</em>, а на енглеском <em>column charts</em> или <em>bar charts</em>):</p>
-<a class="reference internal image-reference" href="../_images/Zarada202.jpg"><img alt="../_images/Zarada202.jpg" class="align-center" src="../_images/Zarada202.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 3.</strong> У овом примеру треба да прикажемо само део података из табеле, и при томе колоне које садрже те податке нису једна до друге. Зато ћемо морати да селектујемо <em>две групе података</em> овако:</p>
+    <div class="section" id="id2">
+<h2>У овој лекцији<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>У овој лекцији ћемо дискутовати о:</p>
 <ol class="arabic simple">
-<li><p>селектуј ћелије A2:A11 као и раније, па</p></li>
-<li><p>притисни тастер [CTRL] и <em>држећи га притиснутог</em> селектуј ћелије D2:D11</p></li>
+<li><p>приказивању података разним врстама графикона, и</p></li>
+<li><p>приказивању две групе података на истом графикону.</p></li>
 </ol>
-<p>Треба да добијеш:</p>
-<a class="reference internal image-reference" href="../_images/Zarada203.jpg"><img alt="../_images/Zarada203.jpg" class="align-center" src="../_images/Zarada203.jpg" style="width: 600px;" /></a>
-<p><em>Обрати пажњу на то да смо у обе групе података селектовали и име колоне!</em></p>
-<p><strong>Корак 4.</strong> Сада кликни на опцију која црта стубичасте дијаграме и одабери стил који ти се највише свиђа:</p>
-<a class="reference internal image-reference" href="../_images/Zarada204.jpg"><img alt="../_images/Zarada204.jpg" class="align-center" src="../_images/Zarada204.jpg" style="width: 600px;" /></a>
-<p>Добили смо графикон:</p>
-<a class="reference internal image-reference" href="../_images/Zarada205.jpg"><img alt="../_images/Zarada205.jpg" class="align-center" src="../_images/Zarada205.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 5.</strong> Ако графикон прекрива текст можемо га мало смањити и померити:</p>
-<a class="reference internal image-reference" href="../_images/Zarada206.jpg"><img alt="../_images/Zarada206.jpg" class="align-center" src="../_images/Zarada206.jpg" style="width: 600px;" /></a>
-<p>Ево и кратког видеа:</p>
-
-    <div  id="XO3XXccnS0Y" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/XO3XXccnS0Y/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-XO3XXccnS0Y" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-XO3XXccnS0Y">
-        </div>
-    </div>
-    
-    
-    </div>
-<div class="section" id="id4">
-<h2>Визуелизација удела у целини<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Ако желимо да визуелизујемо у којој мери појединачни делови учествују у целини користимо <em>секторски дијаграм</em> (или <em>питасти дијаграм</em> од енгл. <em>pie chart</em>).</p>
-<p><strong>Корак 1.</strong> Преузми поново документ <em>Zarada2.xlsx</em> и сними га на свој рачунар (ако треба, „прегази” стару верзију документа):</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Zarada2.xlsx">Zarade</a></p>
-<p><strong>Корак 2.</strong> Пређи на командну траку „Insert” и уочи (немој још ништа да кликнеш!) опцију која црта секторске дијаграме:</p>
-<a class="reference internal image-reference" href="../_images/Zarada207.jpg"><img alt="../_images/Zarada207.jpg" class="align-center" src="../_images/Zarada207.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 3.</strong> Поново селектуј <em>две групе података</em>:</p>
-<ol class="arabic simple">
-<li><p>селектуј ћелије A2:A11 као и раније, па</p></li>
-<li><p>притисни тастер [CTRL] и <em>држећи га притиснутог</em> селектуј ћелије D2:D11</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/Zarada203.jpg"><img alt="../_images/Zarada203.jpg" class="align-center" src="../_images/Zarada203.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 4.</strong> Сада кликни на опцију која црта секторске дијаграме и одабери стил који ти се највише свиђа:</p>
-<a class="reference internal image-reference" href="../_images/Zarada208.jpg"><img alt="../_images/Zarada208.jpg" class="align-center" src="../_images/Zarada208.jpg" style="width: 600px;" /></a>
-<p>Добили смо дијаграм:</p>
-<a class="reference internal image-reference" href="../_images/Zarada209.jpg"><img alt="../_images/Zarada209.jpg" class="align-center" src="../_images/Zarada209.jpg" style="width: 600px;" /></a>
-<p>кога опет можемо мало уредити ако прекрива текст:</p>
-<a class="reference internal image-reference" href="../_images/Zarada210.jpg"><img alt="../_images/Zarada210.jpg" class="align-center" src="../_images/Zarada210.jpg" style="width: 600px;" /></a>
-<p>Ако кликнемо на дијаграм, Ексел ће нам приказати који подаци су приказани на дијаграму:</p>
-<a class="reference internal image-reference" href="../_images/Zarada211.jpg"><img alt="../_images/Zarada211.jpg" class="align-center" src="../_images/Zarada211.jpg" style="width: 600px;" /></a>
-<p>Ево и кратког видеа:</p>
-
-    <div  id="7Q0ke48ERYw" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/7Q0ke48ERYw/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-7Q0ke48ERYw" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-7Q0ke48ERYw">
-        </div>
-    </div>
-    
-    
-    </div>
-<div class="section" id="id6">
-<h2>Приказивање две групе података на истом дијаграму<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Могуће је на истом графикону приказати две групе података. Ево примера.</p>
-<p><strong>Корак 1.</strong> „Нормална телесна температура” је заправо интервал температура који се мења са узрастом особе. Када се температура мери испод пазуха, нормална телесна температура (у степенима Целзијуса) је описана табелом <em>NormalnaTT.xlsx</em> коју можеш да преузмеш са следећег линка:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/NormalnaTT.xlsx">NormalnaTT</a></p>
-<p>Табела изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/ntt1.jpg"><img alt="../_images/ntt1.jpg" class="align-center" src="../_images/ntt1.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 2.</strong></p>
-<ol class="arabic simple">
-<li><p>Селектуј ћелије A2:C6,</p></li>
-<li><p>одабери радну траку „Insert”</p></li>
-<li><p>Из групе „Charts” одабери опцију „Line Chart” (<em>линијски дијаграми</em>)</p></li>
-<li><p>па од понуђених стилова одабери стил као на слици:</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/ntt2.jpg"><img alt="../_images/ntt2.jpg" class="align-center" src="../_images/ntt2.jpg" style="width: 600px;" /></a>
-<p>Добили смо графикон као на слици:</p>
-<a class="reference internal image-reference" href="../_images/ntt3.jpg"><img alt="../_images/ntt3.jpg" class="align-center" src="../_images/ntt3.jpg" style="width: 600px;" /></a>
-<p><strong>Корак 3.</strong> Примети да је Ексел приказао две групе података на истом графикону, додао је графикону и легенду, <em>али није успео да схвати како цео графикон треба да се зове</em> па је зато ставио „Chart Title” као подсетник да морамо ми ручно да унесемо име графикона.</p>
-<p>Ако кликнемо на „Chart Title” једном да га селектујемо, па онда још једном (дакле, не двоклик тик-тик, већ два клика клик-пауза-клик) појавиће се курсор:</p>
-<a class="reference internal image-reference" href="../_images/ntt4.jpg"><img alt="../_images/ntt4.jpg" class="align-center" src="../_images/ntt4.jpg" style="width: 600px;" /></a>
-<p>Сада можемо да унесемо име графикона:</p>
-<a class="reference internal image-reference" href="../_images/ntt5.jpg"><img alt="../_images/ntt5.jpg" class="align-center" src="../_images/ntt5.jpg" style="width: 600px;" /></a>
-<p>и да прераспоредимо елементе табеле, ако је то потребно:</p>
-<a class="reference internal image-reference" href="../_images/ntt6.jpg"><img alt="../_images/ntt6.jpg" class="align-center" src="../_images/ntt6.jpg" style="width: 600px;" /></a>
-<p>Ево и кратког видеа:</p>
-
-    <div  id="sOY23G9t1lE" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/sOY23G9t1lE/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-sOY23G9t1lE" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-sOY23G9t1lE">
-        </div>
-    </div>
-    
-    
-    </div>
-<div class="section" id="id7">
-<h2>Задаци<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p><strong>Задатак 1.</strong> Са следећег линка преузми датотеку која садржи податке о маси (у килограмима) и дужини/висини (у центиметрима) једног дечака од његовог шестог месеца па до његових 6,5 година.</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Decak.xlsx">Decak.xlsx</a></p>
-<p>Прикажи једним графиконом како се мењала његова маса, а другим како се мењала његова висина.</p>
-<p><strong>Задатак 2.</strong> Процењује се да је Кина на дан 1.7.2019. имала 1.420.062.022 становника. Број становника у Кини се сваке године повећа за 0,35%. Под претпоставком да се годишњи раст броја становника у Кини неће мењати, приказати графиконом очекивани број становника Кине у наредних десет година.</p>
-<p><strong>Задатак 3.</strong> Са следећег линка преузми датотеку која садржи податке о броју становника Србије у 2017. години по годинама старости:</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/StanovnistvoSrbije2017.xlsx">StanovnistvoSrbije2017.xlsx</a></p>
-<p>Додај табели нову колону „M/Ž” па у свакој врсти табеле (дакле, за сваки узраст за који у табели постоје подаци) одреди количник припадника мушког и женског пола тог узраста.</p>
-<p>Прикажи податке стубичастим дијаграмом. Шта уочаваш?</p>
 </div>
 </div>
 
