@@ -1,4 +1,3 @@
-
 Време у Ексел табели
 ========================================
 
@@ -29,11 +28,7 @@
 -----------------------
 
 Са следећег линка `Remember.xlsx <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/informatika_VIII/epodaci/Remember.xlsx>`_ преузми датотеку која садржи имена нумера,
-покрени Ексел и учитај датотеку:
-
-.. image:: ../../_images/DataTypes201.jpg
-   :width: 600px
-   :align: center
+покрени Ексел и учитај датотеку.
 
 Корак 2.
 ------------------

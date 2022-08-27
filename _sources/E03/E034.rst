@@ -46,12 +46,12 @@
    :width: 600px
    :align: center
 
-Ево и демонстрације:
+.. Ево и демонстрације:
 
-.. ytpopup:: GHzElH7k1AQ
-   :width: 735
-   :height: 415
-   :align: center
+   .. ytpopup:: GHzElH7k1AQ
+      :width: 735
+      :height: 415
+      :align: center
 
 
 
@@ -72,11 +72,11 @@
    :width: 600px
    :align: center
 
-Ево и демонстрације:
+.. Ево и демонстрације:
 
-.. ytpopup:: q5x1DT_-Zcg
-   :width: 735
-   :height: 415
-   :align: center
+   .. ytpopup:: q5x1DT_-Zcg
+      :width: 735
+      :height: 415
+      :align: center
 
 

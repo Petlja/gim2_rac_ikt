@@ -80,10 +80,10 @@
    :width: 600px
    :align: center
 
-Ево и кратког видеа:
+.. Ево и кратког видеа:
 
-.. ytpopup:: XO3XXccnS0Y
-   :width: 735
-   :height: 415
-   :align: center
+   .. ytpopup:: XO3XXccnS0Y
+      :width: 735
+      :height: 415
+      :align: center
 
