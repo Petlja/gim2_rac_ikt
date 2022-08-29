@@ -6,6 +6,7 @@
     <title>Преузимање података са другог радног листа</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -377,7 +380,7 @@
 <div class="section" id="id2">
 <h2>Корак 15.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Пређимо на радни лист „PJ1“ како бисмо израчунали колико је Пословна јединица 1 зарадила. У ћелији C3</p>
-<a class="reference internal image-reference" href="../_images/PJ41.jpg"><img alt="../_images/PJ41.jpg" class="align-center" src="../_images/PJ41.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ41.jpg"><img alt="../_images/PJ41.jpg" class="align-center" src="../_images/PJ41.jpg" style="width: 780px;" /></a>
 <p>треба да израчунамо колико је новца зарађено продајом мајица у тој пословној јединици. Податак о броју продатих мајица је дат на радном листу „PJ1“, док је цена једне мајице дата на радном листу „Cene“. У ћелију C3 треба да унесемо формулу:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= (цена мајице са радног листа „Cene“) * B3
 </pre></div>
@@ -388,56 +391,52 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p><code class="docutils literal notranslate"><span class="pre">Cene!B3</span></code> што значи: <em>ћелија B3 са радног листа „Cene“</em>.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Дакле, у ћелију C3 треба да унесемо формулу:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= Cene!B3 * B3
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/PJ42.jpg"><img alt="../_images/PJ42.jpg" class="align-center" src="../_images/PJ42.jpg" style="width: 600px;" /></a>
-<p>Добијамо:</p>
-<a class="reference internal image-reference" href="../_images/PJ43.jpg"><img alt="../_images/PJ43.jpg" class="align-center" src="../_images/PJ43.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ42.jpg"><img alt="../_images/PJ42.jpg" class="align-center" src="../_images/PJ42.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id3">
 <h2>Корак 16.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Пошто у ћелије испод ћелије C3 треба да унесемо сличне формуле, кликнућемо на ћелију C3 и „развући“ је до краја табеле:</p>
-<a class="reference internal image-reference" href="../_images/PJ44.jpg"><img alt="../_images/PJ44.jpg" class="align-center" src="../_images/PJ44.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ44.jpg"><img alt="../_images/PJ44.jpg" class="align-center" src="../_images/PJ44.jpg" style="width: 780px;" /></a>
 <p>Ексел је, као и до сада, интелигентно ископирао формуле, што можемо лако проверити:</p>
-<a class="reference internal image-reference" href="../_images/PJ45.jpg"><img alt="../_images/PJ45.jpg" class="align-center" src="../_images/PJ45.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ45.jpg"><img alt="../_images/PJ45.jpg" class="align-center" src="../_images/PJ45.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id4">
 <h2>Корак 17.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Зараду Пословних јединица 2 и 3 ћемо још брже израчунати. На радном листу „PJ1“ ћемо селектовати ћелије C3:C8</p>
-<a class="reference internal image-reference" href="../_images/PJ46.jpg"><img alt="../_images/PJ46.jpg" class="align-center" src="../_images/PJ46.jpg" style="width: 600px;" /></a>
-<p>па ћемо кликнути на опцију „Copy“:</p>
-<a class="reference internal image-reference" href="../_images/PJ47.jpg"><img alt="../_images/PJ47.jpg" class="align-center" src="../_images/PJ47.jpg" style="width: 600px;" /></a>
+<p>Зараду Пословних јединица 2 и 3 ћемо још брже израчунати. На радном листу „PJ1“ ћемо селектовати ћелије C3:C8
+па ћемо кликнути на опцију „Copy“:</p>
+<a class="reference internal image-reference" href="../_images/PJ47.jpg"><img alt="../_images/PJ47.jpg" class="align-center" src="../_images/PJ47.jpg" style="width: 780px;" /></a>
 <p>Онда ћемо прећи на радни лист „PJ2“, кликнути на ћелију C3 и одабрати опцију „Paste“:</p>
-<a class="reference internal image-reference" href="../_images/PJ48.jpg"><img alt="../_images/PJ48.jpg" class="align-center" src="../_images/PJ48.jpg" style="width: 600px;" /></a>
-<p>па ћемо прећи на радни лист „PJ3“, кликнути на ћелију C3 и поново одабрати опцију „Paste“:</p>
-<a class="reference internal image-reference" href="../_images/PJ49.jpg"><img alt="../_images/PJ49.jpg" class="align-center" src="../_images/PJ49.jpg" style="width: 600px;" /></a>
-<p>Лако се види да је Ексел у сваком од ових случајева ископирао формуле тачно онако како смо и очекивали.</p>
+<a class="reference internal image-reference" href="../_images/PJ48.jpg"><img alt="../_images/PJ48.jpg" class="align-center" src="../_images/PJ48.jpg" style="width: 780px;" /></a>
+<p>па ћемо поступак поновити за радни лист „PJ3“.
+Лако се можемо уверити да је Ексел у сваком од ових случајева ископирао формуле тачно онако како смо и очекивали.</p>
 </div>
 <div class="section" id="id5">
 <h2>Корак 18.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Сада ћемо попунити радни лист „Pregled“ на коме се налази преглед укупне зараде.</p>
-<a class="reference internal image-reference" href="../_images/PJ50.jpg"><img alt="../_images/PJ50.jpg" class="align-center" src="../_images/PJ50.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ50.jpg"><img alt="../_images/PJ50.jpg" class="align-center" src="../_images/PJ50.jpg" style="width: 780px;" /></a>
 <p>У ћелију B3 радног листа „Pregled“ треба да упишемо зараду Пословне јединице 1, што је збир ћелија C3:C8 са радног листа „PJ1“. Зато ћемо у ћелију B3 унети следећу формулу:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>=SUM(PJ1!C3:C8)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/PJ51.jpg"><img alt="../_images/PJ51.jpg" class="align-center" src="../_images/PJ51.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ51.jpg"><img alt="../_images/PJ51.jpg" class="align-center" src="../_images/PJ51.jpg" style="width: 780px;" /></a>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Израз <code class="docutils literal notranslate"><span class="pre">PJ1!C3:C8</span></code> значи: „са радног листа PJ1 опсег C3:C8“.
 Зато израз <code class="docutils literal notranslate"><span class="pre">SUM(PJ1!C3:C8)</span></code> значи: „са радног листа PJ1 опсег C3:C8, па сума свега тога“.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
 <div class="section" id="id6">
 <h2>Корак 19.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
@@ -446,26 +445,25 @@
 =SUM(PJ3!C3:C8)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/PJ52.jpg"><img alt="../_images/PJ52.jpg" class="align-center" src="../_images/PJ52.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ52.jpg"><img alt="../_images/PJ52.jpg" class="align-center" src="../_images/PJ52.jpg" style="width: 780px;" /></a>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <p>
-<p><em>ПАЖЊА! Овде не смемо да „развучемо формулу“ из ћелије B3 већ треба ручно да унесемо још две формуле!</em> (Шта мислиш зашто?)</p>
+<p>Пажња! Овде не смемо да „развучемо формулу“ из ћелије B3 већ треба ручно да унесемо још две формуле! Шта мислиш зашто?</p>
 
-    </p></div></div>
-<p>Да бисмо завршили рачун на овом радном листу у ћелију B6 ћемо унети укупну зараду из све три пословне јединице:</p>
-<a class="reference internal image-reference" href="../_images/PJ53.jpg"><img alt="../_images/PJ53.jpg" class="align-center" src="../_images/PJ53.jpg" style="width: 600px;" /></a>
+    </div></div>
+<p>Да бисмо завршили рачун на овом радном листу, у ћелију B6 ћемо унети укупну зараду из све три пословне јединице:</p>
+<a class="reference internal image-reference" href="../_images/PJ53.jpg"><img alt="../_images/PJ53.jpg" class="align-center" src="../_images/PJ53.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id7">
 <h2>Корак 20.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>За крај ћемо секторским дијаграмом приказати удео сваке од ове три пословне јединице у укупној заради фирме.</p>
 <p>Селектоваћемо ћелије A2:B5 (<em>имена колона обавезно укључујемо у селекцију!</em>), прећи на командну траку „Insert“ и из групе команди „Charts“ одабрати опцију која креира секторске дијаграме:</p>
-<a class="reference internal image-reference" href="../_images/PJ54.jpg"><img alt="../_images/PJ54.jpg" class="align-center" src="../_images/PJ54.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ54.jpg"><img alt="../_images/PJ54.jpg" class="align-center" src="../_images/PJ54.jpg" style="width: 780px;" /></a>
 <p>Добијамо дијаграм:</p>
-<a class="reference internal image-reference" href="../_images/PJ55.jpg"><img alt="../_images/PJ55.jpg" class="align-center" src="../_images/PJ55.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ55.jpg"><img alt="../_images/PJ55.jpg" class="align-center" src="../_images/PJ55.jpg" style="width: 780px;" /></a>
 <p>Са овог дијаграма се лако види да је у ситуацији која је описана овом табелом Пословна јединица 3 зарадила више него Пословне јединице 1 и 2 заједно.</p>
 </div>
 </div>

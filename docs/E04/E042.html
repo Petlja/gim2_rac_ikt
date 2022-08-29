@@ -6,6 +6,7 @@
     <title>Датуми у Ексел табели</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -377,11 +380,13 @@
 <div class="section" id="id2">
 <h2>Корак 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Покрени Ексел и направи празан документ:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes101.jpg"><img alt="../_images/DataTypes101.jpg" class="align-center" src="../_images/DataTypes101.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes101.jpg"><img alt="../_images/DataTypes101.jpg" class="screenshot-shadow" src="../_images/DataTypes101.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id3">
 <h2>Корак 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Прва врста ће представљати <em>заглавље табеле</em> и у ћелије чемо унети имена колона:</p>
+<p>Прва врста ће представљати <em>заглавље табеле</em> и у ћелије ћемо унети имена колона:</p>
 <ul class="simple">
 <li><p>Име фестивала</p></li>
 <li><p>Место одржавања</p></li>
@@ -389,7 +394,9 @@
 <li><p>До дана</p></li>
 </ul>
 <p>Прошири колоне тако да имена колона буду видљива у целости:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes102.jpg"><img alt="../_images/DataTypes102.jpg" class="align-center" src="../_images/DataTypes102.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes102.jpg"><img alt="../_images/DataTypes102.jpg" class="screenshot-shadow" src="../_images/DataTypes102.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id4">
 <h2>Корак 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -467,34 +474,36 @@
 </tr>
 </tbody>
 </table>
-<p>Име фестивала и место одржавања су обични текстови које лако уносимо. Датуме уносимо тако што у кућицу унесемо дан, месец и годину <em>раздвојене цртицама</em>. За први фестивал на нашем списку то су датуми:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">2019</span>
-<span class="mi">9</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">2019</span>
+<p>Име фестивала и место одржавања су обични текстови које лако уносимо.
+Датуме уносимо тако што у кућицу унесемо дан, месец и годину <em>раздвојене тачкама, али без тачке иза године</em>.
+За први фестивал на нашем списку то су датуми:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">7.6</span><span class="o">.</span><span class="mi">2019</span>
+<span class="mf">9.6</span><span class="o">.</span><span class="mi">2019</span>
 </pre></div>
 </div>
-<p>Ексел ће препознати да су то датуми (енгл. <em>Date</em> значи „датум“) и приказаће их као:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">07</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">19</span>
+<p>Ексел ће препознати да су то датуми (енг. <em>date</em> значи „датум“):</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes103.jpg"><img alt="../_images/DataTypes103.jpg" class="screenshot-shadow" src="../_images/DataTypes103.jpg" style="width: 780px;" /></a>
+</div>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Понекад, уз другачија регионална подешавања (<em>Regional settings</em>), може се десити да Ексел
+не препозна овако представљене датуме. Тада се датум може унети у облику DD-MM-GG где смо
+употребили по две цифре за дан, месец и годину и раздвојили их цртицама. На пример, овако:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">07</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">10</span>
 <span class="mi">09</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">19</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/DataTypes103.jpg"><img alt="../_images/DataTypes103.jpg" class="align-center" src="../_images/DataTypes103.jpg" style="width: 600px;" /></a>
-<p>Ево и кратког видеа:</p>
 
-    <div  id="KbKIapv2gaE" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/KbKIapv2gaE/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-KbKIapv2gaE" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-KbKIapv2gaE">
-        </div>
-    </div>
-    
-    
-    <p>Унесимо податке о осталим фестивалима. У нашем примеру табела изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes104.jpg"><img alt="../_images/DataTypes104.jpg" class="align-center" src="../_images/DataTypes104.jpg" style="width: 600px;" /></a>
+    </div></div>
+<p>Унесимо податке о осталим фестивалима. У нашем примеру табела изгледа овако:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes104.jpg"><img alt="../_images/DataTypes104.jpg" class="screenshot-shadow" src="../_images/DataTypes104.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>Корак 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
@@ -502,25 +511,33 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">D2</span><span class="o">-</span><span class="n">C2</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/DataTypes105.jpg"><img alt="../_images/DataTypes105.jpg" class="align-center" src="../_images/DataTypes105.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes105.jpg"><img alt="../_images/DataTypes105.jpg" class="screenshot-shadow" src="../_images/DataTypes105.jpg" style="width: 780px;" /></a>
+</div>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p><strong>О, да! Ексел уме да рачуна са датумима!</strong></p>
 
-    </p></div></div>
+    </div></div>
 <p>Када притиснемо [ENTER] добијамо следеће стање:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes106.jpg"><img alt="../_images/DataTypes106.jpg" class="align-center" src="../_images/DataTypes106.jpg" style="width: 600px;" /></a>
-<p>Видимо да је за фестивал који се одржава 7.6, 8.6. и 9.6.2019. Ексел обрачунао да траје 2 дана. Разлог је у томе што се у пословном свету ова функција углавном користи за обрачун дневница (од 7.6. до 8.6. је једна дневница, и од 8.6. до 9.6. је друга дневница). Овај фестивал, с друге стране, траје три дана: цео 7.6, цео 8.6. и цео 9.6. Зато морамо да прилагодимо формулу нашој ситуацији и да унесемо:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes106.jpg"><img alt="../_images/DataTypes106.jpg" class="screenshot-shadow" src="../_images/DataTypes106.jpg" style="width: 780px;" /></a>
+</div>
+<p>Видимо да је за фестивал који се одржава 7.6, 8.6. и 9.6.2019. Ексел обрачунао да траје два дана. Разлог је у томе што се у пословном свету ова функција углавном користи за обрачун дневница (од 7.6. до 8.6. је једна дневница, и од 8.6. до 9.6. је друга дневница). Овај фестивал, с друге стране, траје три дана: цео 7.6, цео 8.6. и цео 9.6. Зато морамо да прилагодимо формулу нашој ситуацији и да унесемо:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">D2</span><span class="o">-</span><span class="n">C2</span><span class="o">+</span><span class="mi">1</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/DataTypes107.jpg"><img alt="../_images/DataTypes107.jpg" class="align-center" src="../_images/DataTypes107.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes107.jpg"><img alt="../_images/DataTypes107.jpg" class="screenshot-shadow" src="../_images/DataTypes107.jpg" style="width: 780px;" /></a>
+</div>
 <p>Ако сада формулу брзо ископирамо наниже (кликнемо на ћелију Е2, ухватимо за „бубуљицу“ и развучемо наниже) добијамо:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes108.jpg"><img alt="../_images/DataTypes108.jpg" class="align-center" src="../_images/DataTypes108.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes108.jpg"><img alt="../_images/DataTypes108.jpg" class="screenshot-shadow" src="../_images/DataTypes108.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id6">
 <h2>Корак 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
@@ -530,7 +547,9 @@
 <h2>Корак 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Сада ћемо израчунати просечно трајање фестивала у табели, као и најкраће и најдуже фестивале у табели.
 Додај табели три нова реда: „Prosek“, „Najkraći“ и „Najduži“:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes109.jpg"><img alt="../_images/DataTypes109.jpg" class="align-center" src="../_images/DataTypes109.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes109.jpg"><img alt="../_images/DataTypes109.jpg" class="screenshot-shadow" src="../_images/DataTypes109.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id8">
 <h2>Корак 7.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
@@ -540,60 +559,66 @@
 <span class="o">=</span><span class="n">MAX</span><span class="p">(</span><span class="n">E2</span><span class="p">:</span><span class="n">E12</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/DataTypes110.jpg"><img alt="../_images/DataTypes110.jpg" class="align-center" src="../_images/DataTypes110.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes110.jpg"><img alt="../_images/DataTypes110.jpg" class="screenshot-shadow" src="../_images/DataTypes110.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id9">
 <h2>Корак 8.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p>Поље које одговара просеку прикажи са две децимале:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes111.jpg"><img alt="../_images/DataTypes111.jpg" class="align-center" src="../_images/DataTypes111.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes111.jpg"><img alt="../_images/DataTypes111.jpg" class="screenshot-shadow" src="../_images/DataTypes111.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id10">
 <h2>Корак 9.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>Једном бојом обој <em>све податке</em> о фестивалу који траје најкраће, а другом <em>све податке</em> о фестивалу који траје најдуже:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes112.jpg"><img alt="../_images/DataTypes112.jpg" class="align-center" src="../_images/DataTypes112.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes112.jpg"><img alt="../_images/DataTypes112.jpg" class="screenshot-shadow" src="../_images/DataTypes112.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id11">
 <h2>Корак 10.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>Постави стил слова у ћелијама A1:E1 на <strong>bold</strong> (кликни на <strong>B</strong>), а у ћелијама A13:E15 на <em>italic</em> (кликни на <em>I</em>):</p>
-<a class="reference internal image-reference" href="../_images/DataTypes113.jpg"><img alt="../_images/DataTypes113.jpg" class="align-center" src="../_images/DataTypes113.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes113.jpg"><img alt="../_images/DataTypes113.jpg" class="screenshot-shadow" src="../_images/DataTypes113.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id12">
 <h2>Корак 11.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p>Сада ћемо да подвучемо линију испод заглавља (прве врсте) и података о последњем фестивалу на списку (у нашем примеру то је дванаеста врста).</p>
 <p>Селектуј ћелије А1:Е1</p>
-<a class="reference internal image-reference" href="../_images/DataTypes114.jpg"><img alt="../_images/DataTypes114.jpg" class="align-center" src="../_images/DataTypes114.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes114.jpg"><img alt="../_images/DataTypes114.jpg" class="screenshot-shadow" src="../_images/DataTypes114.jpg" style="width: 780px;" /></a>
+</div>
 <p>Онда кликни на стрелицу поред иконе за уоквиравање ћелија и одабери „Bottom Border“:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes115.jpg"><img alt="../_images/DataTypes115.jpg" class="align-center" src="../_images/DataTypes115.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes115.jpg"><img alt="../_images/DataTypes115.jpg" class="screenshot-shadow" src="../_images/DataTypes115.jpg" style="width: 780px;" /></a>
+</div>
 <p>Исто то уради заврсту која садржи податке о последњем фестивалу у табели. Добијамо:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes116.jpg"><img alt="../_images/DataTypes116.jpg" class="align-center" src="../_images/DataTypes116.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes116.jpg"><img alt="../_images/DataTypes116.jpg" class="screenshot-shadow" src="../_images/DataTypes116.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id13">
 <h2>Корак 12.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p>Још само једна естетска ситница и готови смо! Датуми одржавања фестивала и трајање фестивала су поравнати по десној ивици, док су имена одговарајућих колона (C, D и E) поравната по левој ивици. Поравнаћемо и њих по десној ивици, да нам табела буде лепша. Томе служе команде из групе
-„Alignment“ (енгл. „поравнавање“):</p>
-<a class="reference internal image-reference" href="../_images/DataTypes117.jpg"><img alt="../_images/DataTypes117.jpg" class="align-center" src="../_images/DataTypes117.jpg" style="width: 600px;" /></a>
-<p>Вертикално поравнавање садржаја ћелије може бити уз горњу ивицу, центрирано, или уз доњу ивицу. Хоризонтално поравнавање садржаја ћелије може бити уз леву ивицу, центрирано, или уз десну ивицу.
-(Команде „Wrap Text“ и „Merge Cells“ ћемо објаснити ускоро.)</p>
+„Alignment“ (енг. „поравнавање“):</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes117.jpg"><img alt="../_images/DataTypes117.jpg" class="screenshot-shadow" src="../_images/DataTypes117.jpg" style="width: 780px;" /></a>
+</div>
+<p>Вертикално поравнавање садржаја ћелије (1) може бити уз горњу ивицу, центрирано, или уз доњу ивицу.
+Хоризонтално поравнавање садржаја ћелије (2) може бити уз леву ивицу, центрирано, или уз десну ивицу.
+Команде „Wrap Text“ (3) и „Merge Cells“ (4) ћемо објаснити ускоро.</p>
 <p>Желимо да поравнамо садржај уз десну ивицу. Зато селектуј ћелије C1:E1 и одабери поравнавање уз десну ивицу:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes119.jpg"><img alt="../_images/DataTypes119.jpg" class="align-center" src="../_images/DataTypes119.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes119.jpg"><img alt="../_images/DataTypes119.jpg" class="screenshot-shadow" src="../_images/DataTypes119.jpg" style="width: 780px;" /></a>
+</div>
 <p>Тако добијамо коначан изглед табеле:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes120.jpg"><img alt="../_images/DataTypes120.jpg" class="align-center" src="../_images/DataTypes120.jpg" style="width: 600px;" /></a>
-<p>Ево и кратког видеа:</p>
-
-    <div  id="mN6BBRHD3CA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/mN6BBRHD3CA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-mN6BBRHD3CA" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-mN6BBRHD3CA">
-        </div>
-    </div>
-    
-    
-    </div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes120.jpg"><img alt="../_images/DataTypes120.jpg" class="screenshot-shadow" src="../_images/DataTypes120.jpg" style="width: 780px;" /></a>
+</div>
+</div>
 <div class="section" id="id14">
 <h2>Корак 13.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <p>Сними табелу.</p>
@@ -605,7 +630,7 @@
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="E041.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  <a  href="E04.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>

@@ -6,6 +6,7 @@
     <title>Унос података и формула у табелу</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -383,14 +386,18 @@
 <div class="section" id="id3">
 <h2>Корак 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Пронађи табелу на свом рачунару (највероватније је завршила у <em>Downloads</em> фолдеру) и отвори је:</p>
-<a class="reference internal image-reference" href="../_images/Recalc1.jpg"><img alt="../_images/Recalc1.jpg" class="align-center" src="../_images/Recalc1.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc1.jpg"><img alt="../_images/Recalc1.jpg" class="screenshot-shadow" src="../_images/Recalc1.jpg" style="width: 780px;" /></a>
+</div>
 <p>Сада за сваког студента унеси бројеве који представљају сате проведене на послу радним даном и викендом
 и израчунај колико је сваки студент зарадио на свом летњем послу.</p>
 </div>
 <div class="section" id="id4">
 <h2>Корак 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Унеси произвољне вредности. Када завршиш табела треба да изгледа овако (с тим да ћеш ти имати другачије вредности у колонама B и C):</p>
-<a class="reference internal image-reference" href="../_images/Recalc3.jpg"><img alt="../_images/Recalc3.jpg" class="align-center" src="../_images/Recalc3.jpg" style="width: 600px;" /></a>
+<p>Унеси произвољне вредности. Када завршиш, табела треба да изгледа овако (с тим да ћеш ти вероватно имати другачије вредности у колонама B и C):</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc3.jpg"><img alt="../_images/Recalc3.jpg" class="screenshot-shadow" src="../_images/Recalc3.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>Корак 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
@@ -398,41 +405,38 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">B3</span><span class="o">*</span><span class="n">D3</span> <span class="o">+</span> <span class="n">C3</span><span class="o">*</span><span class="n">E3</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/Recalc4.jpg"><img alt="../_images/Recalc4.jpg" class="align-center" src="../_images/Recalc4.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc4.jpg"><img alt="../_images/Recalc4.jpg" class="screenshot-shadow" src="../_images/Recalc4.jpg" style="width: 780px;" /></a>
+</div>
 <p>Како гласи формула за другог студента?</p>
-<a class="reference internal image-reference" href="../_images/Recalc5.jpg"><img alt="../_images/Recalc5.jpg" class="align-center" src="../_images/Recalc5.jpg" style="width: 600px;" /></a>
-<p>Вероватно ти се по глави већ мота она народна „И тако летњи дан до подне“. Да не бисмо исти досадни посао радили још сто пута (и при томе вероватно направили доста грешака) <em>сада ћемо показати користан трик који ће за нас урадити посао.</em> Кликни на ћелију F4 и примети да је доњи десни угао зеленог оквира око ћелије истакнут
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc5.jpg"><img alt="../_images/Recalc5.jpg" class="screenshot-shadow" src="../_images/Recalc5.jpg" style="width: 780px;" /></a>
+</div>
+<p>Вероватно ти се по глави већ мота она народна „И тако летњи дан до подне“. Да не бисмо исти досадни посао радили још сто пута
+(и при томе вероватно направили доста грешака), <em>сада ћемо показати користан трик који ће за нас урадити посао.</em>
+Кликни на ћелију F4 и приметићеш да је доњи десни угао зеленог оквира око ћелије истакнут
 (оквир има „бубуљицу“):</p>
-<a class="reference internal image-reference" href="../_images/Recalc6.jpg"><img alt="../_images/Recalc6.jpg" class="align-center" src="../_images/Recalc6.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc6.jpg"><img alt="../_images/Recalc6.jpg" class="screenshot-shadow" src="../_images/Recalc6.jpg" style="width: 780px;" /></a>
+</div>
 <p>Ухвати мишем бубуљицу и „развуци оквир“ до дна колоне. Ексел ће попунити ћелије неким вредностима:</p>
-<a class="reference internal image-reference" href="../_images/Recalc7.jpg"><img alt="../_images/Recalc7.jpg" class="align-center" src="../_images/Recalc7.jpg" style="width: 600px;" /></a>
-<p>Кликни сада, рецимо, на ћелију F9 и погледај у оквиру за формуле (<em>formula bar</em>) која формула је уписана у ћелију.</p>
-<a class="reference internal image-reference" href="../_images/Recalc8.jpg"><img alt="../_images/Recalc8.jpg" class="align-center" src="../_images/Recalc8.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc7.jpg"><img alt="../_images/Recalc7.jpg" class="screenshot-shadow" src="../_images/Recalc7.jpg" style="width: 780px;" /></a>
+</div>
+<p>Кликни сада, рецимо, на ћелију F9 (1) и погледај у оквиру (2) за формуле (<em>formula bar</em>) која је формула уписана у ћелију.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc8.jpg"><img alt="../_images/Recalc8.jpg" class="screenshot-shadow" src="../_images/Recalc8.jpg" style="width: 780px;" /></a>
+</div>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p><strong>Ооооо, да! Ексел је „погодио“ коју формулу смо желели да упишемо у ћелију!</strong></p>
 
-    </p></div></div>
-<p>Ево и кратког видеа:</p>
-
-    <div  id="2XiSIC0NU_A" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/2XiSIC0NU_A/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-2XiSIC0NU_A" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-2XiSIC0NU_A">
-        </div>
-    </div>
-    
-    
-    <p>Да буде одмах јасно, ово није никаква магија већ прост алгоритам. На основу формуле која је била уписана у ћелију F4 Ексел је простим алгоритмом генерисао формуле и уписао их редом у све ћелије кроз које смо „развукли оквир“.
+    </div></div>
+<p>Да буде одмах јасно, ово није никаква магија, већ прост алгоритам. На основу формуле која је била уписана у ћелију F4 Ексел је простим алгоритмом генерисао формуле и уписао их редом у све ћелије кроз које смо „развукли оквир“.
 Идеја алгоритма је да се слова у адреси ћелије не мењају, а бројеви у адреси ћелије се редом повећавају. Ево и табеларног прегледа:</p>
 <table class="docutils align-left" id="id7">
 <caption><span class="caption-text">Формуле у одговарајућим ћелијама табеле</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
@@ -464,7 +468,8 @@
 </div>
 <div class="section" id="id6">
 <h2>Корак 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Израчунаћемо сада колико су просечно сати радили студенти радним данима и викендом, и колико су зарадили у просеку. Ексел уме аутоматски да израчуна просек низа бројева. Само треба позвати функцију AVERAGE (енгл. „просек“).</p>
+<p>Израчунаћемо сада колико су просечно сати радили студенти радним данима и викендом, и колико су зарадили у просеку.
+Ексел уме аутоматски да израчуна просек низа бројева. Само треба позвати функцију AVERAGE (енг. просек).</p>
 <p>У ћелију A12 упиши „Prosečno“. Сада желимо да у ћелији B12 прикажемо просечно време које су наведени студенти провели на послу. Дакле, желимо да израчунамо просек бројева који су уписани у ћелије B3, B4, …, B11. Један начин да то урадимо је да у ћелију унесемо формулу</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="p">(</span><span class="n">B3</span> <span class="o">+</span> <span class="n">B4</span> <span class="o">+</span> <span class="n">B5</span> <span class="o">+</span> <span class="n">B6</span> <span class="o">+</span> <span class="n">B7</span> <span class="o">+</span> <span class="n">B8</span> <span class="o">+</span> <span class="n">B9</span> <span class="o">+</span> <span class="n">B10</span> <span class="o">+</span> <span class="n">B11</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span>
 </pre></div>
@@ -473,10 +478,14 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">AVERAGE</span><span class="p">(</span><span class="n">B3</span><span class="p">:</span><span class="n">B11</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>која рачуна просек (AVERAGE) бројева у ћелијама B3, B4, …, B11 (B3:B11). „AVERAGE“ је још једна функција коју Ексел познаје.</p>
-<a class="reference internal image-reference" href="../_images/Recalc9.jpg"><img alt="../_images/Recalc9.jpg" class="align-center" src="../_images/Recalc9.jpg" style="width: 600px;" /></a>
+<p>која рачуна просек (AVERAGE) бројева у ћелијама B3, B4, …, B11 (B3:B11). AVERAGE је још једна функција коју Ексел познаје.</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc9.jpg"><img alt="../_images/Recalc9.jpg" class="screenshot-shadow" src="../_images/Recalc9.jpg" style="width: 780px;" /></a>
+</div>
 <p>На исти начин ћемо израчунати просек бројева у ћелијама C3:C11 и F3:F11</p>
-<a class="reference internal image-reference" href="../_images/Recalc10.jpg"><img alt="../_images/Recalc10.jpg" class="align-center" src="../_images/Recalc10.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Recalc10.jpg"><img alt="../_images/Recalc10.jpg" class="screenshot-shadow" src="../_images/Recalc10.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 </div>
 

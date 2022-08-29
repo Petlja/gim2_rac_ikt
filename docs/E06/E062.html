@@ -6,6 +6,7 @@
     <title>Апсолутна адреса ћелије</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -374,8 +377,8 @@
   <div class="section" id="id1">
 <h1>Апсолутна адреса ћелије<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Сада ћемо показати нови концепт: апсолутну адресу ћелије. Механизам апсолутног адресирања ћелије нам омогућује да
-<em>фиксирамо</em> ћелију у следећем смислу: <em>приликом копирања формуле овај елемент формуле неће бити модификован</em>.
-Показујемо на два примера значај овог механизма.</p>
+<em>фиксирамо</em> ћелију тако да <em>приликом копирања формуле овај елемент формуле неће бити модификован</em>.
+Показаћемо на два примера значај овог механизма.</p>
 <div class="section" id="id2">
 <h2>Корак 7.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>За сваку врсту воћа израчунаћемо удео те врсте воћа у укупној заради и приказати га у облику процента. Као што смо већ видели, проценти се рачунају као обичан количник дела и целине, и онда се одговарајуће ћелије само форматирају на одговарајући начин.</p>
@@ -384,42 +387,40 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>У нашем примеру целину представља укупна зарада (број у ћелији D16), док су делови чији удео у целини рачунамо бројеви који представљају зараду сваке појединачне врсте воћа.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Да бисмо израчунали удео који зарада на јабукама носи у укупној заради у ћелију E5 ћемо уписати формулу</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">D5</span><span class="o">/</span><span class="n">D16</span>
 </pre></div>
 </div>
 <p>(количник дела и целине):</p>
-<a class="reference internal image-reference" href="../_images/Zarada9.jpg"><img alt="../_images/Zarada9.jpg" class="align-center" src="../_images/Zarada9.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada9.jpg"><img alt="../_images/Zarada9.jpg" class="align-center" src="../_images/Zarada9.jpg" style="width: 780px;" /></a>
 <p>Добијамо неки децимални број који ћемо касније форматирати као проценат.
-Пошто ћелије E6:E15 садрже исту формулу, само ћемо кликути на ћелију E5 и „развући“ до дна:</p>
-<a class="reference internal image-reference" href="../_images/Zarada10.jpg"><img alt="../_images/Zarada10.jpg" class="align-center" src="../_images/Zarada10.jpg" style="width: 600px;" /></a>
+Пошто ћелије E6:E15 садрже исту формулу, само ћемо кликнути на ћелију E5 и „развући“ је до дна:</p>
+<a class="reference internal image-reference" href="../_images/Zarada10.jpg"><img alt="../_images/Zarada10.jpg" class="align-center" src="../_images/Zarada10.jpg" style="width: 780px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p><strong>УПС! ГДЕ СМО ПОГРЕШИЛИ?</strong></p>
+<p>Упс! Где смо погрешили?</p>
 
-    </p></div></div>
+    </div></div>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
-<p>Ако кликнемо на ћелију E5 и притиснемо тастер [F2] Ексел ће нам показати формулу која је у ћелији и означиће ћелије које учествују у формули:</p>
+            
+<p>Ако кликнемо на ћелију E5 и притиснемо тастер [F2], Ексел ће нам показати формулу која је у ћелији и означиће ћелије које учествују у формули:</p>
 
-    </p></div></div>
-<a class="reference internal image-reference" href="../_images/Zarada11.jpg"><img alt="../_images/Zarada11.jpg" class="align-center" src="../_images/Zarada11.jpg" style="width: 600px;" /></a>
+    </div></div>
+<a class="reference internal image-reference" href="../_images/Zarada11.jpg"><img alt="../_images/Zarada11.jpg" class="align-center" src="../_images/Zarada11.jpg" style="width: 780px;" /></a>
 <p>Формула у ћелији E5 је добра. (Како не би била када смо је ручно унели.)</p>
 <p>Хајде сада да кликнемо на ћелију E6 и притиснемо тастер [F2]:</p>
-<a class="reference internal image-reference" href="../_images/Zarada12.jpg"><img alt="../_images/Zarada12.jpg" class="align-center" src="../_images/Zarada12.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada12.jpg"><img alt="../_images/Zarada12.jpg" class="align-center" src="../_images/Zarada12.jpg" style="width: 780px;" /></a>
 <p>Ето зашто се Ексел буни: формула у ћелији E6 гласи</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">D6</span><span class="o">/</span><span class="n">D17</span>
 </pre></div>
@@ -450,46 +451,47 @@
 </tr>
 </tbody>
 </table>
-<p>Када смо формулу из ћелије E5 ископирали у ћелију E6 пренели смо формулу један ред ниже. Тако је D5 постало D6, што нам одговара, али је D16 постало D17, што нам <em>никако не одговара</em>.
+<p>Када смо формулу из ћелије E5 ископирали у ћелију E6, пренели смо формулу један ред ниже. Тако је D5 постало D6, што нам одговара, али је D16 постало D17, што нам <em>никако не одговара</em>.
 Волели бисмо када бисмо могли да убедимо Ексел да при преласку са E5 на E6 он промени D5 на D6, али желимо да при томе D16 остане D16. И то је, наравно, могуће!</p>
 <p>Обрисаћемо сада све (селектујемо ћелије E5:E15) и притиснемо тастер [Del] (или [Delete]) на тастатури:</p>
-<a class="reference internal image-reference" href="../_images/Zarada13.jpg"><img alt="../_images/Zarada13.jpg" class="align-center" src="../_images/Zarada13.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada13.jpg"><img alt="../_images/Zarada13.jpg" class="align-center" src="../_images/Zarada13.jpg" style="width: 780px;" /></a>
 <p>Поново ћемо у поље E5 унети формулу, али овај пут ћемо написати:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= D5/$D$16
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/Zarada14.jpg"><img alt="../_images/Zarada14.jpg" class="align-center" src="../_images/Zarada14.jpg" style="width: 600px;" /></a>
-<p>Симболима $ које смо додали испред имена колоне и броја врсте ћелије D16 смо <em>фиксирали</em> ту ћелију у следећем смислу: <em>приликом копирања формуле овај елемент формуле неће бити модификован; он ће увек остати $D$16</em>.</p>
-<a class="reference internal image-reference" href="../_images/Zarada15.jpg"><img alt="../_images/Zarada15.jpg" class="align-center" src="../_images/Zarada15.jpg" style="width: 600px;" /></a>
-<p>Да се уверимо да је то заиста тако ископираћемо формулу из ћелије E5 у ћелију E6 користећи <em>Copy/Paste</em> акцију. Ако притиснемо тастер [F2] док стојимо на ћелији E6 видимо да је у њу уписана формула</p>
+<a class="reference internal image-reference" href="../_images/Zarada14.jpg"><img alt="../_images/Zarada14.jpg" class="align-center" src="../_images/Zarada14.jpg" style="width: 780px;" /></a>
+<p>Симболима $ које смо додали испред имена колоне и броја врсте ћелије D16 смо <em>фиксирали</em> ту ћелију: <em>приликом копирања формуле овај елемент формуле неће бити модификован; он ће увек остати $D$16</em>.</p>
+<a class="reference internal image-reference" href="../_images/Zarada15.jpg"><img alt="../_images/Zarada15.jpg" class="align-center" src="../_images/Zarada15.jpg" style="width: 780px;" /></a>
+<p>Да се уверимо да је то заиста тако ископираћемо формулу из ћелије E5 у ћелију E6 користећи <em>Copy/Paste</em> акцију. Ако притиснемо тастер
+[F2] док стојимо на ћелији E6, видимо да је у њу уписана формула</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= D6/$D$16
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/Zarada16.jpg"><img alt="../_images/Zarada16.jpg" class="align-center" src="../_images/Zarada16.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada16.jpg"><img alt="../_images/Zarada16.jpg" class="align-center" src="../_images/Zarada16.jpg" style="width: 780px;" /></a>
 <p>Дакле, приликом копирања формуле из E5 у E6, D5 постало D6, али је $D$16 остало $D$16.</p>
 <p>Сада слободно можемо да кликнемо на ћелију E6 и „развучемо“ формулу до дна табеле:</p>
-<a class="reference internal image-reference" href="../_images/Zarada17.jpg"><img alt="../_images/Zarada17.jpg" class="align-center" src="../_images/Zarada17.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada17.jpg"><img alt="../_images/Zarada17.jpg" class="align-center" src="../_images/Zarada17.jpg" style="width: 780px;" /></a>
 <p>У свакој ћелији се налази коректна формула. На пример,</p>
-<a class="reference internal image-reference" href="../_images/Zarada18.jpg"><img alt="../_images/Zarada18.jpg" class="align-center" src="../_images/Zarada18.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada18.jpg"><img alt="../_images/Zarada18.jpg" class="align-center" src="../_images/Zarada18.jpg" style="width: 780px;" /></a>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <ul class="simple">
 <li><p>Адреса ћелије као што је D6 се зове <em>релативна адреса</em> зато што је Екселу приликом копирања формуле дозвољено да је мења.</p></li>
-<li><p>Адреса ћелије као што је $D$16, која је <em>фиксирана</em>, се зове <em>апсолутна адреса</em> зато што Екселу приликом копирања формуле <strong>није</strong> дозвољено да је мења (зато је <em>апсолутна, непроменљива</em>).</p></li>
+<li><p>Адреса ћелије као што је $D$16, која је <em>фиксирана</em>, зове се <em>апсолутна адреса</em> зато што Екселу приликом копирања формуле <strong>није</strong> дозвољено да је мења (зато је <em>апсолутна, непроменљива</em>).</p></li>
 </ul>
 
-    </p></div></div>
+    </div></div>
 </div>
 <div class="section" id="id3">
 <h2>Корак 8.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>За крај треба још бројеве које смо добили у колони E приказати у облику процента. Да бисмо то постигли, селектоваћмо ћелије E5:E15 и као формат приказа одабрати „Percentage“:</p>
-<a class="reference internal image-reference" href="../_images/Zarada19.jpg"><img alt="../_images/Zarada19.jpg" class="align-center" src="../_images/Zarada19.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada19.jpg"><img alt="../_images/Zarada19.jpg" class="align-center" src="../_images/Zarada19.jpg" style="width: 780px;" /></a>
 <p>Добијамо:</p>
-<a class="reference internal image-reference" href="../_images/Zarada20.jpg"><img alt="../_images/Zarada20.jpg" class="align-center" src="../_images/Zarada20.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada20.jpg"><img alt="../_images/Zarada20.jpg" class="align-center" src="../_images/Zarada20.jpg" style="width: 780px;" /></a>
 <p>За крај, сними табелу као Ексел фајл и као ПДФ фајл.</p>
 </div>
 </div>

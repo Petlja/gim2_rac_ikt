@@ -6,6 +6,7 @@
     <title>Селектовање групе ћелија</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -387,9 +390,13 @@
 </pre></div>
 </div>
 <p>која ће израчунати просечну температуру за ова четири месеца у Амстердаму:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes2.jpg"><img alt="../_images/DataTypes2.jpg" class="align-center" src="../_images/DataTypes2.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes2.jpg"><img alt="../_images/DataTypes2.jpg" class="screenshot-shadow" src="../_images/DataTypes2.jpg" style="width: 780px;" /></a>
+</div>
 <p>и притисни [ENTER]:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes3.jpg"><img alt="../_images/DataTypes3.jpg" class="align-center" src="../_images/DataTypes3.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes3.jpg"><img alt="../_images/DataTypes3.jpg" class="screenshot-shadow" src="../_images/DataTypes3.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id4">
 <h2>Корак 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -397,19 +404,25 @@
 <div class="math notranslate nohighlight">
 \[t_F = 1,8 \cdot t_C + 32\]</div>
 <p>Приликом уношења формуле морамо повести рачуна о томе да се множење означава звездицом <code class="docutils literal notranslate"><span class="pre">*</span></code>:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes4.jpg"><img alt="../_images/DataTypes4.jpg" class="align-center" src="../_images/DataTypes4.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes4.jpg"><img alt="../_images/DataTypes4.jpg" class="screenshot-shadow" src="../_images/DataTypes4.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>Корак 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Исти посао треба урадити за јун, јул, август и за просек. Можемо исту формулу унети још четири пута, али је боље да се послужимо брзим копирањем. Ако кликнемо на ћелију G2 видећемо увек присутну „бубуљицу“ у доњем десном углу:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes5.jpg"><img alt="../_images/DataTypes5.jpg" class="align-center" src="../_images/DataTypes5.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes5.jpg"><img alt="../_images/DataTypes5.jpg" class="screenshot-shadow" src="../_images/DataTypes5.jpg" style="width: 780px;" /></a>
+</div>
 <p>Ухватимо „бубуљицу“, развучемо до краја врсте и добијамо:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes6.jpg"><img alt="../_images/DataTypes6.jpg" class="align-center" src="../_images/DataTypes6.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes6.jpg"><img alt="../_images/DataTypes6.jpg" class="screenshot-shadow" src="../_images/DataTypes6.jpg" style="width: 780px;" /></a>
+</div>
 <p>Формула у ћелији G2 је гласила</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="mf">1.8</span> <span class="o">*</span> <span class="n">B2</span> <span class="o">+</span> <span class="mi">32</span>
 </pre></div>
 </div>
-<p>Ако погледамо шта пише у ћелији H2 видећемо да тамо стоји формула</p>
+<p>Ако погледамо шта пише у ћелији H2, видећемо да тамо стоји формула</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="mf">1.8</span> <span class="o">*</span> <span class="n">C2</span> <span class="o">+</span> <span class="mi">32</span>
 </pre></div>
 </div>
@@ -448,41 +461,34 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
-<p>Брзо копрање ради на један начин када оквир „развлачимо“ вертикално, а на други начин када га „развлачимо“ хоризонтално. Поента је да се у сваком случају „чува логика формуле“.</p>
+            
+<p>Брзо копирање ради и када оквир „развлачимо“ вертикално, и када га „развлачимо“ хоризонтално.
+Поента је да се у сваком случају „чува логика формуле“.</p>
 
-    </p></div></div>
-<p>До сада смо попунили тек први ред табеле. Уместо да све ове кораке понављамо за сваки ред табеле посебно, послужићемо се још једним лукавством. Означићемо низ ћелија (ова операција се у жаргону зове „селектовање“ од енгл. <em>select</em> што значи „одабрати“) и онда ћемо брзим копирањем попунити све ћелије у табели.</p>
+    </div></div>
+<p>До сада смо попунили тек први ред табеле. Уместо да све ове кораке понављамо за сваки ред табеле посебно, послужићемо се још једним лукавством.
+Означићемо низ ћелија (ова операција се у жаргону зове „селектовање“, од енг. <em>select</em>, што значи „одабрати“) и онда ћемо брзим копирањем попунити све ћелије у табели.</p>
 </div>
 <div class="section" id="id6">
 <h2>Корак 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Пошто смо попунили први ред табеле, означићемо (такорећи <em>селектоваћемо</em>) низ ћелија F2:K2 тако што ћемо кликнути на ћелију F2 (дакле, НЕ на „бубуљицу“ већ у срце ћелије F2) и <em>не пуштајући миша</em> развући оквир до ћелије K2:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes7.jpg"><img alt="../_images/DataTypes7.jpg" class="align-center" src="../_images/DataTypes7.jpg" style="width: 600px;" /></a>
+<p>Пошто смо попунили први ред табеле, означићемо (такорећи <em>селектоваћемо</em>) низ ћелија F2:K2 тако што ћемо кликнути на ћелију F2 (дакле, НЕ на „бубуљицу“, већ у срце ћелије F2) и <em>не пуштајући миша</em> развући оквир до ћелије K2:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes7.jpg"><img alt="../_images/DataTypes7.jpg" class="screenshot-shadow" src="../_images/DataTypes7.jpg" style="width: 780px;" /></a>
+</div>
 <p>Овим смо означили ћелије које су интересантне (јер садрже формуле које желимо да размножимо по целој табели).</p>
 </div>
 <div class="section" id="id7">
 <h2>Корак 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Е, <em>сада ухватимо за „бубуљицу“</em> која се налази у доњем десном углу означеног распона и „развучемо“ до дна табеле:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes8.jpg"><img alt="../_images/DataTypes8.jpg" class="align-center" src="../_images/DataTypes8.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes8.jpg"><img alt="../_images/DataTypes8.jpg" class="screenshot-shadow" src="../_images/DataTypes8.jpg" style="width: 780px;" /></a>
+</div>
 <p>Ексел је ископирао формуле које су се налазиле у означеним ћелијама и током копирања сваку формулу прилагодио позицији на којој се она налази. На пример, ако погледамо ћелију J11 (температура у степенима Фаренхајта у Ослу у августу) видећемо да је та вредност израчуната тако што је формула за конверзију примењена на ћелију E11 (температура у степенима Целзијуса у Ослу у августу), као што и треба:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes9.jpg"><img alt="../_images/DataTypes9.jpg" class="align-center" src="../_images/DataTypes9.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes9.jpg"><img alt="../_images/DataTypes9.jpg" class="screenshot-shadow" src="../_images/DataTypes9.jpg" style="width: 780px;" /></a>
+</div>
 <p>Тако је овај део задатка решен.</p>
-<p>Ево и демонстрације:</p>
-
-    <div  id="MW_2mlGs1qg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/MW_2mlGs1qg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-MW_2mlGs1qg" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-MW_2mlGs1qg">
-        </div>
-    </div>
-    
-    
-    </div>
+</div>
 </div>
 
 

@@ -6,6 +6,7 @@
     <title>Квиз</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -376,15 +379,19 @@
 <div class="section" id="id2">
 <h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_8_Питање1">
-            <p>Q-23: Шта се постиже опцијом „Merge and Center” у Екселу?</p>
+            <p>Q-23: Шта се постиже опцијом „Merge and Center“ у Екселу?</p>
 
             <li data-component="answer"  id="ТестЕ1_8_Питање1_opt_a">Вредности из одабраних ћелија се саберу и усредње.</li><li data-component="feedback" id="ТестЕ1_8_Питање1_opt_a">Покушај поново!</li>
             
-            <li data-component="answer"  id="ТестЕ1_8_Питање1_opt_b">Израчуна се аритметичка средина вредности из одабраних ћелија</li><li data-component="feedback" id="ТестЕ1_8_Питање1_opt_b">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_8_Питање1_opt_b">Израчуна се аритметичка средина вредности из одабраних ћелија.</li><li data-component="feedback" id="ТестЕ1_8_Питање1_opt_b">Покушај поново!</li>
             
-            <li data-component="answer" data-correct id="ТестЕ1_8_Питање1_opt_c">Изабране ћелије се споје и њихов садржај се центрира у односу на ћелију</li><li data-component="feedback" id="ТестЕ1_8_Питање1_opt_c">Тачно!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_8_Питање1_opt_c">Изабране ћелије се споје и њихов садржај се центрира у односу на ћелију.</li><li data-component="feedback" id="ТестЕ1_8_Питање1_opt_c">Тачно!</li>
             
 
             </ul>
@@ -393,15 +400,19 @@
 <div class="section" id="id3">
 <h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_8_Питање2">
-            <p>Q-24: Шта се постиже опцијом „Wrap text” у Екселу?</p>
+            <p>Q-24: Шта се постиже опцијом „Wrap text“ у Екселу?</p>
 
             <li data-component="answer" data-correct id="ТестЕ1_8_Питање2_opt_a">Текст који не може да стане у ћелију по ширини, прелази у нови ред исте ћелије.</li><li data-component="feedback" id="ТестЕ1_8_Питање2_opt_a">Тачно!</li>
             
             <li data-component="answer"  id="ТестЕ1_8_Питање2_opt_b">За текст који не може да стане у ћелију по ширини, смањује се величина фонта.</li><li data-component="feedback" id="ТестЕ1_8_Питање2_opt_b">Покушај поново!</li>
             
-            <li data-component="answer"  id="ТестЕ1_8_Питање2_opt_c">На текст се додаје ефекат "таласања".</li><li data-component="feedback" id="ТестЕ1_8_Питање2_opt_c">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_8_Питање2_opt_c">На текст се додаје ефекат „таласања“.</li><li data-component="feedback" id="ТестЕ1_8_Питање2_opt_c">Покушај поново!</li>
             
             <li data-component="answer"  id="ТестЕ1_8_Питање2_opt_d">Текст се дели у два једнака дела, који се распоређују у две суседне ћелије.</li><li data-component="feedback" id="ТестЕ1_8_Питање2_opt_d">Покушај поново!</li>
             
@@ -412,7 +423,11 @@
 <div class="section" id="id4">
 <h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_8_Питање3">
             <p>Q-25: Означи НЕТАЧАН исказ:</p>
 
@@ -429,7 +444,11 @@
 <div class="section" id="id5">
 <h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_8_Питање4">
             <p>Q-26: Означи НЕТАЧАН исказ:</p>
 
@@ -446,9 +465,13 @@
 <div class="section" id="id6">
 <h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_8_Питање5">
-            <p>Q-27: PDF је скраћеница од:</p>
+            <p>Q-27: ПДФ (PDF) је скраћеница од:</p>
 
             <li data-component="answer"  id="ТестЕ1_8_Питање5_opt_a">Printable Document Format</li><li data-component="feedback" id="ТестЕ1_8_Питање5_opt_a">Покушај поново!</li>
             
@@ -465,17 +488,21 @@
 <div class="section" id="id7">
 <h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_8_Питање6">
             <p>Q-28: Означити НЕТАЧАН исказ:</p>
 
-            <li data-component="answer"  id="ТестЕ1_8_Питање6_opt_a">Опција "Save As" омогућује да се документ сними у PDF формату</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_a">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_8_Питање6_opt_a">Опција „Save As“ омогућује да се документ сними у ПДФ формату.</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_a">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
-            <li data-component="answer"  id="ТестЕ1_8_Питање6_opt_b">Опција "Save As" омогућује да се документ сними под другим именом</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_b">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_8_Питање6_opt_b">Опција „Save As“ омогућује да се документ сними под другим именом.</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_b">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
-            <li data-component="answer"  id="ТестЕ1_8_Питање6_opt_c">Опција "Save As" омогућује да се документ сними у други фолдер</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_c">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_8_Питање6_opt_c">Опција „Save As“ омогућује да се документ сними у други фолдер.</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_c">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
-            <li data-component="answer" data-correct id="ТестЕ1_8_Питање6_opt_d">Опција "Save As" омогућује да се документ сними на CD/DVD</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_d">Тако је!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_8_Питање6_opt_d">Опција „Save As“ омогућује да се документ сними на ЦД/ДВД.</li><li data-component="feedback" id="ТестЕ1_8_Питање6_opt_d">Тако је!</li>
             
 
             </ul>

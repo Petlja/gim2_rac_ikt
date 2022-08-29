@@ -6,6 +6,7 @@
     <title>Управљање подацима на радним листовима</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -378,14 +381,11 @@
 <h2>Корак 5.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Врати се на радни лист „Cene“ да га мало улепшаш:</p>
 <ul class="simple">
-<li><p>мало прошири колону А</p></li>
-<li><p>спој ћелије A1 и B1 (опција „Merge Cells“) и повећај величину слова на 16</p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/PJ10.jpg"><img alt="../_images/PJ10.jpg" class="align-center" src="../_images/PJ10.jpg" style="width: 600px;" /></a>
-<ul class="simple">
+<li><p>мало прошири колону А,</p></li>
+<li><p>спој ћелије A1 и B1 (опција „Merge Cells“) и повећај величину слова на 16, и</p></li>
 <li><p>унеси произвољне цене производа:</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/PJ11.jpg"><img alt="../_images/PJ11.jpg" class="align-center" src="../_images/PJ11.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ11.jpg"><img alt="../_images/PJ11.jpg" class="align-center" src="../_images/PJ11.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id3">
 <h2>Корак 6.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
@@ -395,44 +395,40 @@
 <li><p>спој ћелије A1:C1 (опција „Merge Cells“) и повећај величину слова на 16</p></li>
 <li><p>унеси произвољне бројеве у колону „Prodato kom.“</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/PJ12.jpg"><img alt="../_images/PJ12.jpg" class="align-center" src="../_images/PJ12.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ12.jpg"><img alt="../_images/PJ12.jpg" class="align-center" src="../_images/PJ12.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id4">
 <h2>Корак 7.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Пређи на радни лист „PJ2“. Он је потпуно празан:</p>
-<a class="reference internal image-reference" href="../_images/PJ31.jpg"><img alt="../_images/PJ31.jpg" class="align-center" src="../_images/PJ31.jpg" style="width: 600px;" /></a>
-<p>Да не бисмо из почетка прекуцавали имена колона и имена производа ископираћемо их са радног листа „PJ1“.</p>
+<a class="reference internal image-reference" href="../_images/PJ31.jpg"><img alt="../_images/PJ31.jpg" class="align-center" src="../_images/PJ31.jpg" style="width: 780px;" /></a>
+<p>Да не бисмо испочетка прекуцавали имена колона и имена производа, ископираћемо их са радног листа „PJ1“.</p>
 </div>
 <div class="section" id="id5">
 <h2>Корак 8.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Врати се на радни лист „PJ1“ и селектуј све на њему:</p>
-<a class="reference internal image-reference" href="../_images/PJ32.jpg"><img alt="../_images/PJ32.jpg" class="align-center" src="../_images/PJ32.jpg" style="width: 600px;" /></a>
-<p>Онда у групи команди „Clipboard“ кликни на опцију „Copy“:</p>
-<a class="reference internal image-reference" href="../_images/PJ151.jpg"><img alt="../_images/PJ151.jpg" class="align-center" src="../_images/PJ151.jpg" style="width: 600px;" /></a>
-<p>У табели се не види никаква промена (јер ништа нисмо ни мењали); опција „Copy“ је у посебан део меморије прекопирала садржај ћелија A1:C8.</p>
+<p>Врати се на радни лист „PJ1“ и селектуј све на њему.
+Онда у групи команди „Clipboard“ кликни на опцију „Copy“.
+У табели се не види никаква промена (јер ништа нисмо ни мењали); опција „Copy“ је у посебан део меморије (<em>Clipboard</em>)
+прекопирала садржај ћелија A1:C8.</p>
+<a class="reference internal image-reference" href="../_images/PJ32.jpg"><img alt="../_images/PJ32.jpg" class="align-center" src="../_images/PJ32.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id6">
 <h2>Корак 9.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Сада се врати на радни лист „PJ2“ и кликни на ћелију А1:</p>
-<a class="reference internal image-reference" href="../_images/PJ33.jpg"><img alt="../_images/PJ33.jpg" class="align-center" src="../_images/PJ33.jpg" style="width: 600px;" /></a>
-<p>и онда из групе команди „Clipboard“ одабери опцију „Paste“:</p>
-<a class="reference internal image-reference" href="../_images/PJ171.jpg"><img alt="../_images/PJ171.jpg" class="align-center" src="../_images/PJ171.jpg" style="width: 600px;" /></a>
+<p>Сада се врати на радни лист „PJ2“ и кликни на ћелију А1
+па из групе команди „Clipboard“ одабери опцију „Paste“:</p>
+<a class="reference internal image-reference" href="../_images/PJ33.jpg"><img alt="../_images/PJ33.jpg" class="align-center" src="../_images/PJ33.jpg" style="width: 780px;" /></a>
 <p>Ексел је ископирао податке из меморије на нову локацију тако да горњи десни угао нове табеле буде ћелија на коју смо кликнули на почетку (А1):</p>
-<a class="reference internal image-reference" href="../_images/PJ34.jpg"><img alt="../_images/PJ34.jpg" class="align-center" src="../_images/PJ34.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ34.jpg"><img alt="../_images/PJ34.jpg" class="align-center" src="../_images/PJ34.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id7">
 <h2>Корак 10.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p>Кликни на наслов табеле (ћелије А1:C1) и притисни тастер [F2] како би прешао у мод за исправке:</p>
-<a class="reference internal image-reference" href="../_images/PJ35.jpg"><img alt="../_images/PJ35.jpg" class="align-center" src="../_images/PJ35.jpg" style="width: 600px;" /></a>
-<p>и исправи „Poslovna jedinica 1“ на „Poslovna jedinica 2“ и притисни [ENTER]:</p>
-<a class="reference internal image-reference" href="../_images/PJ36.jpg"><img alt="../_images/PJ36.jpg" class="align-center" src="../_images/PJ36.jpg" style="width: 600px;" /></a>
+<p>Кликни на наслов табеле (ћелије А1:C1) и притисни тастер [F2] како би прешао у мод за исправке.
+Исправи „Poslovna jedinica 1“ на „Poslovna jedinica 2“ и притисни [ENTER]:</p>
+<a class="reference internal image-reference" href="../_images/PJ36.jpg"><img alt="../_images/PJ36.jpg" class="align-center" src="../_images/PJ36.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id8">
 <h2>Корак 11.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
-<p>Селектуј ћелије B3:B8</p>
-<a class="reference internal image-reference" href="../_images/PJ37.jpg"><img alt="../_images/PJ37.jpg" class="align-center" src="../_images/PJ37.jpg" style="width: 600px;" /></a>
-<p>и притисни тастер [Del] како бисмо обрисали податке:</p>
-<a class="reference internal image-reference" href="../_images/PJ38.jpg"><img alt="../_images/PJ38.jpg" class="align-center" src="../_images/PJ38.jpg" style="width: 600px;" /></a>
+<p>Селектуј ћелије B3:B8 и притисни тастер [Del] како бисмо обрисали податке:</p>
+<a class="reference internal image-reference" href="../_images/PJ37.jpg"><img alt="../_images/PJ37.jpg" class="align-center" src="../_images/PJ37.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id9">
 <h2>Корак 12.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
@@ -441,17 +437,17 @@
 <li><p>мало прошири колоне А, B и C</p></li>
 <li><p>унеси произвољне бројеве у колону „Prodato kom.“</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/PJ21.jpg"><img alt="../_images/PJ21.jpg" class="align-center" src="../_images/PJ21.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ21.jpg"><img alt="../_images/PJ21.jpg" class="align-center" src="../_images/PJ21.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id10">
 <h2>Корак 13.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>На исти начин попуни радни лист „PJ3“:</p>
-<a class="reference internal image-reference" href="../_images/PJ39.jpg"><img alt="../_images/PJ39.jpg" class="align-center" src="../_images/PJ39.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ39.jpg"><img alt="../_images/PJ39.jpg" class="align-center" src="../_images/PJ39.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id11">
 <h2>Корак 14.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>Радни лист „Pregled“ има другачију структуру јер је на њему сажет преглед зарада по пословним јединицама. Попуни га овако:</p>
-<a class="reference internal image-reference" href="../_images/PJ40.jpg"><img alt="../_images/PJ40.jpg" class="align-center" src="../_images/PJ40.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PJ40.jpg"><img alt="../_images/PJ40.jpg" class="align-center" src="../_images/PJ40.jpg" style="width: 780px;" /></a>
 </div>
 </div>
 

@@ -6,6 +6,7 @@
     <title>Квиз</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -376,15 +379,19 @@
 <div class="section" id="id2">
 <h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_9_Питање1">
             <p>Q-29: Означи НЕТАЧАН одговор:</p>
 
-            <li data-component="answer"  id="ТестЕ1_9_Питање1_opt_a">Притиском на тастер [F2] добија се могућност измене садржаја ћелије</li><li data-component="feedback" id="ТестЕ1_9_Питање1_opt_a">Покушај поново! (Тражи се НЕТАЧАН одговор)</li>
+            <li data-component="answer"  id="ТестЕ1_9_Питање1_opt_a">Притиском на тастер [F2] добија се могућност измене садржаја ћелије.</li><li data-component="feedback" id="ТестЕ1_9_Питање1_opt_a">Покушај поново! (Тражи се НЕТАЧАН одговор)</li>
             
-            <li data-component="answer"  id="ТестЕ1_9_Питање1_opt_b">Притиском на тастер [F2] може се видети формула која се налази у ћелији, као и друге ћелије које се јављају у тој формули</li><li data-component="feedback" id="ТестЕ1_9_Питање1_opt_b">Покушај поново! (Тражи се НЕТАЧАН одговор)</li>
+            <li data-component="answer"  id="ТестЕ1_9_Питање1_opt_b">Притиском на тастер [F2] може се видети формула која се налази у ћелији, као и друге ћелије које се јављају у тој формули.</li><li data-component="feedback" id="ТестЕ1_9_Питање1_opt_b">Покушај поново! (Тражи се НЕТАЧАН одговор)</li>
             
-            <li data-component="answer" data-correct id="ТестЕ1_9_Питање1_opt_c">Притиском на тастер [F2] добија се могућност измене стила ћелије (боја, оквир, ...)</li><li data-component="feedback" id="ТестЕ1_9_Питање1_opt_c">Тако је!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_9_Питање1_opt_c">Притиском на тастер [F2] добија се могућност измене стила ћелије (боја, оквир...).</li><li data-component="feedback" id="ТестЕ1_9_Питање1_opt_c">Тако је!</li>
             
 
             </ul>
@@ -393,10 +400,14 @@
 <div class="section" id="id3">
 <h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_9_Питање2">
             <p>Q-30: Која опција у Екселу копира садржај из документа у Clipboard:</p>
-<a class="reference internal image-reference" href="../_images/PJ17.jpg"><img alt="../_images/PJ17.jpg" class="align-center" src="../_images/PJ17.jpg" style="width: 100px;" /></a>
+<a class="reference internal image-reference" href="../_images/testE06a.jpg"><img alt="../_images/testE06a.jpg" class="align-center" src="../_images/testE06a.jpg" style="width: 700px;" /></a>
 
             <li data-component="answer"  id="ТестЕ1_9_Питање2_opt_a">Cut</li><li data-component="feedback" id="ТестЕ1_9_Питање2_opt_a">Покушај поново!</li>
             
@@ -413,10 +424,14 @@
 <div class="section" id="id4">
 <h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_9_Питање3">
             <p>Q-31: Која опција у Екселу копира садржај из Clipboardа у документ:</p>
-<a class="reference internal image-reference" href="../_images/PJ15.jpg"><img alt="../_images/PJ15.jpg" class="align-center" src="../_images/PJ15.jpg" style="width: 100px;" /></a>
+<a class="reference internal image-reference" href="../_images/testE06b.jpg"><img alt="../_images/testE06b.jpg" class="align-center" src="../_images/testE06b.jpg" style="width: 700px;" /></a>
 
             <li data-component="answer"  id="ТестЕ1_9_Питање3_opt_a">Cut</li><li data-component="feedback" id="ТестЕ1_9_Питање3_opt_a">Покушај поново!</li>
             
@@ -433,17 +448,21 @@
 <div class="section" id="id5">
 <h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_9_Питање4">
             <p>Q-32: Означи тачан исказ:</p>
 
-            <li data-component="answer"  id="ТестЕ1_9_Питање4_opt_a">Приликом копирања формула Екселу је дозвољено да мења адресу $A$9 како би очувао "логику формуле"</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_a">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_9_Питање4_opt_a">Приликом копирања формула Екселу је дозвољено да мења адресу $A$9 како би очувао „логику формуле“.</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_a">Покушај поново!</li>
             
-            <li data-component="answer"  id="ТестЕ1_9_Питање4_opt_b">Приликом копирања формула Екселу није дозвољено да мења адресу A9 како би очувао "логику формуле"</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_b">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_9_Питање4_opt_b">Приликом копирања формула Екселу није дозвољено да мења адресу A9 како би очувао „логику формуле“.</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_b">Покушај поново!</li>
             
-            <li data-component="answer"  id="ТестЕ1_9_Питање4_opt_c">Приликом копирања формула Екселу није дозвољено да мења ни адресу A9 ни адресу $A$9</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_c">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_9_Питање4_opt_c">Приликом копирања формула Екселу није дозвољено да мења ни адресу A9 ни адресу $A$9.</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_c">Покушај поново!</li>
             
-            <li data-component="answer" data-correct id="ТестЕ1_9_Питање4_opt_d">Приликом копирања формула Екселу је дозвољено да мења адресу A9 како би очувао "логику формуле", није му дозвољено да мења адресу $A$9</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_d">Тачно!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_9_Питање4_opt_d">Приликом копирања формула Екселу је дозвољено да мења адресу A9 како би очувао „логику формуле“, али му није дозвољено да мења адресу $A$9.</li><li data-component="feedback" id="ТестЕ1_9_Питање4_opt_d">Тачно!</li>
             
 
             </ul>

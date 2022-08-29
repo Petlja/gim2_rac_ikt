@@ -6,6 +6,7 @@
     <title>Рачунање минимума и максимума</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -376,8 +379,10 @@
 <p>Сада ћемо научити како да одредимо најхладнији и најтоплији град по месецима.</p>
 <div class="section" id="id2">
 <h2>Корак 8.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Сада ћемо научити како да одредимо најхладнији и најтоплији град по месецима. У ћелију А17 упиши „Minimum“, а у ћелију A18 упиши „Maksimum“:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes15.jpg"><img alt="../_images/DataTypes15.jpg" class="align-center" src="../_images/DataTypes15.jpg" style="width: 600px;" /></a>
+<p>У ћелију А17 упиши „Minimum“, а у ћелију A18 упиши „Maksimum“:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes15.jpg"><img alt="../_images/DataTypes15.jpg" class="screenshot-shadow" src="../_images/DataTypes15.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id3">
 <h2>Корак 9.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
@@ -386,7 +391,9 @@
 </pre></div>
 </div>
 <p>Ова формула ће израчунати најмањи (MIN) од бројева B2, B3, …, B16 (B2:B16) и ту вредност уписати у ћелију B17:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes16.jpg"><img alt="../_images/DataTypes16.jpg" class="align-center" src="../_images/DataTypes16.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes16.jpg"><img alt="../_images/DataTypes16.jpg" class="screenshot-shadow" src="../_images/DataTypes16.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id4">
 <h2>Корак 10.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -395,18 +402,28 @@
 </pre></div>
 </div>
 <p>Ова формула ће израчунати највећи (MAX) од бројева B2, B3, …, B16 (B2:B16) и ту вредност уписати у ћелију B18:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes17.jpg"><img alt="../_images/DataTypes17.jpg" class="align-center" src="../_images/DataTypes17.jpg" style="width: 600px;" /></a>
-<p>Тако смо добили најнижу и највижу температуру у мају:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes18.jpg"><img alt="../_images/DataTypes18.jpg" class="align-center" src="../_images/DataTypes18.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes17.jpg"><img alt="../_images/DataTypes17.jpg" class="screenshot-shadow" src="../_images/DataTypes17.jpg" style="width: 780px;" /></a>
+</div>
+<p>Тако смо добили најнижу и највишу температуру у мају:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes18.jpg"><img alt="../_images/DataTypes18.jpg" class="screenshot-shadow" src="../_images/DataTypes18.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>Корак 11.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Да бисмо то исто урадили за јун, јул и август полсужићемо се комбинацијом трикова које смо научили – селектоваћемо ћелије B17 и B18:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes19.jpg"><img alt="../_images/DataTypes19.jpg" class="align-center" src="../_images/DataTypes19.jpg" style="width: 600px;" /></a>
+<p>Да бисмо то исто урадили за јун, јул и август послужићемо се комбинацијом трикова које смо научили – селектоваћемо ћелије B17 и B18:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes19.jpg"><img alt="../_images/DataTypes19.jpg" class="screenshot-shadow" src="../_images/DataTypes19.jpg" style="width: 780px;" /></a>
+</div>
 <p>па ћемо „ухватити за бубуљицу“ и развући селекцију до колоне Е:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes20.jpg"><img alt="../_images/DataTypes20.jpg" class="align-center" src="../_images/DataTypes20.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes20.jpg"><img alt="../_images/DataTypes20.jpg" class="screenshot-shadow" src="../_images/DataTypes20.jpg" style="width: 780px;" /></a>
+</div>
 <p>Тако смо добили најниже и највише температуре које су постигнуте у ова четири месеца:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes21.jpg"><img alt="../_images/DataTypes21.jpg" class="align-center" src="../_images/DataTypes21.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes21.jpg"><img alt="../_images/DataTypes21.jpg" class="screenshot-shadow" src="../_images/DataTypes21.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 </div>
 

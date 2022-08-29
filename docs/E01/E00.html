@@ -6,6 +6,7 @@
     <title>Програми за табеларна израчунавања</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -377,38 +380,35 @@
 у прилици да морамо да доносимо важне одлуке, што значи да смо све чешће у прилици да морамо да
 анализирамо податке. Анализа података постаје незаобилазан елемент чак и на личном нивоу.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Да ли узети кредит са нижом каматном стопом и дужим периодом отплате, или обрнуто?</p>
 
-    </p></div></div>
+    </div></div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>За брзе и краће позајмице новца од банке, да ли је боље определити се за кредитну картицу или за дозвољени минус?</p>
 
-    </p></div></div>
+    </div></div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Да ли је боље узети стамбени кредит који је индексиран у еврима, динарима или швајцарским францима?</p>
 
-    </p></div></div>
-<p>Ниједан од ових проблема се не може решити „у глави“, без озбиљне анализе услова који су везани за сваку опцију, и озбиљне анализе очекиваних прилива средстава у породицу. Дакле, без озбиљне <em>анализе података</em>.</p>
+    </div></div>
+<p>Ниједан од ових проблема се не може решити „у глави“, без озбиљне анализе услова који су у вези са сваком опцијом,
+и озбиљне анализе очекиваних прилива средстава у породици. Дакле, без озбиљне <em>анализе података</em>.</p>
 <p>Податке добијамо посматрањем, прикупљањем, анкетирањем… Обрадом података долазимо до <em>информације</em>:</p>
-<a class="reference internal image-reference" href="../_images/podatak-obrada-inf.jpg"><img alt="../_images/podatak-obrada-inf.jpg" class="align-center" src="../_images/podatak-obrada-inf.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/podatak-obrada-inf.jpg"><img alt="../_images/podatak-obrada-inf.jpg" src="../_images/podatak-obrada-inf.jpg" style="width: 780px;" /></a>
+</div>
 <div class="topic">
 <p class="topic-title"></p>
 <p><strong>Податак</strong> може бити неки број, неколико бројева, или пакет бројева представљен у облику табеле.</p>
@@ -417,7 +417,7 @@
 </div>
 <div class="section" id="id2">
 <h2>Пример<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Једна продавница рачунарске опреме на свом складишту има следеће производе (за сваки производ је наведена цена у динарима и количина на складишту):</p>
+<p>Продавница рачунарске опреме у свом складишту има следеће производе (за сваки производ је наведена цена у динарима и количина у складишту):</p>
 <table class="colwidths-given docutils align-left" id="id4">
 <caption><span class="caption-text">Стање у складишту</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -582,29 +582,29 @@
 </tr>
 </tbody>
 </table>
-<p>Колика је вредност робе на складишту? Израчунајте уз помоћ калкулатора, па проверите рачун са учеником до себе.</p>
+<p>Колика је вредност робе у складишту? Израчунајте уз помоћ калкулатора, па проверите рачун са учеником до себе.</p>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
-<p>Нама, људима, рачунање иде јако лоше. Зато смо направили рачунске машине да нам помогну приликом тог досадног посла!
+            
+<p>Нама, људима, рачунање иде релативно лоше. Зато смо направили рачунске машине да нам помогну приликом тог досадног посла!
 Хајде да их упослимо!</p>
 
-    </p></div></div>
+    </div></div>
 <p>Мајкрософтов Ексел (<em>Microsoft Excel</em>) представља један од најраспрострањенијих софтверских производа за обраду табеларно представљених података. Ексел своју популарност дугује томе што је табела
-у коју се уносе подаци „опипљива”, она је ту, корисник може само да кликне на поље и да унесе податак или формулу.
-Зато ћемо у наредних десетак лекција показати како се них разноврсних проблема може решити користећи овај софтверски алат.</p>
+у коју се уносе подаци „опипљива“, она је ту, корисник може само да кликне на поље и да унесе податак или формулу.
+Зато ћемо у наредних десетак лекција показати како се низ разноврсних проблема може решити користећи овај софтверски алат.</p>
 </div>
 <div class="section" id="id3">
 <h2>У овој лекцији<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>У овој лекцији ћемо видети:</p>
+<p>У овој лекцији ћете сазнати:</p>
 <ol class="arabic simple">
 <li><p>како се покреће Ексел,</p></li>
 <li><p>како се креће кроз табелу и како се уносе једноставни подаци,</p></li>
 <li><p>како се уносе једноставне формуле, и</p></li>
-<li><p>како се снима ексел документ.</p></li>
+<li><p>како се снима Ексел документ.</p></li>
 </ol>
 </div>
 </div>

@@ -6,6 +6,7 @@
     <title>Интелигентно копирање формула</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -379,23 +382,23 @@
 <p>Преузми табелу <em>Zarada.xlsx</em> са следећег линка и учитај је у Ексел:</p>
 <p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Zarada.xlsx">Zarada.xlsx</a></p>
 <p>Табела изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/Zarada1.jpg"><img alt="../_images/Zarada1.jpg" class="align-center" src="../_images/Zarada1.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada1.jpg"><img alt="../_images/Zarada1.jpg" class="align-center" src="../_images/Zarada1.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id3">
 <h2>Корак 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>У поље B1 унеси неки датум (датум за који се прави анализа), а у поље B2 унеси име продајног места (било какав текст).</p></li>
 <li><p>Спој ћелије A3:E3 (<em>Merge Cells</em>) и повећај величину слова текста у новој (великој) ћелији.</p></li>
-<li><p>Ћелије B2 и B4:E4 поравнај по десној ивици.</p></li>
+<li><p>Ћелије B4:E4 поравнај по десној ивици.</p></li>
 <li><p>За стил текста у ћелијама A4:E4 одабери <strong>bold</strong> и <em>italic</em>.</p></li>
 </ol>
 <p>Табела треба да изгледа отприлике овако:</p>
-<a class="reference internal image-reference" href="../_images/Zarada2.jpg"><img alt="../_images/Zarada2.jpg" class="align-center" src="../_images/Zarada2.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada2.jpg"><img alt="../_images/Zarada2.jpg" class="align-center" src="../_images/Zarada2.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id4">
 <h2>Корак 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>У ћелије B5:B15 унеси произвољне бројеве. Они представљају количину воћа која је продата, рецимо овако:</p>
-<a class="reference internal image-reference" href="../_images/Zarada3.jpg"><img alt="../_images/Zarada3.jpg" class="align-center" src="../_images/Zarada3.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada3.jpg"><img alt="../_images/Zarada3.jpg" class="align-center" src="../_images/Zarada3.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id5">
 <h2>Корак 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
@@ -404,7 +407,7 @@
 </pre></div>
 </div>
 <p>и онда ту формулу „развуци“ до краја листе:</p>
-<a class="reference internal image-reference" href="../_images/Zarada4.jpg"><img alt="../_images/Zarada4.jpg" class="align-center" src="../_images/Zarada4.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada4.jpg"><img alt="../_images/Zarada4.jpg" class="align-center" src="../_images/Zarada4.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id6">
 <h2>Корак 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
@@ -412,7 +415,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="n">D5</span><span class="p">:</span><span class="n">D15</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/Zarada5.jpg"><img alt="../_images/Zarada5.jpg" class="align-center" src="../_images/Zarada5.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada5.jpg"><img alt="../_images/Zarada5.jpg" class="align-center" src="../_images/Zarada5.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id7">
 <h2>Корак 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
@@ -421,36 +424,50 @@
 </pre></div>
 </div>
 <p>али ћемо сада показати бржи начин да се то уради. Користићемо наредбе из групе „Clipboard“:</p>
-<a class="reference internal image-reference" href="../_images/CopyPaste.jpg"><img alt="../_images/CopyPaste.jpg" class="align-center" src="../_images/CopyPaste.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/CopyPaste.jpg"><img alt="../_images/CopyPaste.jpg" class="align-center" src="../_images/CopyPaste.jpg" style="width: 780px;" /></a>
+<p>Кликом на дугме „Copy“ (1) садржај селектованог дела табеле се <em>копира</em> у посебан део меморије који се зове „Clipboard“ („подметач за писање“),
+док се кликом на дугме „Paste“ (2) садржај Clipboard-а уписује у документ.</p>
+<p><span class="math notranslate nohighlight">\(\ \)</span></p>
 <p>Пошто смо већ у ћелији D16 израчунали збир бројева у ћелијама D5:D15, и пошто је формула коју треба да унесемо у ћелију B15 „аналогна“, просто ћемо <em>ископирати</em> формулу из ћелије D16 у ћелију B16. Ево како.
-Кликни на ћелију D16 и онда кликни на икону која одговара операцији „Copy“ (енгл. „ископирај“):</p>
-<a class="reference internal image-reference" href="../_images/Zarada6.jpg"><img alt="../_images/Zarada6.jpg" class="align-center" src="../_images/Zarada6.jpg" style="width: 600px;" /></a>
+Кликни на ћелију D16 и онда кликни на икону која одговара операцији „Copy“ („ископирај“):</p>
+<a class="reference internal image-reference" href="../_images/Zarada6.jpg"><img alt="../_images/Zarada6.jpg" class="align-center" src="../_images/Zarada6.jpg" style="width: 780px;" /></a>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>У табели се ништа није десило, али је Ексел <em>ископирао</em> формулу у посебан део меморије који се зове <em>Clipboard</em>.</p>
 
-    </p></div></div>
-<p>Сада кликни на ћелију B16 и онда кликни на икону која одговара операцији „Paste“ (енгл. „налепи“) која ће садржај из <em>Clipboard</em>-а ископирати у ћелију на коју смо кликнули, <em>али интелигентно</em>:</p>
-<a class="reference internal image-reference" href="../_images/Zarada7.jpg"><img alt="../_images/Zarada7.jpg" class="align-center" src="../_images/Zarada7.jpg" style="width: 600px;" /></a>
+    </div></div>
+<p>Сада кликни на ћелију B16 и онда кликни на икону која одговара операцији „Paste“ („налепи“) која ће садржај из <em>Clipboard</em>-а ископирати у ћелију на коју смо кликнули, <em>али интелигентно</em>:</p>
+<a class="reference internal image-reference" href="../_images/Zarada7.jpg"><img alt="../_images/Zarada7.jpg" class="align-center" src="../_images/Zarada7.jpg" style="width: 780px;" /></a>
 <p>Ексел је ископирао формулу у ћелију B16, али се прилагодио чињеници да смо формулу пренели из колоне D у колону B. Зато сада у колони B16 пише:</p>
-<a class="reference internal image-reference" href="../_images/Zarada8.jpg"><img alt="../_images/Zarada8.jpg" class="align-center" src="../_images/Zarada8.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/Zarada8.jpg"><img alt="../_images/Zarada8.jpg" class="align-center" src="../_images/Zarada8.jpg" style="width: 780px;" /></a>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
+<p>Ова операција је веома важна и у жаргону се зове <em>Copy/Paste</em>. Пошто се <em>Copy/Paste</em> акција користи веома често
+у свакодневном раду, уведене су пречице са тастатуре којима се постиже исти ефекат:</p>
 <ul class="simple">
-<li><p>Ова операција је веома важна и у жаргону се зове <em>Copy/Paste</em>.</p></li>
-<li><p>Ако je садржај који се копира број, датум, време или текст, приликом копирања неће ништа бити промењено. <em>Али, ако је садржај који се копира формула, она ће бити прилагођена положају нове ћелије и биће измењена на одговарајући начин!</em>  Ово својство Ексела зовемо <em>интелигентно копирање формула</em>.</p></li>
-<li><p>Oперација „развлачења ћелије за бубуљицу“ коју смо до сада користили да брзо копирамо формуле је само вишеструка примена операције <em>Copy/Paste</em>.</p></li>
+<li><p>[Ctrl]+[C] је пречица за акцију <em>Copy</em>, а</p></li>
+<li><p>[Ctrl]+[V] је пречица за акцију <em>Paste</em>.</p></li>
 </ul>
 
-    </p></div></div>
+    </div></div>
+<p>Oперација „развлачења ћелије за бубуљицу“, коју смо до сада користили да брзо копирамо формуле, само је вишеструка примена операције <em>Copy/Paste</em>.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Ако je садржај који се копира број, датум, време или текст, приликом копирања неће ништа бити промењено. <em>Али ако је садржај који се копира формула, она ће бити прилагођена положају нове ћелије и биће измењена на одговарајући начин!</em>  Ово својство Ексела зовемо <em>интелигентно копирање формула</em>.</p>
+
+    </div></div>
 </div>
 </div>
 

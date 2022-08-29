@@ -6,6 +6,7 @@
     <title>Уређивање табеле</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -375,54 +378,61 @@
 <h1>Уређивање табеле<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Табела сада садржи све податке које смо желели у њу да спакујемо, али је доста непрегледна. Ми, људи, нисмо добри у тумачењу велике количине бројева – много боље нам иду слике. Зато ћемо мало улепшати табелу како бисмо истакли оно што смо уочили и како бисмо раздвојили различите врсте података.</p>
 <p>За истицање елемената у табели користимо сегмент команди које се налазе у групи „Font“:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes22.jpg"><img alt="../_images/DataTypes22.jpg" class="align-center" src="../_images/DataTypes22.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes22.jpg"><img alt="../_images/DataTypes22.jpg" class="screenshot-shadow" src="../_images/DataTypes22.jpg" style="width: 780px;" /></a>
+</div>
 <p>Команде представљене иконама у овој групи већ познајеш:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes23.jpg"><img alt="../_images/DataTypes23.jpg" class="align-center" src="../_images/DataTypes23.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes23.jpg"><img alt="../_images/DataTypes23.jpg" class="screenshot-shadow" src="../_images/DataTypes23.jpg" style="width: 780px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>Промена облика слова (фонт).</p></li>
+<li><p>Промена величине слова директним одабиром величине.</p></li>
+<li><p>Повећавање или смањивање величине слова.</p></li>
+<li><p>Промена стила слова: <strong>B</strong> - <strong>bold</strong>, подебљана слова;
+<em>I</em> - <em>italic</em>, искошена слова; U - underline, подвучена слова.</p></li>
+<li><p>Постављање оквира око ћелије или групе ћелија.</p></li>
+<li><p>Одабир боје позадине ћелије или групе ћелија.</p></li>
+<li><p>Одабир боје слова у ћелији или групи ћелија.</p></li>
+</ol>
 <div class="section" id="id2">
 <h2>Корак 12.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Постави боју слова у заглављу табеле (ћелије А1:К1) на бело, а боју позадине ћелија на тамно сиво тако што ћеш</p>
 <ol class="arabic simple">
-<li><p>селектовати ћелије А1:К1</p></li>
+<li><p>селектовати ћелије А1:К1,</p></li>
 <li><p>кликнути на стрелицу поред иконе за подешавање боје слова и одабрати белу боју, и</p></li>
 <li><p>кликнути на стрелицу поред иконе за подешавање боје позадине ћелије и одабрати тамно сиву.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/DataTypes24.jpg"><img alt="../_images/DataTypes24.jpg" class="align-center" src="../_images/DataTypes24.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes24.jpg"><img alt="../_images/DataTypes24.jpg" class="screenshot-shadow" src="../_images/DataTypes24.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id3">
 <h2>Корак 13.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>За слова у ћелијама А17:Е18 (минималне и максималне температуре):</p>
 <ol class="arabic simple">
-<li><p>као стил одабери <strong>B</strong> (енгл. <em>bold</em> што значи „подебљано“),</p></li>
+<li><p>као стил одабери <strong>B</strong> (енг. <em>bold</em> што значи „подебљано“),</p></li>
 <li><p>зеленом обој слова која одговарају минималним температурама, а</p></li>
 <li><p>црвеном обој слова која одговарају максималним температурама.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/DataTypes25.jpg"><img alt="../_images/DataTypes25.jpg" class="align-center" src="../_images/DataTypes25.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes25.jpg"><img alt="../_images/DataTypes25.jpg" class="screenshot-shadow" src="../_images/DataTypes25.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id4">
 <h2>Корак 14.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Позадину ћелија које одговарају просечним температурама (F2:F16 и K2:K16) обој жуто:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes26.jpg"><img alt="../_images/DataTypes26.jpg" class="align-center" src="../_images/DataTypes26.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes26.jpg"><img alt="../_images/DataTypes26.jpg" class="screenshot-shadow" src="../_images/DataTypes26.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>Корак 15.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Температуре које су исказане у степенима Фаренхајта (ћелије G2:J16) обој светло плаво:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes27.jpg"><img alt="../_images/DataTypes27.jpg" class="align-center" src="../_images/DataTypes27.jpg" style="width: 600px;" /></a>
-<p>Ево и кратке демонстрације:</p>
-
-    <div  id="UJO0UHws164" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/UJO0UHws164/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-UJO0UHws164" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-UJO0UHws164">
-        </div>
-    </div>
-    
-    
-    </div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes27.jpg"><img alt="../_images/DataTypes27.jpg" class="screenshot-shadow" src="../_images/DataTypes27.jpg" style="width: 780px;" /></a>
+</div>
+</div>
 <div class="section" id="id6">
 <h2>Корак 16.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>Коначно, у делу табеле B2:E16 где су температуре исказане у степенима Целзијуса</p>
@@ -431,8 +441,10 @@
 <li><p>обој светло црвено позадину сваке ћелије која садржи температуру која је максимална за тај месец.</p></li>
 </ol>
 <p>Треба да добијеш:</p>
-<a class="reference internal image-reference" href="../_images/DataTypes28.jpg"><img alt="../_images/DataTypes28.jpg" class="align-center" src="../_images/DataTypes28.jpg" style="width: 600px;" /></a>
-<p>Шта закљућујеш гледајући само у боје ћелија?</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/DataTypes28.jpg"><img alt="../_images/DataTypes28.jpg" class="screenshot-shadow" src="../_images/DataTypes28.jpg" style="width: 780px;" /></a>
+</div>
+<p>Шта закључујеш гледајући само у боје ћелија?</p>
 </div>
 </div>
 

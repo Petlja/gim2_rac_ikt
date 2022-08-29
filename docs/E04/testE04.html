@@ -6,6 +6,7 @@
     <title>Квиз</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -376,19 +379,23 @@
 <div class="section" id="id2">
 <h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_7_Питање1">
             <p>Q-19: Једна ћелија у Ексел табели може да садржи:</p>
 
-            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_a">број</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_a">А формуле?</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_a">Број</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_a">А формуле?</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_b">текст</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_b">А бројеви?</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_b">Текст</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_b">А бројеви?</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_c">датум</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_c">А текст?</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_c">Датум</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_c">А текст?</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_d">време</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_d">А текст?</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање1_opt_d">Време</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_d">А текст?</li>
             
-            <li data-component="answer" data-correct id="ТестЕ1_7_Питање1_opt_e">све горе наведено</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_e">Тачно!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_7_Питање1_opt_e">Све горе наведено</li><li data-component="feedback" id="ТестЕ1_7_Питање1_opt_e">Тачно!</li>
             
 
             </ul>
@@ -397,17 +404,21 @@
 <div class="section" id="id3">
 <h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_7_Питање2">
             <p>Q-20: Означи НЕТАЧАН исказ:</p>
 
-            <li data-component="answer" data-correct id="ТестЕ1_7_Питање2_opt_a">У Екселу је могуће рачунати само са бројевима</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_a">Тако је!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_7_Питање2_opt_a">У Екселу је могуће рачунати само са бројевима.</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_a">Тако је!</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање2_opt_b">У Екселу је могуће рачунати са датумима</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_b">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање2_opt_b">У Екселу је могуће рачунати са датумима.</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_b">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање2_opt_c">У Екселу је могуће рачунати са временом</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_c">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање2_opt_c">У Екселу је могуће рачунати са временом.</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_c">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање2_opt_d">У Екселу је могуће рачунати са валутама</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_d">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање2_opt_d">У Екселу је могуће рачунати са валутама.</li><li data-component="feedback" id="ТестЕ1_7_Питање2_opt_d">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
 
             </ul>
@@ -416,17 +427,21 @@
 <div class="section" id="id4">
 <h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_7_Питање3">
             <p>Q-21: Означи НЕТАЧАН исказ:</p>
 
-            <li data-component="answer"  id="ТестЕ1_7_Питање3_opt_a">Ћелијама које садрже валуту се може додати ознака валуте</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_a">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање3_opt_a">Ћелијама које садрже валуту се може додати ознака валуте.</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_a">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање3_opt_b">Вредности у ћелијама које садрже валуту се могу заокружити на три децимале</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_b">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање3_opt_b">Вредности у ћелијама које садрже валуту се могу заокружити на три децимале.</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_b">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
-            <li data-component="answer" data-correct id="ТестЕ1_7_Питање3_opt_c">Вредности у ћелијама које садрже валуту се могу заокружити највише на две децимале</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_c">Тако је!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_7_Питање3_opt_c">Вредности у ћелијама које садрже валуту се могу заокружити највише на две децимале.</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_c">Тако је!</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање3_opt_d">Ознака валуте која је додата ћелији која садржи валуту не утиче на нумеричку вредност ћелије</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_d">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање3_opt_d">Ознака валуте која је додата ћелији која садржи валуту не утиче на нумеричку вредност ћелије.</li><li data-component="feedback" id="ТестЕ1_7_Питање3_opt_d">Покушај поново! (Тражи се НЕТАЧАН исказ)</li>
             
 
             </ul>
@@ -435,7 +450,11 @@
 <div class="section" id="id5">
 <h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ТестЕ1_7_Питање4">
             <p>Q-22: Када у некој ћелији Ексел прикаже</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>#############
@@ -443,13 +462,13 @@
 </div>
 <p>то значи:</p>
 
-            <li data-component="answer"  id="ТестЕ1_7_Питање4_opt_a">Да ћелија садржи коментар</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_a">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање4_opt_a">Да ћелија садржи коментар.</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_a">Покушај поново!</li>
             
-            <li data-component="answer" data-correct id="ТестЕ1_7_Питање4_opt_b">Да вредност ћелије не може да се прикаже зато што је ћелија сувише уска</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_b">Тачно!</li>
+            <li data-component="answer" data-correct id="ТестЕ1_7_Питање4_opt_b">Да вредност ћелије не може да се прикаже зато што је ћелија сувише уска.</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_b">Тачно!</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање4_opt_c">Да је садржај ћелије избрисан јер Ексел није могао да прикаже број који је у њу смештен</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_c">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање4_opt_c">Да је садржај ћелије избрисан јер Ексел није могао да прикаже број који је у њу смештен.</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_c">Покушај поново!</li>
             
-            <li data-component="answer"  id="ТестЕ1_7_Питање4_opt_d">Да је дошло до грешке у рачунању</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_d">Покушај поново!</li>
+            <li data-component="answer"  id="ТестЕ1_7_Питање4_opt_d">Да је дошло до грешке у рачунању.</li><li data-component="feedback" id="ТестЕ1_7_Питање4_opt_d">Покушај поново!</li>
             
 
             </ul>

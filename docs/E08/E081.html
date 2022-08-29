@@ -6,6 +6,7 @@
     <title>Сортирање података</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -374,53 +377,71 @@
   <div class="section" id="id1">
 <h1>Сортирање података<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Показаћемо сада како се у Екселу могу сортирати табеле.
-Приликом сортирања табеле Ексел преуређује врсте табеле
+Приликом сортирања Ексел преуређује врсте табеле
 тако да бројеви уписани у неку колону буду поређани по величини.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Ексел може да сортира и нумеричке податке (бројеве) и текстуалне податке (рецимо, имена)!</p>
+
+    </div></div>
+<p>Прво ћемо показати сортирање нумеричких података.</p>
 <div class="section" id="id2">
 <h2>Корак 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Са следећег линка преузми документ <em>Top25YouTubers.xlsx</em> и сними га на свој рачунар:</p>
 <p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/informatika_VIII/epodaci/Top25YouTubers.xlsx">YouTubers.xlsx</a></p>
 <p>Табела садржи податке о првих 25 YouTube канала према броју претплатника на дан 1. јул 2019:</p>
-<a class="reference internal image-reference" href="../_images/YT1.jpg"><img alt="../_images/YT1.jpg" class="align-center" src="../_images/YT1.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT1.jpg"><img alt="../_images/YT1.jpg" class="screenshot-shadow" src="../_images/YT1.jpg" style="width: 780px;" /></a>
+</div>
 <p>За сваки канал је наведен његов YouTube ранг (GRADE), име канала (NAME), колико је видеа објављено на каналу (VIDEOS),
 колико има претплатника (SUBSCRIBERS) и колико има прегледа (VIEWS). Табела jе сортирана по броју претплатника.</p>
 </div>
 <div class="section" id="id3">
 <h2>Корак 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Сортираћемо сада табелу по броју прегледа (VIEWS). Селектоваћемо целу табелу <em>заједно са првом врстом у којој су наведена имена колона</em>:</p>
-<a class="reference internal image-reference" href="../_images/YT2.jpg"><img alt="../_images/YT2.jpg" class="align-center" src="../_images/YT2.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT2.jpg"><img alt="../_images/YT2.jpg" class="screenshot-shadow" src="../_images/YT2.jpg" style="width: 780px;" /></a>
+</div>
 <p>Прећи ћемо на командну траку „Data“ и одабрати опцију „Sort“:</p>
-<a class="reference internal image-reference" href="../_images/YT3.jpg"><img alt="../_images/YT3.jpg" class="align-center" src="../_images/YT3.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT3.jpg"><img alt="../_images/YT3.jpg" class="screenshot-shadow" src="../_images/YT3.jpg" style="width: 780px;" /></a>
+</div>
 <p>Појавиће се прозор у коме можемо да одаберемо колону по којој ће бити сортирана табела:</p>
-<a class="reference internal image-reference" href="../_images/YT4.jpg"><img alt="../_images/YT4.jpg" class="align-center" src="../_images/YT4.jpg" style="width: 600px;" /></a>
-<p>У одељку „Column“ (енгл. „колона“) кликнемо на стрелицу, па у листи која се појавила одаберемо „VIEWS“ јер желимо да сортирамо табелу по броју прегледа (колона „VIEWS“):</p>
-<a class="reference internal image-reference" href="../_images/YT5.jpg"><img alt="../_images/YT5.jpg" class="align-center" src="../_images/YT5.jpg" style="width: 600px;" /></a>
-<p>Потом у одељку „Order“ (енгл. „редослед“) кликнемо на стрелицу, па у листи која се појавила одаберемо „Largest to Smallest“ јер желимо да сортирамо табелу од већих ка мањим вредностима. (Да смо којим случајем правили „листу срама“, одабрали бисмо опцију „Smallest to Largest“ која би наложила Екселу да сортира табелу од канала са најмање прегледа до канала са највише прегледа.)</p>
-<a class="reference internal image-reference" href="../_images/YT6.jpg"><img alt="../_images/YT6.jpg" class="align-center" src="../_images/YT6.jpg" style="width: 600px;" /></a>
-<p>Када кликнемо на „OK“ добијамо сортирану табелу (редови су испремештани тако да на првом месту буде канал са највише прегледа):</p>
-<a class="reference internal image-reference" href="../_images/YT7.jpg"><img alt="../_images/YT7.jpg" class="align-center" src="../_images/YT7.jpg" style="width: 600px;" /></a>
-<p>Ево и кратког видеа:</p>
-
-    <div  id="8LVLF73jbhE" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/8LVLF73jbhE/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-8LVLF73jbhE" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-8LVLF73jbhE">
-        </div>
-    </div>
-    
-    
-    </div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT4.jpg"><img alt="../_images/YT4.jpg" class="screenshot-shadow" src="../_images/YT4.jpg" style="width: 780px;" /></a>
+</div>
+<p>Кликни на стрелицу поред „Sort by“ (1),
+па у листи која се појавила (2) одабери „VIEWS“
+јер желимо да сортирамо табелу по броју прегледа (колона „VIEWS“):</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT5.jpg"><img alt="../_images/YT5.jpg" class="screenshot-shadow" src="../_images/YT5.jpg" style="width: 780px;" /></a>
+</div>
+<p>Потом у одељку „Order“ („редослед“) кликнемо на стрелицу (1), па у листи која се појавила одаберемо „Largest to Smallest“ (2)
+јер желимо да сортирамо табелу од већих ка мањим вредностима. (Да смо којим случајем правили „листу срама“, одабрали бисмо опцију „Smallest to Largest“,
+која би наложила Екселу да сортира табелу од канала са најмање прегледа до канала са највише прегледа.)
+Онда кликни на „OK“ (3):</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT6.jpg"><img alt="../_images/YT6.jpg" class="screenshot-shadow" src="../_images/YT6.jpg" style="width: 780px;" /></a>
+</div>
+<p>Када кликнемо на „OK“, добијамо сортирану табелу (редови су испремештани тако да на првом месту буде канал са највише прегледа):</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT7.jpg"><img alt="../_images/YT7.jpg" class="screenshot-shadow" src="../_images/YT7.jpg" style="width: 780px;" /></a>
+</div>
+</div>
 <div class="section" id="id4">
 <h2>Корак 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Прикажимо број прегледа по каналима хистограмом. Означимо ћелије B1:B26 и онда <em>притиснемо тастер [CTRL] и држећи га притиснутог</em> означимо још и ћелије E1:E26.</p>
-<a class="reference internal image-reference" href="../_images/YT7b.jpg"><img alt="../_images/YT7b.jpg" class="align-center" src="../_images/YT7b.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT7b.jpg"><img alt="../_images/YT7b.jpg" class="screenshot-shadow" src="../_images/YT7b.jpg" style="width: 780px;" /></a>
+</div>
 <p>Онда одаберемо командну траку „Insert“ и са ње опцију за креирање стубичастих дијаграма, па одаберемо стил који нам се највише свиђа. Ако је потребно, преместимо дијаграм да не прекрива податке:</p>
-<a class="reference internal image-reference" href="../_images/YT7d.jpg"><img alt="../_images/YT7d.jpg" class="align-center" src="../_images/YT7d.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/YT7d.jpg"><img alt="../_images/YT7d.jpg" class="screenshot-shadow" src="../_images/YT7d.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 </div>
 

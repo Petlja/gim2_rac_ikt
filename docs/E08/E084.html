@@ -6,6 +6,7 @@
     <title>Задаци за вежбу</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -380,10 +383,10 @@
 <p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Cricket.xlsx">Cricket.xlsx</a></p>
 <p>Табела садржи податке о најбољим играчима крикета у историји крикета.</p>
 <p><em>Корак 1.</em> Прошири колоне табеле ако је потребно.</p>
-<p><em>Корак 2.</em> За сваког такмичара у табели израчунај параметар ARY (= Average Runs per Year) тако што ћеш поделити вредност у колони Runs разликом бројева у колонама From и To. То нам за сваког такмичара каже колико је просечно има ранова по години активног играња.</p>
+<p><em>Корак 2.</em> За сваког такмичара у табели израчунај параметар ARY (= Average Runs per Year) тако што ћеш поделити вредност у колони „Runs“ разликом бројева у колонама „From“ и „To“. То нам за сваког такмичара каже колико је просечно има „ранова“ по години активног играња.</p>
 <p><em>Корак 3.</em> Сортирај табелу по колони ARY од већих вредности ка мањим.</p>
 <p><em>Корак 4.</em> Позадину ћелија за првих 25 играча у овако сортираној табели обој светло плавом.</p>
-<p><em>Корак 5.</em> Међу првих 25 играча у овако сортираној табели нађи оне који су завршили своју каријеру током XX века и позадину ћелија у којима су подаци о њима оној светло црвено.</p>
+<p><em>Корак 5.</em> Међу првих 25 играча у овако сортираној табели нађи оне који су завршили своју каријеру током 20. века и позадину ћелија у којима су подаци о њима обој светло-црвено.</p>
 <p>Шта уочаваш?</p>
 <p><strong>Задатак 3.</strong>  Са следећег линка преузми документ <em>Plivanje.xlsx</em> и сними га на свој рачунар:</p>
 <p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Plivanje.xlsx">Plivanje.xlsx</a></p>
@@ -392,14 +395,14 @@
 <p>Такмичар се квалификовао у Б финале ако је испунио норму за Б финале, односно, ако је просечно време које му је потребно да преплива 50 м мање или једнако од норме за Б финале, и при томе се <em>није квалификовао</em> у А финале.</p>
 <p><em>Корак 1.</em> Прошири колоне табеле ако је потребно.</p>
 <p><em>Корак 2.</em> За сваког такмичара у табели израчунај просечно време које му је било потребно да преплива 50 м.</p>
-<p><em>Корак 3.</em> Одредити колико такмичара се квалификовало за А финале, а колико за Б финале. Ове податке немој рачунати ручно већ користи функцију COUNTIF.</p>
+<p><em>Корак 3.</em> Одредити колико се такмичара квалификовало за А финале, а колико за Б финале. Ове податке немој рачунати ручно већ користи функцију COUNTIF.</p>
 <p><strong>Задатак 4.</strong> Са следећег линка преузми датотеку која садржи податке о берачима воћа на једној плантажи:</p>
 <p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/JabukeNorma.xlsx">JabukeNorma.xlsx</a></p>
 <ul class="simple">
 <li><p>Прошири колоне ако је потребно и улепшај табелу.</p></li>
 <li><p>Одреди укупну количину јабука, крушака и трешања које су убране.</p></li>
 <li><p>За сваког берача утврди колико је зарадио ако знаш да су износи убраног воћа дати у килограмима, а цена брања по килограму воћа је дата испод табеле са берачима.</p></li>
-<li><p>За сваког берача утврди колико је укупно килограма воћа убрао, па на основу тога утврди колико берача је испунило норму, а колико није. Добијене податке упиши у ћелије Е25, односно, Е26. (Берач је испунио норму ако је убрао барем ону количину воћа која је уписана у ћелију B23; податке о броју берача који су или нису испунили норму немој рачунати ручно већ користи функцију COUNTIF).</p></li>
+<li><p>За сваког берача утврди колико је укупно килограма воћа убрао, па на основу тога утврди колико берача је испунило норму, а колико није. Добијене податке упиши у ћелије Е25, односно, Е26. (Берач је испунио норму ако је убрао барем ону количину воћа која је уписана у ћелију B23; податке о броју берача који јесу или нису испунили норму немој рачунати ручно већ користи функцију COUNTIF).</p></li>
 </ul>
 </div>
 

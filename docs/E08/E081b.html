@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Визуелизација удела у целини – Секторски дијаграми</title>
+    <title>Сортирање текстуалних података</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
     <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
@@ -375,50 +375,76 @@
     <div id="main-content">
     
   <div class="section" id="id1">
-<h1>Визуелизација удела у целини – Секторски дијаграми<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Ако желимо да визуелизујемо у којој мери појединачни делови учествују
-у целини, користимо <em>секторски дијаграм</em> (или <em>питасти дијаграм</em>, од енг. <em>pie chart</em>).</p>
+<h1>Сортирање текстуалних података<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Показаћемо сада да Ексел може да сортира и текстуалне податке
+(на пример, списак ученика по презимену). Процедура је иста као
+у случају сортирања бројева, с тим да ће редослед сортираних података
+зависити од писма, што и не изненађује! Рецимо, ако треба по имену ученика
+сортирати табелу у којој су имена написана ћирилицом, Ексел ће их сортирати азбучно,
+а ако су имена написана латиницом – абецедно.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Текстуални подаци се сортирају према <em>лексикографском</em> поретку.
+Лексикографски поредак зависи од редоследа слова у писму којим су подаци
+записани.</p>
+
+    </div></div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Потражи на Интернету или питај наставника шта је то <em>лексикографија</em>
+(помоћ: „λέξις“ на грчком значи <em>реч</em>; „γραφία“ на грчком значи <em>записивање</em>).</p>
+
+    </div></div>
+<p>На пример, приликом сортирања речи записаних ћирилицом, реч „азбука“ ће се
+појавити пре речи „амбуланта“ зато што се у ћирилици слово „з“ јавља пре слова „м“.
+С друге стране, ако су речи записане латиницом тада ће се реч
+„ambulanta“ појавити пре речи „azbuka“ јер се у латиници слово „m“ јавља пре слова „z“.</p>
 <div class="section" id="id2">
-<h2>Корак 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Преузми поново документ <em>Zarada2.xlsx</em> и сними га на свој рачунар (ако треба, „прегази“ стару верзију документа):</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/informatika_VIII/epodaci/Zarada2.xlsx">Zarade</a></p>
+<h2>Корак 1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Са следећег линка</p>
+<p><a class="reference external" href="../../_static/OskarNom.xlsx">OskarNom.xlsx</a></p>
+<p>преузми фајл који садржи списак свих наших филмова који су номиновани за популарну филмску
+награду „Оскар“ и отвори га:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Oskar1.jpg"><img alt="../_images/Oskar1.jpg" class="screenshot-shadow" src="../_images/Oskar1.jpg" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id3">
-<h2>Корак 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Пређи на командну траку „Insert“ и уочи (немој још ништа да кликнеш!) опцију која црта секторске дијаграме:</p>
+<h2>Корак 2<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Видимо да је табела сортирана по годинама када је филм номинован.
+Сортираћемо сада табелу по режисерима. Селектуј све податке у табели, укључујући и имена колона:</p>
 <div class="figure align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/Zarada207.jpg"><img alt="../_images/Zarada207.jpg" class="screenshot-shadow" src="../_images/Zarada207.jpg" style="width: 780px;" /></a>
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Oskar2.jpg"><img alt="../_images/Oskar2.jpg" class="screenshot-shadow" src="../_images/Oskar2.jpg" style="width: 780px;" /></a>
 </div>
 </div>
 <div class="section" id="id4">
-<h2>Корак 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Поново селектуј <em>две групе података</em>:</p>
-<ol class="arabic simple">
-<li><p>селектуј ћелије A2:A11 као и раније, па</p></li>
-<li><p>притисни тастер [CTRL] и <em>држећи га притиснутог</em> селектуј ћелије D2:D11.</p></li>
-</ol>
+<h2>Корак 3<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Пређи на командну траку „Data“ (1), кликни на дугме „Sort“ (2), па у менију који се појави
+у листи „Sort by“ (3) одабери „Режија“, у листи „Order“ (4) провери да стоји
+„A to Z“ (што значи да ће сортирање ићи од А до Ш јер су подаци ћирилични!) и кликни „OK“ (5):</p>
 <div class="figure align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/Zarada203.jpg"><img alt="../_images/Zarada203.jpg" class="screenshot-shadow" src="../_images/Zarada203.jpg" style="width: 780px;" /></a>
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Oskar3.jpg"><img alt="../_images/Oskar3.jpg" class="screenshot-shadow" src="../_images/Oskar3.jpg" style="width: 780px;" /></a>
 </div>
-</div>
-<div class="section" id="id5">
-<h2>Корак 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Сада кликни на опцију која црта секторске дијаграме и одабери стил који ти се највише свиђа:</p>
+<p>Добијамо табелу сортирану по имену и презимену режисера:</p>
 <div class="figure align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/Zarada208.jpg"><img alt="../_images/Zarada208.jpg" class="screenshot-shadow" src="../_images/Zarada208.jpg" style="width: 780px;" /></a>
+<a class="screenshot-shadow reference internal image-reference" href="../_images/Oskar4.jpg"><img alt="../_images/Oskar4.jpg" class="screenshot-shadow" src="../_images/Oskar4.jpg" style="width: 780px;" /></a>
 </div>
-<p>Добили смо дијаграм:</p>
-<div class="figure align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/Zarada209.jpg"><img alt="../_images/Zarada209.jpg" class="screenshot-shadow" src="../_images/Zarada209.jpg" style="width: 780px;" /></a>
-</div>
-<p>који опет можемо мало уредити ако прекрива текст:</p>
-<div class="figure align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/Zarada210.jpg"><img alt="../_images/Zarada210.jpg" class="screenshot-shadow" src="../_images/Zarada210.jpg" style="width: 780px;" /></a>
-</div>
-<p>Ако кликнемо на дијаграм, Ексел ће нам приказати који су подаци приказани на дијаграму:</p>
-<div class="figure align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/Zarada211.jpg"><img alt="../_images/Zarada211.jpg" class="screenshot-shadow" src="../_images/Zarada211.jpg" style="width: 780px;" /></a>
-</div>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Уколико су подаци унети у табелу латичичним писмом, поступак је исти!</p>
+
+    </div></div>
 </div>
 </div>
 
@@ -427,7 +453,7 @@
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="E072.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  <a  href="E081.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>

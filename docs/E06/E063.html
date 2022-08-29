@@ -6,6 +6,7 @@
     <title>Прерачун валута</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -257,8 +259,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E04/E04.html><div class="studioLecture" id=activity-E04><i class="fas fa-file-alt activity-icon"></i>Разне врсте података у табели</div></a>
-                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E042.html><div class="studioLecture" id=activity-E042><i class="fas fa-file-alt activity-icon"></i>Датуми у Ексел табели</div></a>
+                <a href=../E04/E041.html><div class="studioLecture" id=activity-E041><i class="fas fa-file-alt activity-icon"></i>Валуте у Ексел табели</div></a>
                 <a href=../E04/E043.html><div class="studioLecture" id=activity-E043><i class="fas fa-file-alt activity-icon"></i>Време у Ексел табели</div></a>
                 <a href=../E04/E044.html><div class="studioLecture" id=activity-E044><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
                 <a href=../E04/testE04.html><div class="studioLecture" id=activity-testE04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
@@ -321,6 +323,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../E08/E08.html><div class="studioLecture" id=activity-E08><i class="fas fa-file-alt activity-icon"></i>Сортирање, филтрирање и фреквенцијска анализа</div></a>
                 <a href=../E08/E081.html><div class="studioLecture" id=activity-E081><i class="fas fa-file-alt activity-icon"></i>Сортирање података</div></a>
+                <a href=../E08/E081b.html><div class="studioLecture" id=activity-E081b><i class="fas fa-file-alt activity-icon"></i>Сортирање текстуалних података</div></a>
                 <a href=../E08/E082.html><div class="studioLecture" id=activity-E082><i class="fas fa-file-alt activity-icon"></i>Филтрирање података</div></a>
                 <a href=../E08/E083.html><div class="studioLecture" id=activity-E083><i class="fas fa-file-alt activity-icon"></i>Фреквенцијска анализа</div></a>
                 <a href=../E08/E084.html><div class="studioLecture" id=activity-E084><i class="fas fa-file-alt activity-icon"></i>Задаци за вежбу</div></a>
@@ -376,24 +379,24 @@
 <p>Показаћемо сада још један пример у коме се природно користе апсолутне адресе ћелија.</p>
 <div class="section" id="id2">
 <h2>Корак 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Са следећег линка преузми документ <em>PriceList.xlsx</em> који садржи ценовник једне радње у три валуте: еврима, британским фунтама и динарима:</p>
+<p>Са следећег линка преузми документ <em>PriceList.xlsx</em>, који садржи ценовник једне радње у три валуте: еврима, британским фунтама и динарима:</p>
 <p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/PriceList.xlsx">PriceList.xlsx</a></p>
 <p>Табела изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/PriceList1.jpg"><img alt="../_images/PriceList1.jpg" class="align-center" src="../_images/PriceList1.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PriceList1.jpg"><img alt="../_images/PriceList1.jpg" class="align-center" src="../_images/PriceList1.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id3">
 <h2>Корак 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Прво ћемо мало да улепшамо табелу.</p>
 <ol class="arabic simple">
-<li><p>Спој (<em>Merge Cells</em>) ћелије A1:D1 (наслов табле), постави величину слова на 16, обој позадину ових ћелија тамно сиво, а слова бело.</p></li>
+<li><p>Спој (<em>Merge Cells</em>) ћелије A1:D1 (наслов табле), постави величину слова на 16, обој позадину ових ћелија тамно-сиво, а слова бело.</p></li>
 <li><p>Постави величину слова у ћелијама A2:D3 на 12.</p></li>
-<li><p>Спој (<em>Merge Cells</em>) ћелије A15:C15 (наслов мале табеле); обој позадину ових ћелија тамно сиво, а слова бело.</p></li>
+<li><p>Спој (<em>Merge Cells</em>) ћелије A15:C15 (наслов мале табеле); обој позадину ових ћелија тамно-сиво, а слова бело.</p></li>
 <li><p>Прошири колоне A, B, C и D тако да сав садржај буде видљив.</p></li>
-<li><p>Спој (<em>Merge Cells</em>) ћелије A2 и A3 и центрирај садржај вертикално.</p></li>
-<li><p>Спој (<em>Merge Cells</em>) ћелије B2:D2</p></li>
+<li><p>Спој (<em>Merge Cells</em>) ћелије A2 и A3 и центрирај садржај <em>вертикално</em>.</p></li>
+<li><p>Спој (<em>Merge Cells</em>) ћелије B2:D2.</p></li>
 </ol>
 <p>Табела сада изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/PriceList2.jpg"><img alt="../_images/PriceList2.jpg" class="align-center" src="../_images/PriceList2.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PriceList2.jpg"><img alt="../_images/PriceList2.jpg" class="align-center" src="../_images/PriceList2.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id4">
 <h2>Корак 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -401,7 +404,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= B4*$B$16
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/PriceList3.jpg"><img alt="../_images/PriceList3.jpg" class="align-center" src="../_images/PriceList3.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PriceList3.jpg"><img alt="../_images/PriceList3.jpg" class="align-center" src="../_images/PriceList3.jpg" style="width: 780px;" /></a>
 <p>У овој формули ћелија B4 није фиксирана јер приликом копирања формуле у следећи ред желимо да она постане B5
 (и тако добијемо формулу која конвертује у британске фунте цену наредног производа на листи).
 С друге стране, ћелија B16 је фиксирана изразом $B$16 јер се на сваки ред табеле примењује курс фунте из ћелије B16,
@@ -410,11 +413,11 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= B4*$B$17
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/PriceList4.jpg"><img alt="../_images/PriceList4.jpg" class="align-center" src="../_images/PriceList4.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PriceList4.jpg"><img alt="../_images/PriceList4.jpg" class="align-center" src="../_images/PriceList4.jpg" style="width: 780px;" /></a>
 <p>Сада можемо ове две формуле да брзо ископирамо у остатак табеле. Селектоваћемо ћелије C4:D4</p>
-<a class="reference internal image-reference" href="../_images/PriceList5.jpg"><img alt="../_images/PriceList5.jpg" class="align-center" src="../_images/PriceList5.jpg" style="width: 600px;" /></a>
-<p>и „развући“ до дна табеле:</p>
-<a class="reference internal image-reference" href="../_images/PriceList6.jpg"><img alt="../_images/PriceList6.jpg" class="align-center" src="../_images/PriceList6.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PriceList5.jpg"><img alt="../_images/PriceList5.jpg" class="align-center" src="../_images/PriceList5.jpg" style="width: 780px;" /></a>
+<p>и „развући“ их до дна табеле:</p>
+<a class="reference internal image-reference" href="../_images/PriceList6.jpg"><img alt="../_images/PriceList6.jpg" class="align-center" src="../_images/PriceList6.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id5">
 <h2>Корак 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
@@ -426,7 +429,7 @@
 <li><p>Уоквири следеће групе ћелија користећи опцију „Outside Borders“: A2:A13, A2:D3, B3:B13, C3:C13, D3:D13</p></li>
 </ol>
 <p>Табела на крају треба да изгледа овако:</p>
-<a class="reference internal image-reference" href="../_images/PriceList7.jpg"><img alt="../_images/PriceList7.jpg" class="align-center" src="../_images/PriceList7.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/PriceList7.jpg"><img alt="../_images/PriceList7.jpg" class="align-center" src="../_images/PriceList7.jpg" style="width: 780px;" /></a>
 </div>
 <div class="section" id="id6">
 <h2>Корак 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
