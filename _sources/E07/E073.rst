@@ -19,9 +19,10 @@
 Пређи на командну траку „Insert“ и уочи (немој још ништа да кликнеш!) опцију која црта секторске дијаграме:
 
 
-.. image:: ../../_images/Zarada207.jpg
-   :width: 600px
+.. figure:: ../../_images/Zarada207.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 3.
@@ -33,9 +34,10 @@
 2. притисни тастер [CTRL] и *држећи га притиснутог* селектуј ћелије D2:D11.
 
 
-.. image:: ../../_images/Zarada203.jpg
-   :width: 600px
+.. figure:: ../../_images/Zarada203.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 4.
@@ -44,33 +46,37 @@
 Сада кликни на опцију која црта секторске дијаграме и одабери стил који ти се највише свиђа:
 
 
-.. image:: ../../_images/Zarada208.jpg
-   :width: 600px
+.. figure:: ../../_images/Zarada208.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Добили смо дијаграм:
 
 
-.. image:: ../../_images/Zarada209.jpg
-   :width: 600px
+.. figure:: ../../_images/Zarada209.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 који опет можемо мало уредити ако прекрива текст:
 
 
-.. image:: ../../_images/Zarada210.jpg
-   :width: 600px
+.. figure:: ../../_images/Zarada210.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Ако кликнемо на дијаграм, Ексел ће нам приказати који су подаци приказани на дијаграму:
 
 
-.. image:: ../../_images/Zarada211.jpg
-   :width: 600px
+.. figure:: ../../_images/Zarada211.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и кратког видеа:
 
@@ -78,4 +84,5 @@
       :width: 735
       :height: 415
       :align: center
+
 

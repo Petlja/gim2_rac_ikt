@@ -10,9 +10,10 @@
 Покрени Ексел и направи празан документ:
 
 
-.. image:: ../../_images/DataTypes101.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes101.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 2.
@@ -28,9 +29,10 @@
 Прошири колоне тако да имена колона буду видљива у целости:
 
 
-.. image:: ../../_images/DataTypes102.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes102.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 
@@ -67,9 +69,10 @@
 
 Ексел ће препознати да су то датуми (енг. *date* значи „датум“):
 
-.. image:: ../../_images/DataTypes103.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes103.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и кратког видеа:
 
@@ -77,6 +80,7 @@
       :width: 735
       :height: 415
       :align: center
+   :class: screenshot-shadow
 
 .. infonote::
 
@@ -92,9 +96,10 @@
 Унесимо податке о осталим фестивалима. У нашем примеру табела изгледа овако:
 
 
-.. image:: ../../_images/DataTypes104.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes104.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 4.
@@ -108,9 +113,10 @@
 
 
 
-.. image:: ../../_images/DataTypes105.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes105.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. infonote::
 
@@ -119,9 +125,10 @@
 Када притиснемо [ENTER] добијамо следеће стање:
 
 
-.. image:: ../../_images/DataTypes106.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes106.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Видимо да је за фестивал који се одржава 7.6, 8.6. и 9.6.2019. Ексел обрачунао да траје два дана. Разлог је у томе што се у пословном свету ова функција углавном користи за обрачун дневница (од 7.6. до 8.6. је једна дневница, и од 8.6. до 9.6. је друга дневница). Овај фестивал, с друге стране, траје три дана: цео 7.6, цео 8.6. и цео 9.6. Зато морамо да прилагодимо формулу нашој ситуацији и да унесемо:
@@ -131,17 +138,19 @@
 
 
 
-.. image:: ../../_images/DataTypes107.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes107.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Ако сада формулу брзо ископирамо наниже (кликнемо на ћелију Е2, ухватимо за „бубуљицу“ и развучемо наниже) добијамо:
 
 
-.. image:: ../../_images/DataTypes108.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes108.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 5.
@@ -156,9 +165,10 @@
 Додај табели три нова реда: „Prosek“, „Najkraći“ и „Najduži“:
 
 
-.. image:: ../../_images/DataTypes109.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes109.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 7.
@@ -173,9 +183,10 @@
 
 
 
-.. image:: ../../_images/DataTypes110.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes110.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 8.
@@ -184,9 +195,10 @@
 Поље које одговара просеку прикажи са две децимале:
 
 
-.. image:: ../../_images/DataTypes111.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes111.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 9.
@@ -195,9 +207,10 @@
 Једном бојом обој *све податке* о фестивалу који траје најкраће, а другом *све податке* о фестивалу који траје најдуже:
 
 
-.. image:: ../../_images/DataTypes112.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes112.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 10.
@@ -207,9 +220,10 @@
 Постави стил слова у ћелијама A1:E1 на **bold** (кликни на **B**), а у ћелијама A13:E15 на *italic* (кликни на *I*):
 
 
-.. image:: ../../_images/DataTypes113.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes113.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 11.
@@ -220,25 +234,28 @@
 Селектуј ћелије А1:Е1
 
 
-.. image:: ../../_images/DataTypes114.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes114.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Онда кликни на стрелицу поред иконе за уоквиравање ћелија и одабери „Bottom Border“:
 
 
-.. image:: ../../_images/DataTypes115.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes115.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Исто то уради заврсту која садржи податке о последњем фестивалу у табели. Добијамо:
 
 
-.. image:: ../../_images/DataTypes116.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes116.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 12.
@@ -248,9 +265,10 @@
 „Alignment“ (енг. „поравнавање“):
 
 
-.. image:: ../../_images/DataTypes117.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes117.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Вертикално поравнавање садржаја ћелије (1) може бити уз горњу ивицу, центрирано, или уз доњу ивицу.
@@ -260,17 +278,19 @@
 Желимо да поравнамо садржај уз десну ивицу. Зато селектуј ћелије C1:E1 и одабери поравнавање уз десну ивицу:
 
 
-.. image:: ../../_images/DataTypes119.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes119.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Тако добијамо коначан изглед табеле:
 
 
-.. image:: ../../_images/DataTypes120.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes120.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 .. Ево и кратког видеа:
@@ -279,7 +299,6 @@
       :width: 735
       :height: 415
       :align: center
-
 
 Корак 13.
 -------------------

@@ -7,9 +7,10 @@
 Да бисмо одштампали табелу, треба прво да кликнемо на „File“:
 
 
-.. image:: ../../_images/Print22.jpg
-   :width: 600px
+.. figure:: ../../_images/Print22.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 и у новом погледу који смо добили треба да кликнемо на опцију „Print“ (1).
@@ -17,9 +18,10 @@
 тако ће документ изгледати када се одштампа. Кликом на дугме „Print“ (2) документ шаљемо на штампу:
 
 
-.. image:: ../../_images/Print23.jpg
-   :width: 600px
+.. figure:: ../../_images/Print23.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 
@@ -30,17 +32,19 @@
 па са списка располошивих штампача одаберемо други штампач (3)):
 
 
-.. image:: ../../_images/Print26.jpg
-   :width: 600px
+.. figure:: ../../_images/Print26.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 У делу менија који се зове „Settings“ можемо да мењамо разне параметре штампе (маргине, оријентацију папира итд), а ми ћемо детаљно причати само о једном -- параметру који одређује формат папира:
 
 
-.. image:: ../../_images/Print27.jpg
-   :width: 600px
+.. figure:: ../../_images/Print27.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Стандардни формат папира за штампање у Европи, па и у Србији као држави европског културног простора, зове се А4.
@@ -50,9 +54,10 @@
 „Letter“ је дежмекастији -- мало је „нижи“ и мало шири:
 
 
-.. image:: ../../_images/A4-Letter.jpg
+.. figure:: ../../_images/A4-Letter.jpg
    :width: 600px
    :align: center
+
 
 
 Често се дешава да су након инсталације софтвера параметри подешени према америчком стандарду.
@@ -64,5 +69,6 @@
       :width: 735
       :height: 415
       :align: center
+
 
 

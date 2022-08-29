@@ -9,9 +9,10 @@
 У ћелију А17 упиши „Minimum“, а у ћелију A18 упиши „Maksimum“:
 
 
-.. image:: ../../_images/DataTypes15.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes15.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 9.
@@ -26,9 +27,10 @@
 Ова формула ће израчунати најмањи (MIN) од бројева B2, B3, ..., B16 (B2:B16) и ту вредност уписати у ћелију B17:
 
 
-.. image:: ../../_images/DataTypes16.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes16.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 10.
@@ -43,17 +45,19 @@
 Ова формула ће израчунати највећи (MAX) од бројева B2, B3, ..., B16 (B2:B16) и ту вредност уписати у ћелију B18:
 
 
-.. image:: ../../_images/DataTypes17.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes17.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Тако смо добили најнижу и највишу температуру у мају:
 
 
-.. image:: ../../_images/DataTypes18.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes18.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 11.
@@ -62,25 +66,28 @@
 Да бисмо то исто урадили за јун, јул и август послужићемо се комбинацијом трикова које смо научили -- селектоваћемо ћелије B17 и B18:
 
 
-.. image:: ../../_images/DataTypes19.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes19.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 па ћемо „ухватити за бубуљицу“ и развући селекцију до колоне Е:
 
 
-.. image:: ../../_images/DataTypes20.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes20.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Тако смо добили најниже и највише температуре које су постигнуте у ова четири месеца:
 
 
-.. image:: ../../_images/DataTypes21.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes21.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 

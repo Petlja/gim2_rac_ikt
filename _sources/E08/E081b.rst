@@ -34,9 +34,10 @@
 преузми фајл који садржи списак свих наших филмова који су номиновани за популарну филмску
 награду „Оскар“ и отвори га:
 
-.. image:: ../../_images/Oskar1.jpg
-   :width: 600px
+.. figure:: ../../_images/Oskar1.jpg
+   :width:  780px
    :align: center
+   :class: screenshot-shadow
 
 Корак 2
 -------------------
@@ -44,9 +45,10 @@
 Видимо да је табела сортирана по годинама када је филм номинован.
 Сортираћемо сада табелу по режисерима. Селектуј све податке у табели, укључујући и имена колона:
 
-.. image:: ../../_images/Oskar2.jpg
-   :width: 600px
+.. figure:: ../../_images/Oskar2.jpg
+   :width:  780px
    :align: center
+   :class: screenshot-shadow
 
 Корак 3
 -------------------
@@ -55,15 +57,17 @@
 у листи „Sort by“ (3) одабери „Режија“, у листи „Order“ (4) провери да стоји
 „A to Z“ (што значи да ће сортирање ићи од А до Ш јер су подаци ћирилични!) и кликни „OK“ (5):
 
-.. image:: ../../_images/Oskar3.jpg
-   :width: 600px
+.. figure:: ../../_images/Oskar3.jpg
+   :width:  780px
    :align: center
+   :class: screenshot-shadow
 
 Добијамо табелу сортирану по имену и презимену режисера:
 
-.. image:: ../../_images/Oskar4.jpg
-   :width: 600px
+.. figure:: ../../_images/Oskar4.jpg
+   :width:  780px
    :align: center
+   :class: screenshot-shadow
 
 .. infonote::
 

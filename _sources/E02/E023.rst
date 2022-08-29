@@ -14,9 +14,10 @@
 
 Сада се мало играј бројевима. Промени неке вредности и примети како Ексел аутоматски прерачунава све ћелије чија вредност зависи од начињене измене.
 
-.. image:: ../../_images/Recalc11.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc11.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 7.
@@ -26,22 +27,25 @@
 
 Десним кликом кликни на редни број врсте 5 (баш на број 5) и у малом менију који се појавио одабери „Insert“:
 
-.. image:: ../../_images/Recalc12.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc12.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Појавиће се нова празна врста:
 
-.. image:: ../../_images/Recalc13.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc13.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Унеси неко име и неке податке о радним сатима и накнадама, као и формулу за обрачун зараде,
 и уочи да је *Ексел аутоматски прерачунао све податке у табели*:
 
-.. image:: ../../_images/Recalc14.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc14.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 .. Погледајмо и кратак видео:
@@ -51,6 +55,7 @@
       :height: 415
       :align: center
 
+
 Корак 8.
 -----------------
 
@@ -58,21 +63,24 @@
 
 Десним кликом кликни на име колоне F (баш на слово F) и у малом менију који се појавио одабери „Insert“:
 
-.. image:: ../../_images/Recalc15.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc15.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Појавиће се нова празна колона:
 
-.. image:: ../../_images/Recalc16.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc16.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 У ћелију F2 упиши „Kazna“ и попуни остале ћелије колоне F (ако студент није кажњен упиши 0), рецимо овако:
 
-.. image:: ../../_images/Recalc17.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc17.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Следећи видео демонстрира уметање врсте и колоне у табелу:
 
@@ -81,20 +89,23 @@
       :height: 415
       :align: center
 
+
 Овај пут Ексел није ништа прерачунао аутоматски: вредности зараде се нису измениле! Разлог је то што Ексел не зна како да укључи нове податке у обрачун зараде -- *за то нам је потребна нова формула!* Зато ћемо сада у ћелију G3 унети формулу која узима и казну у обзир:
 ::
 
     = B3*D3 + C3*E3 - F3
 
-.. image:: ../../_images/Recalc18.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc18.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 и онда ћемо брзим копирањем ту формулу „развући“ на ћелије G3:G12
 
-.. image:: ../../_images/Recalc19.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc19.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. infonote::
 

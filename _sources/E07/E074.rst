@@ -19,9 +19,10 @@
 Табела изгледа овако:
 
 
-.. image:: ../../_images/ntt1.jpg
-   :width: 600px
+.. figure:: ../../_images/ntt1.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 2.
@@ -33,17 +34,19 @@
 4. па од понуђених стилова одабери стил као на слици:
 
 
-.. image:: ../../_images/ntt2.jpg
-   :width: 600px
+.. figure:: ../../_images/ntt2.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Добили смо графикон као на слици:
 
 
-.. image:: ../../_images/ntt3.jpg
-   :width: 600px
+.. figure:: ../../_images/ntt3.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 3.
@@ -56,25 +59,28 @@
 већ два клика *клик-пауза-клик*), појавиће се курсор:
 
 
-.. image:: ../../_images/ntt4.jpg
-   :width: 600px
+.. figure:: ../../_images/ntt4.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Сада можемо да унесемо име графикона:
 
 
-.. image:: ../../_images/ntt5.jpg
-   :width: 600px
+.. figure:: ../../_images/ntt5.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 и да прераспоредимо елементе табеле, ако је то потребно:
 
 
-.. image:: ../../_images/ntt6.jpg
-   :width: 600px
+.. figure:: ../../_images/ntt6.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и кратког видеа:
 
@@ -82,4 +88,5 @@
       :width: 735
       :height: 415
       :align: center
+   :class: screenshot-shadow
 

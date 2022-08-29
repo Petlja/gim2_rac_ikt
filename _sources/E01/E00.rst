@@ -24,8 +24,8 @@
 
 Податке добијамо посматрањем, прикупљањем, анкетирањем... Обрадом података долазимо до *информације*:
 
-.. image:: ../../_images/podatak-obrada-inf.jpg
-   :width: 600px
+.. figure:: ../../_images/podatak-obrada-inf.jpg
+   :width: 780px
    :align: center
 
 .. topic:: \ 

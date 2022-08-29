@@ -23,9 +23,10 @@
 Улепшај табелу и сними је. Табела на крају треба да изгледа отприлике овако:
 
 
-.. image:: ../../_images/DataTypes210.jpg
+.. figure:: ../../_images/DataTypes210.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 
 
 **Задатак 2.** Направи Ексел табелу која садржи дневник рада једног ученика. Табела треба да има следеће колоне:
@@ -46,9 +47,10 @@
 Табела коју добијеш треба да изгледа отприлике овако:
 
 
-.. image:: ../../_images/DataTypes214.jpg
+.. figure:: ../../_images/DataTypes214.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 
 
 **Задатак 3*.** Направи Ексел табелу која садржи распоред излагања презентација из неког предмета. Табела треба да има три колоне:
@@ -78,23 +80,26 @@
 „More Number Formats“:
 
 
-.. image:: ../../_images/DataTypes211.jpg
+.. figure:: ../../_images/DataTypes211.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 
 
 У листи „Category“ одабери „Time“, па онда у листи „Type“ одабери „13:30“, што представља пример формата:
 
 
-.. image:: ../../_images/DataTypes212.jpg
+.. figure:: ../../_images/DataTypes212.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 
 
 Улепшај табелу и сними је. Табела на крају треба да изгледа отприлике овако:
 
 
-.. image:: ../../_images/DataTypes213.jpg
+.. figure:: ../../_images/DataTypes213.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 

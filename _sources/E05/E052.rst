@@ -39,33 +39,37 @@
 што значи да рачунамо количник дела и целине (*удео* тока кроз Србију у целом току Дунава):
 
 
-.. image:: ../../_images/Print7.jpg
-   :width: 600px
+.. figure:: ../../_images/Print7.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Исто урадимо и за остале реке у табели. Добијамо:
 
 
-.. image:: ../../_images/Print8.jpg
-   :width: 600px
+.. figure:: ../../_images/Print8.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Да бисмо ове количнике приказали као проценте, селектоваћемо ћелије D2:D8, кликнути на стрелицу поред формата податка и одабрати „Percentage“:
 
 
-.. image:: ../../_images/Print9.jpg
-   :width: 600px
+.. figure:: ../../_images/Print9.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Добијамо количнике форматиране као проценте, са две децимале:
 
 
-.. image:: ../../_images/Print10.jpg
-   :width: 600px
+.. figure:: ../../_images/Print10.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и кратког видеа:
 

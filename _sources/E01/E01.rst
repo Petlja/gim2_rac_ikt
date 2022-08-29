@@ -5,15 +5,17 @@
 или да потражимо документ међу фајловима који су на рачунару (2),
 или да учитамо неки од докумената на којима смо недавно радили (3):
 
-.. image:: ../../_images/OpenExcel.jpg
-   :width: 600px
+.. figure:: ../../_images/OpenExcel.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Ако се одлучимо да кренемо од празног документа (*Blank Workbook*), отвориће се нови празан радни лист:
 
-.. image:: ../../_images/Excel0.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel0.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Одмах испод заглавља прозора налази се *командна трака* (енг. *command ribbon* или кратко само *ribbon*) на којој су сличицама (које се зову *иконе* или *иконице*) приказане разне акције које Ексел уме да изврши. О некима од њих ћемо детаљно причати касније.
 Највећи део прозора представља табела чије су колоне означене словима (A, B, C, D, ...), а врсте бројевима (1, 2, 3, ...). Табела се састоји од „кућица“ које зовемо *ћелије*. Ћелија може да садржи
@@ -33,31 +35,31 @@
    .. ytpopup:: GmQeSPrvMnQ
       :width: 735
       :height: 415
-      :align: center
 
 Да бисмо унели неки податак, рецимо, у ћелију Е12, треба да кликнемо мишем на њу или да се стрелицама „дошетамо“ до ње.
 Онда можемо да унесемо неки текст или број, рецимо овако:
 
 
-.. image:: ../../_images/Excel2.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel2.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. infonote::
 
     Након уноса податка обавезно треба притиснути тастер [ENTER].
 
-.. image:: ../../_images/Excel3.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel3.jpg
+   :width: 780px
    :align: center
-
+   :class: screenshot-shadow
 
 .. Следећи видео илуструје унос података у Ексел табелу:
 
    .. ytpopup:: Rivrb_UfOMA
       :width: 735
       :height: 415
-      :align: center
+
 
 .. infonote::
 
@@ -78,21 +80,22 @@
 
 Крени од празне табеле:
 
-.. image:: ../../_images/Excel100.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel100.jpg
+   :width: 780px
    :align: center
 
 Ексел аутоматски додели неку „стандардну“ ширину колонама и висину врстама табеле. Ако ништа не променимо, унос података ће бити непријатан и табела ће на крају изгледати некако овако:
 
-.. image:: ../../_images/Excel101.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel101.jpg
+   :width: 780px
    :align: center
+
 
 Пошто су колоне сувише уске, описи се не виде добро. Колоне се могу проширити тако што мишем „ухватиш“
 границу између два слова у заглављу табеле и развучеш колону колико ти одговара:
 
-.. image:: ../../_images/Excel101-1.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel101-1.png
+   :width: 780px
    :align: center
 
 Друга могућност је да миша позиционираш на границу између две колоне и када промени облик у :math:`\leftarrow\!\!|\!\!\rightarrow`
@@ -100,29 +103,31 @@
 
 У сваком случају, добијамо табелу која је много прегледнија:
 
-.. image:: ../../_images/Excel102.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel102.jpg
+   :width: 780px
    :align: center
 
 На исти начин се могу проширити и врсте у табели, али то нам у овом примеру није било потребно.
 
 Да нам труд не пропадне треба да снимимо табелу коју смо направили. Кликни на „File“:
 
-.. image:: ../../_images/Excel103.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel103.jpg
+   :width: 780px
    :align: center
 
 па онда на „Save as“ (1) и „This PC“ (2):
 
-.. image:: ../../_images/Excel104.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel104.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 У одговарајуће поље унеси име фајла (3) и кликни на „Save“ (4):
 
-.. image:: ../../_images/Excel105.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel105.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Погледајмо и кратак видео:
 

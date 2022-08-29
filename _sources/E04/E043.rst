@@ -49,17 +49,19 @@
 што значи 0 сати, 6 минута и 4 секунде. Тако добијамо:
 
 
-.. image:: ../../_images/DataTypes202.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes202.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Унесимо сада на исти начин и трајање свих осталих нумера:
 
 
-.. image:: ../../_images/DataTypes203.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes203.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Ексел уме да рачуна са временима, па је лако одредити укупно трајање албума. У ћелију C2 ћемо уписати укупно трајање албума тако што ћемо унети формулу:
@@ -69,17 +71,19 @@
 
 
 
-.. image:: ../../_images/DataTypes204.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes204.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Ексел је сабрао трајање свих нумера и у поље уписао трајање целог албума:
 
 
-.. image:: ../../_images/DataTypes205.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes205.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 3.
@@ -88,33 +92,37 @@
 За крај ћемо мало улепшати табелу. Прво ћемо центрирати садржај у ћелијама A4:А16
 
 
-.. image:: ../../_images/DataTypes206.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes206.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 док ћемо ћелију C4 поравнати по десној ивици:
 
 
-.. image:: ../../_images/DataTypes207.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes207.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Позадину ћелија A1:C2 ћемо обојити црно, а слова бело. Исто тако и ћелије A4:C4
 
 
-.. image:: ../../_images/DataTypes208.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes208.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Стил слова у ћелији B1 (име аутора) ћемо поставити на *italic*, а у ћелијама B2:C2 (име албума и трајање) на **bold**. Коначно, ћелије A5:C16 ћемо обојити светло сиво:
 
 
-.. image:: ../../_images/DataTypes209.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes209.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 4.

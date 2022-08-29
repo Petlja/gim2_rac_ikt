@@ -14,17 +14,19 @@
 Селектуј *само први ред табеле* у коме се налазе имена колона:
 
 
-.. image:: ../../_images/YT8.jpg
-   :width: 600px
+.. figure:: ../../_images/YT8.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 и онда на командној траци „Data“ (1) и кликни на „Filter“ (2):
 
 
-.. image:: ../../_images/YT9.jpg
-   :width: 600px
+.. figure:: ../../_images/YT9.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Поред имена сваке колоне се појавила стрелица. Те стрелице нам дају приступ критеријумима за филтрирање табеле.
@@ -38,17 +40,19 @@
 па одабери квачицу код „А+“ (3) и потом кликни на OK (4):
 
 
-.. image:: ../../_images/YT11.jpg
-   :width: 600px
+.. figure:: ../../_images/YT11.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Тако смо „профилтрирали“ табелу и приказали само оне редове који у колони „GRADE“ садрже вредност А+:
 
 
-.. image:: ../../_images/YT12.jpg
-   :width: 600px
+.. figure:: ../../_images/YT12.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 .. infonote::
@@ -61,9 +65,10 @@
 већ је само приказ података усклађен са критеријумом филтрирања:
 
 
-.. image:: ../../_images/YT13.jpg
-   :width: 600px
+.. figure:: ../../_images/YT13.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Осим тога, специјални знак поред имена колоне „GRADE“ нам каже да је укључен аутофилтер на тој колони, а у дну прозора стоји порука „6 of 25 records found“
@@ -78,6 +83,7 @@
 
 
 
+
 Корак 3.
 -----------------
 
@@ -86,9 +92,10 @@
 Ако пробамо да применимо функцију SUM распон ћелија који морамо да наведемо не одговара ситуацији:
 
 
-.. image:: ../../_images/YT14.jpg
-   :width: 600px
+.. figure:: ../../_images/YT14.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 јер ми *не желимо* да саберемо *све* ћелије од C4 до C13, већ *само оне ћелије распона C4:C13 које задовољавају услове филтера*. Зато ћемо сумирање морати да урадимо другачије.
@@ -96,25 +103,28 @@
 Кликнемо на ћелију C27 и са командне траке „Formulas“ одаберемо „Autosum“:
 
 
-.. image:: ../../_images/YT15.jpg
-   :width: 600px
+.. figure:: ../../_images/YT15.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 „Autosum“ је малчице вештачки интелигентна опција која уме да проанализира контекст у коме желимо да одредимо збир и на основу тога које друге опције су укључене може да одабере праву функцију за сумирање. У нашем случају добијамо:
 
 
-.. image:: ../../_images/YT16.jpg
-   :width: 600px
+.. figure:: ../../_images/YT16.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Дакле, „Autosum“ се определио за функцију „SUBTOTAL(9, C2:C26)“, што значи да ће на цео распон C2:C26 бити примењена 9. могућност функције „SUBTOTAL“, а то је тачно рачунање збира уз примену филтера:
 
 
-.. image:: ../../_images/YT17.jpg
-   :width: 600px
+.. figure:: ../../_images/YT17.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и кратког видеа:
 
@@ -122,4 +132,5 @@
       :width: 735
       :height: 415
       :align: center
+   :class: screenshot-shadow
 

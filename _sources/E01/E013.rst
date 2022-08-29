@@ -29,9 +29,10 @@
 
 Прво ћемо кликнути на ћелију D1 и у њу уписати „Ukupno“, да се зна шта представљају подаци у тој колони:
 
-.. image:: ../../_images/Excel106.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel106.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Корак 2
 """"""""""
@@ -45,26 +46,29 @@
 Како уносимо формулу, Ексел показује које ћелије учествују у формули:
 
 
-.. image:: ../../_images/Excel107.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel107.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Када притиснемо [ENTER], Ексел ће израчунати вредност формуле и уписати одговарајући број у ћелију:
 
 
-.. image:: ../../_images/Excel108.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel108.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Важно је да разумемо да *Ексел није заборавио формулу!* Она је и даље уписана у ћелију, али се приказује *вредност формуле* јер је то
 оно што ми као корисници желимо да видимо. Ако сада поново кликнемо на ћелију, формула се јасно види у реду изнад (који се зове *formula bar*):
 
 
-.. image:: ../../_images/Excel109.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel109.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Сада ћемо у ћелију D3 унети формулу
 ::
@@ -75,9 +79,10 @@
 ово не би требало да буде превише захтевно.
 
 
-.. image:: ../../_images/Excel110.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel110.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево целог поступка и у облику кратког видеа:
 
@@ -85,6 +90,7 @@
       :width: 735
       :height: 415
       :align: center
+
 
 На овај начин је Ексел за нас израчунао колико новца је потрошено на сваку појединачну ставку. Још само да видимо колико новца је укупно потрошено, и задатак је готов.
 
@@ -110,17 +116,19 @@
 Приликом уноса формуле Ексел означава ћелије које учествују у рачуну:
 
 
-.. image:: ../../_images/Excel111.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel111.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 па када притиснемо [ENTER] добијамо:
 
 
-.. image:: ../../_images/Excel112.jpg
-   :width: 600px
+.. figure:: ../../_images/Excel112.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Следи кратак видео који илуструје овај поступак:
 
@@ -128,6 +136,7 @@
       :width: 735
       :height: 415
       :align: center
+
 
 
 Корак 4

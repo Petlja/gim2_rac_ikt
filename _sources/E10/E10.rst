@@ -11,8 +11,8 @@
 преко могућности да групе корисника сарађују на обради докумената „у облаку“, па чак до изнајмљивања процесорског времена.
 
 
-.. image:: ../../_images/Sh1.jpg
-   :width: 600px
+.. figure:: ../../_images/Sh1.jpg
+   :width: 780px
    :align: center
 
 
@@ -39,18 +39,18 @@
 Треба отићи на *google.com*, кликнути на „Пријави се“ (или „Sign In“):
 
 
-.. image:: ../../_images/Sh2.jpg
-   :width: 600px
+.. figure:: ../../_images/Sh2.jpg
+   :width: 780px
    :align: center
-
+   :class: screenshot-shadow
 
 и потом унети своју адресу за електронску пошту и одговарајућу лозинку:
 
 
-.. image:: ../../_images/Sh3.jpg
-   :width: 600px
+.. figure:: ../../_images/Sh3.jpg
+   :width: 780px
    :align: center
-
+   :class: screenshot-shadow
 
 Након идентификације имамо приступ свим Гугловим сервисима.
 

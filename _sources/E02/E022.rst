@@ -17,9 +17,10 @@
 Пронађи табелу на свом рачунару (највероватније је завршила у *Downloads* фолдеру) и отвори је:
 
 
-.. image:: ../../_images/Recalc1.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc1.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 
@@ -31,9 +32,10 @@
 
 Унеси произвољне вредности. Када завршиш, табела треба да изгледа овако (с тим да ћеш ти вероватно имати другачије вредности у колонама B и C):
 
-.. image:: ../../_images/Recalc3.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc3.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Корак 4.
 --------------
@@ -43,36 +45,41 @@
 
     = B3*D3 + C3*E3
 
-.. image:: ../../_images/Recalc4.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc4.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Како гласи формула за другог студента?
 
-.. image:: ../../_images/Recalc5.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc5.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Вероватно ти се по глави већ мота она народна „И тако летњи дан до подне“. Да не бисмо исти досадни посао радили још сто пута
 (и при томе вероватно направили доста грешака), *сада ћемо показати користан трик који ће за нас урадити посао.*
 Кликни на ћелију F4 и приметићеш да је доњи десни угао зеленог оквира око ћелије истакнут
 (оквир има „бубуљицу“):
 
-.. image:: ../../_images/Recalc6.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc6.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Ухвати мишем бубуљицу и „развуци оквир“ до дна колоне. Ексел ће попунити ћелије неким вредностима:
 
-.. image:: ../../_images/Recalc7.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc7.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Кликни сада, рецимо, на ћелију F9 (1) и погледај у оквиру (2) за формуле (*formula bar*) која је формула уписана у ћелију.
 
-.. image:: ../../_images/Recalc8.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc8.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. infonote::
 
@@ -84,6 +91,7 @@
       :width: 735
       :height: 415
       :align: center
+
 
 Да буде одмах јасно, ово није никаква магија, већ прост алгоритам. На основу формуле која је била уписана у ћелију F4 Ексел је простим алгоритмом генерисао формуле и уписао их редом у све ћелије кроз које смо „развукли оквир“.
 Идеја алгоритма је да се слова у адреси ћелије не мењају, а бројеви у адреси ћелије се редом повећавају. Ево и табеларног прегледа:
@@ -117,14 +125,16 @@
 
 која рачуна просек (AVERAGE) бројева у ћелијама B3, B4, ..., B11 (B3:B11). AVERAGE је још једна функција коју Ексел познаје.
 
-.. image:: ../../_images/Recalc9.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc9.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 На исти начин ћемо израчунати просек бројева у ћелијама C3:C11 и F3:F11
 
-.. image:: ../../_images/Recalc10.jpg
-   :width: 600px
+.. figure:: ../../_images/Recalc10.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 

@@ -5,26 +5,29 @@
 па у новом погледу одаберемо „Export“ (1), потом „Create PDF/XPS Document“ (2) и коначно
 да кликнемо на дугме „Create PDF/XPS“ (3):
 
-.. image:: ../../_images/Print30.jpg
+.. figure:: ../../_images/Print30.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 
 
 У прозору који се појави можемо да изменимо име документа ако то желимо (1),
 и на крају кликнемо на „Publish“:
 
 
-.. image:: ../../_images/Print32.jpg
+.. figure:: ../../_images/Print32.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 
 
 Ако ПДФ документ отворимо из неког програма за преглед ПДФ докумената видећемо нешто слично овоме:
 
 
-.. image:: ../../_images/Print33.jpg
+.. figure:: ../../_images/Print33.jpg
    :width: 600px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и кратког видеа:
 
@@ -32,4 +35,5 @@
       :width: 735
       :height: 415
       :align: center
+   :class: screenshot-shadow
 

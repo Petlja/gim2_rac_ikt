@@ -11,7 +11,7 @@
 
 
 .. image:: ../../_images/PJ1.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -20,7 +20,7 @@
 
 
 .. image:: ../../_images/PJ2.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -28,7 +28,7 @@
 
 
 .. image:: ../../_images/PJ3.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -46,7 +46,7 @@
 
 
 .. image:: ../../_images/PJ4.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -59,7 +59,7 @@
 
 
 .. image:: ../../_images/PJ5.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -69,7 +69,7 @@
 
 
 .. image:: ../../_images/PJ6.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -82,7 +82,7 @@
 
 
 .. image:: ../../_images/PJ7.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -90,7 +90,7 @@
 
 
 .. image:: ../../_images/PJ8.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -101,7 +101,7 @@
 
 
 .. image:: ../../_images/PJ9.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 .. Ево и кратког видеа:

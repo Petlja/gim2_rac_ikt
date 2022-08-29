@@ -15,7 +15,7 @@
 
 
 .. image:: ../../_images/PriceList1.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Корак 2.
@@ -34,7 +34,7 @@
 
 
 .. image:: ../../_images/PriceList2.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Корак 3.
@@ -48,7 +48,7 @@
 
 
 .. image:: ../../_images/PriceList3.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -65,7 +65,7 @@
 
 
 .. image:: ../../_images/PriceList4.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -73,7 +73,7 @@
 
 
 .. image:: ../../_images/PriceList5.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -81,7 +81,7 @@
 
 
 .. image:: ../../_images/PriceList6.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Корак 4.
@@ -99,7 +99,7 @@
 
 
 .. image:: ../../_images/PriceList7.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 

@@ -7,17 +7,19 @@
 За истицање елемената у табели користимо сегмент команди које се налазе у групи „Font“:
 
 
-.. image:: ../../_images/DataTypes22.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes22.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Команде представљене иконама у овој групи већ познајеш:
 
 
-.. image:: ../../_images/DataTypes23.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes23.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 1. Промена облика слова (фонт).
 2. Промена величине слова директним одабиром величине.
@@ -38,9 +40,10 @@
 3. кликнути на стрелицу поред иконе за подешавање боје позадине ћелије и одабрати тамно сиву.
 
 
-.. image:: ../../_images/DataTypes24.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes24.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 13.
@@ -53,9 +56,10 @@
 3. црвеном обој слова која одговарају максималним температурама.
 
 
-.. image:: ../../_images/DataTypes25.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes25.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 14.
@@ -64,9 +68,10 @@
 Позадину ћелија које одговарају просечним температурама (F2:F16 и K2:K16) обој жуто:
 
 
-.. image:: ../../_images/DataTypes26.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes26.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 15.
@@ -75,9 +80,10 @@
 Температуре које су исказане у степенима Фаренхајта (ћелије G2:J16) обој светло плаво:
 
 
-.. image:: ../../_images/DataTypes27.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes27.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и кратке демонстрације:
 
@@ -85,6 +91,7 @@
       :width: 735
       :height: 415
       :align: center
+
 
 
 Корак 16.
@@ -98,9 +105,10 @@
 Треба да добијеш:
 
 
-.. image:: ../../_images/DataTypes28.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes28.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Шта закључујеш гледајући само у боје ћелија?

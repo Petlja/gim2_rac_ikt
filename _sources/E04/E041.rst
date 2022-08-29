@@ -13,9 +13,10 @@
 
 Покрени Ексел и отвори фајл. Видећеш да су у фајлу наведене донације које је једно спортско друштво примило. За сваку донацију је наведено име донатора (у колони „Name“), датум донације (у колони „Date“) и износ (у колони „Amount“):
 
-.. image:: ../../_images/DataTypes301.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes301.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 3.
@@ -24,9 +25,10 @@
 Корестећи клизач:
 
 
-.. image:: ../../_images/DataTypes302.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes302.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 спусти се до дна табеле и додај три нове врсте:
@@ -36,9 +38,10 @@
 * Max
 
 
-.. image:: ../../_images/DataTypes303.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes303.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 4.
@@ -53,9 +56,10 @@
 како би добио укупну вредност донација:
 
 
-.. image:: ../../_images/DataTypes304.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes304.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Потом у поље C137 унеси формулу
@@ -72,9 +76,10 @@
 како би добио вредност најмање и највеће донације:
 
 
-.. image:: ../../_images/DataTypes305.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes305.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 5.
@@ -83,9 +88,10 @@
 Пошто су све донације биле у еврима, форматираћемо све бројеве у колони C тако да се испред броја појави ознака за евро. Селектуј ћелије C2:C138
 
 
-.. image:: ../../_images/DataTypes306.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes306.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Кликни на стрелицу (1) поред ознаке формата ћелије и појавиће се мали мени.
@@ -94,17 +100,19 @@
 Зато ћемо да одаберемо „More Number Formats...“ (2) како је на слици и предложено:
 
 
-.. image:: ../../_images/DataTypes307.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes307.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Добијамо нови дијалог:
 
 
-.. image:: ../../_images/DataTypes309.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes309.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 У одељку „Category“ (енг. „Категорија“) одаберемо „Currency“ (1).
@@ -123,9 +131,10 @@
 
 Табела сада изгледа овако:
 
-.. image:: ../../_images/DataTypes311.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes311.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 
@@ -147,9 +156,10 @@
         то значи да се ту налази неки број, али је ћелија сувише уска да би тај број могао да буде приказан у целости. Само треба проширити колону C и све ће бити у реду:
 
 
-.. image:: ../../_images/DataTypes312.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes312.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 6.

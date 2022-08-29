@@ -23,17 +23,19 @@
 која ће израчунати просечну температуру за ова четири месеца у Амстердаму:
 
 
-.. image:: ../../_images/DataTypes2.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes2.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 и притисни [ENTER]:
 
 
-.. image:: ../../_images/DataTypes3.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes3.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 3.
@@ -49,9 +51,10 @@
 Приликом уношења формуле морамо повести рачуна о томе да се множење означава звездицом ``*``:
 
 
-.. image:: ../../_images/DataTypes4.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes4.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 4.
@@ -60,17 +63,19 @@
 Исти посао треба урадити за јун, јул, август и за просек. Можемо исту формулу унети још четири пута, али је боље да се послужимо брзим копирањем. Ако кликнемо на ћелију G2 видећемо увек присутну „бубуљицу“ у доњем десном углу:
 
 
-.. image:: ../../_images/DataTypes5.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes5.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Ухватимо „бубуљицу“, развучемо до краја врсте и добијамо:
 
 
-.. image:: ../../_images/DataTypes6.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes6.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Формула у ћелији G2 је гласила
@@ -113,9 +118,10 @@
 Пошто смо попунили први ред табеле, означићемо (такорећи *селектоваћемо*) низ ћелија F2:K2 тако што ћемо кликнути на ћелију F2 (дакле, НЕ на „бубуљицу“, већ у срце ћелије F2) и *не пуштајући миша* развући оквир до ћелије K2:
 
 
-.. image:: ../../_images/DataTypes7.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes7.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Овим смо означили ћелије које су интересантне (јер садрже формуле које желимо да размножимо по целој табели).
 
@@ -125,17 +131,19 @@
 Е, *сада ухватимо за „бубуљицу“* која се налази у доњем десном углу означеног распона и „развучемо“ до дна табеле:
 
 
-.. image:: ../../_images/DataTypes8.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes8.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Ексел је ископирао формуле које су се налазиле у означеним ћелијама и током копирања сваку формулу прилагодио позицији на којој се она налази. На пример, ако погледамо ћелију J11 (температура у степенима Фаренхајта у Ослу у августу) видећемо да је та вредност израчуната тако што је формула за конверзију примењена на ћелију E11 (температура у степенима Целзијуса у Ослу у августу), као што и треба:
 
 
-.. image:: ../../_images/DataTypes9.jpg
-   :width: 600px
+.. figure:: ../../_images/DataTypes9.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Тако је овај део задатка решен.
 
@@ -145,4 +153,5 @@
       :width: 735
       :height: 415
       :align: center
+
 

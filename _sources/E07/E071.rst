@@ -26,9 +26,10 @@
 Да бисмо ове податке приказали графиконом, селектоваћемо целу табелу *укључујући и имена колона*:
 
 
-.. image:: ../../_images/gr4.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr4.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 У највећем броју случајева Ексел може да закључи како треба да се зове табела
@@ -42,17 +43,19 @@
 На командној траци „Insert“ из групе „Charts“ одабери опцију „Scatter“ (2),
 па из низа графичких решења која су ти понуђена одабери неко стил који ти се свиђа (3):
 
-.. image:: ../../_images/gr5.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr5.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Добијамо графикон који је део документа:
 
 
-.. image:: ../../_images/gr8.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr8.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 4.
@@ -62,9 +65,10 @@
 Примети да је Ексел исправно схватио како графикон треба да се зове:
 
 
-.. image:: ../../_images/gr9.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr9.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 5.
@@ -74,9 +78,10 @@
 видећемо да је графикон заиста саставни део документа **али и то да нам недостаје део графикона**:
 
 
-.. image:: ../../_images/gr10.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr10.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 .. questionnote::
@@ -90,6 +95,7 @@
       :width: 735
       :height: 415
       :align: center
+
 
 Корак 6.
 ----------------
@@ -138,27 +144,31 @@
 Пређи на радну траку „File“, одабери „Print“ (1), кликни на стрелицу поред имена активног штампача (2),
 па са списка расположивих штампача одабери „Microsoft Print to PDF“ (3):
 
-.. image:: ../../_images/gr10-2.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr10-2.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Након тога одабери „Landscape“ као оријентацију папира (4), па кликни на дугме „Print“ (5):
 
-.. image:: ../../_images/gr10-3.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr10-3.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 У новом прозору који се појавио дај име свом ПДФ фајлу (6) и кликни на дугме „Save“ (7):
 
-.. image:: ../../_images/gr10-4.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr10-4.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 Ако сада погледамо ПДФ документ, видећемо да је графикон и даљњ саставни део документа,
 као и да је све лепо стало на папир:
 
 
-.. image:: ../../_images/gr10-5.jpg
-   :width: 600px
+ .. figure:: ../../_images/gr10-5.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 

@@ -15,7 +15,7 @@
 
 
 .. image:: ../../_images/Zarada1.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Корак 2.
@@ -30,7 +30,7 @@
 
 
 .. image:: ../../_images/Zarada2.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Корак 3.
@@ -40,7 +40,7 @@
 
 
 .. image:: ../../_images/Zarada3.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Корак 4.
@@ -56,7 +56,7 @@
 
 
 .. image:: ../../_images/Zarada4.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -72,7 +72,7 @@
 
 
 .. image:: ../../_images/Zarada5.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Корак 6.
@@ -88,7 +88,7 @@
 
 
 .. image:: ../../_images/CopyPaste.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 Кликом на дугме „Copy“ (1) садржај селектованог дела табеле се *копира* у посебан део меморије који се зове „Clipboard“ („подметач за писање“),
@@ -101,7 +101,7 @@
 
 
 .. image:: ../../_images/Zarada6.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 .. infonote::
@@ -112,7 +112,7 @@
 
 
 .. image:: ../../_images/Zarada7.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 
@@ -120,7 +120,7 @@
 
 
 .. image:: ../../_images/Zarada8.jpg
-   :width: 600px
+   :width: 780px
    :align: center
 
 

@@ -12,9 +12,10 @@
 За подешавање приказа бројева у табели користимо групу команди „Number“:
 
 
-.. image:: ../../_images/DataTypes-N.jpg
-   :width: 600px
+ .. figure:: ../../_images/DataTypes-N.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Да бисмо објаснили Екселу у ком делу табеле треба приказати бројеве са задатим бројем децимала,
@@ -26,25 +27,28 @@
 Кликни мишем на ћелију F2 *и не пуштајући леви тастер на мишу* развуци оквир до ћелије K16 овако:
 
 
-.. image:: ../../_images/DataTypes10.jpg
-   :width: 600px
+ .. figure:: ../../_images/DataTypes10.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Кликни на стрелицу поред „General“ и у менију који се појави одабери „Number“:
 
 
-.. image:: ../../_images/DataTypes11.jpg
-   :width: 600px
+ .. figure:: ../../_images/DataTypes11.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Сви бројеви у селектованом делу табеле ће бити приказани са две децимале.
 
 
-.. image:: ../../_images/DataTypes12.jpg
-   :width: 600px
+ .. figure:: ../../_images/DataTypes12.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и демонстрације:
 
@@ -56,21 +60,24 @@
 
 
 
+
 Приказивање бројева са две децимале је најчешћи захтев који корисници Ексела имају, и зато је подразумевано да ће Ексел приказати бројеве на две децимале. Ако из неких разлога желимо да прикажемо бројеве са три децимална места, или само једним, треба кликнути на стрелицу поред
 „General“, па уместо „Number“ одабрати „More Number Formats...“ („још формата бројева“):
 
 
-.. image:: ../../_images/DataTypes13.jpg
-   :width: 600px
+ .. figure:: ../../_images/DataTypes13.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 и у прозору који се појавио унети жељени број децимала:
 
 
-.. image:: ../../_images/DataTypes14.jpg
-   :width: 600px
+ .. figure:: ../../_images/DataTypes14.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. Ево и демонстрације:
 
@@ -78,5 +85,6 @@
       :width: 735
       :height: 415
       :align: center
+   :class: screenshot-shadow
 
 

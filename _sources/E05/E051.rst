@@ -10,9 +10,10 @@
 Покрени Ексел и отвори документ:
 
 
-.. image:: ../../_images/Print1.jpg
-   :width: 600px
+.. figure:: ../../_images/Print1.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Корак 2.
@@ -21,9 +22,10 @@
 Прошири колоне тако да се у потпуности види садржај ћелија:
 
 
-.. image:: ../../_images/Print2.jpg
-   :width: 600px
+.. figure:: ../../_images/Print2.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Табела је ружна зато што је, рецимо, име колоне C дугачко, а бројеви који су уписани у ту колону су релативно мали. Има много празног простора и то отежава читање.
@@ -35,33 +37,37 @@
 Сузи колоне B и C и прошири прву врсту. Да бу проширио прву врсту „ухвати“ мишем границу између бројева ``1`` и ``2``
 
 
-.. image:: ../../_images/Print3.jpg
-   :width: 600px
+.. figure:: ../../_images/Print3.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 и повуци наниже:
 
 
-.. image:: ../../_images/Print4.jpg
-   :width: 600px
+.. figure:: ../../_images/Print4.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 И даље се текст не види у целости: Ексел, наиме, неће сам од себе „смотати текст“ у два реда чак и када је ћелија довољно висока. Морамо му наредити да то уради. Селектуј ћелије B1 и C1, па онда кликни на икону која одговара операцији „Wrap Text“ („смотај текст“):
 
 
-.. image:: ../../_images/Print5.jpg
-   :width: 600px
+.. figure:: ../../_images/Print5.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 
 Табела сада изгледа овако:
 
 
-.. image:: ../../_images/Print6.jpg
-   :width: 600px
+.. figure:: ../../_images/Print6.jpg
+   :width: 780px
    :align: center
+   :class: screenshot-shadow
 
 .. infonote::
 
