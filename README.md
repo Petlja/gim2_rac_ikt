@@ -1,9 +1,10 @@
 # Porgrami za tabelarna izračunavanja za drugi razred gimnazije 
 
 Ovaj repozitorijum posvećen je kursu za Porgrame za tabelarno izračunavanje za drugi razred gimnazije.
-Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/483/0](https://petlja.org/kurs/483/)
 
-Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim2_rac_ikt/releases
+Kurs je na Petljinom portalu dotupan ovde: [https://petlja.org/kurs/483/0](https://petlja.org/kurs/483/)
+
+Kurs možete integrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim2_rac_ikt/releases
 
 ## Konverzija u *HTML*
 
